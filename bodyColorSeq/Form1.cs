@@ -8,7 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using comWithPlc;
 using oracleDatabase;
-
+using Oracle.ManagedDataAccess.Client;
 
 
 /**timer1 定时60s，获取读写站数据
@@ -33,6 +33,9 @@ namespace bodyColorSeq
         oracleDatabaseOperate operateDatabase = new oracleDatabaseOperate();
 
         public int total,one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty;
+
+      
+
         public int twentyone, twentytwo, twentythree, twentyfour, twentyfive, twentysix, twentyseven, twentyeight, twentynine, thirty;
 
        
@@ -41,6 +44,7 @@ namespace bodyColorSeq
         {
             timer1.Start();
             timer2.Start();
+    
         }
 
         #region 程序后台运行
@@ -116,26 +120,62 @@ namespace bodyColorSeq
         {
             timer2.Interval = 5000;
 
+            #region RB3725
+
             if (operatePLC.getPlcMX("10.228.141.94", 129, 1, 3))
             {
                 RB3725.BackColor = Color.GreenYellow;
                 one = 1;
+
+                    OracleConnection con = new OracleConnection("Data Source=10.228.141.253/ORCL;User Id=WEBKF;Password=WEBKF");
+                    OracleCommand com = new OracleCommand("select * from (select * from BODYCOLORSEQ order by XUHAO desc ) where rownum=1", con);
+                    con.Open();
+                    OracleDataReader read = com.ExecuteReader();
+                    read.Read();
+                    l3730.Text = read["COLOR"].ToString();
+                    con.Close();
+              
             }
             else
             {
                 RB3725.BackColor = Color.White;
                 one = 0;
+                l3725.Text= "-";
+
             }
+
+            #endregion
 
             if (operatePLC.getPlcMX("10.228.141.94", 137, 1, 3))
             {
                 RB3730.BackColor = Color.GreenYellow;
                 two = 1;
+
+                if ((one + two) == 2)
+                {
+                    OracleConnection con = new OracleConnection("Data Source=10.228.141.253/ORCL;User Id=WEBKF;Password=WEBKF");
+                    OracleCommand com = new OracleCommand("select * from (select * from BODYCOLORSEQ order by XUHAO desc ) where rownum=2", con);
+                    con.Open();
+                    OracleDataReader read = com.ExecuteReader();
+                    read.Read();
+                    l3730.Text = read["COLOR"].ToString();
+                    con.Close();
+
+                }else if((one+two)==1){
+                    OracleConnection con = new OracleConnection("Data Source=10.228.141.253/ORCL;User Id=WEBKF;Password=WEBKF");
+                    OracleCommand com = new OracleCommand("select * from (select * from BODYCOLORSEQ order by XUHAO desc ) where rownum=1", con);
+                    con.Open();
+                    OracleDataReader read = com.ExecuteReader();
+                    read.Read();
+                    l3730.Text = read["COLOR"].ToString();
+                    con.Close();
+                }
             }
             else
             {
                 RB3730.BackColor = Color.White;
                 two = 0;
+                l3730.Text = "-";
             }
 
             if (operatePLC.getPlcMX("10.228.141.94", 141, 1, 3))
@@ -436,6 +476,9 @@ namespace bodyColorSeq
                 thirty = 0;
             }
 
+
+
+            
             total = one + two + three + four + five + six + seven + eight + nine + ten + eleven + twelve + thirteen + fourteen + fifteen + sixteen + seventeen + eighteen + nineteen + twenty;
             bodyNum.Text = Convert.ToString(total);
 
@@ -444,8 +487,19 @@ namespace bodyColorSeq
             dataGridView1.DataSource = operateDatabase.OrcGetDs(sql, "BODYCOLORSEQ").Tables[0];
    
 
+           
+
+
+
+
+
+
+
+
+
         }
 
+  
 
 
         private void bodyFis_TextChanged(object sender, EventArgs e)

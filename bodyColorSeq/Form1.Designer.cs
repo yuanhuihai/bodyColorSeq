@@ -80,6 +80,8 @@
             this.RB4340 = new System.Windows.Forms.Button();
             this.RB4345 = new System.Windows.Forms.Button();
             this.RB4350 = new System.Windows.Forms.Button();
+            this.l3725 = new System.Windows.Forms.Label();
+            this.l3730 = new System.Windows.Forms.Label();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -507,11 +509,31 @@
             this.RB4350.Text = "RB4350";
             this.RB4350.UseVisualStyleBackColor = true;
             // 
+            // l3725
+            // 
+            this.l3725.AutoSize = true;
+            this.l3725.Location = new System.Drawing.Point(63, 120);
+            this.l3725.Name = "l3725";
+            this.l3725.Size = new System.Drawing.Size(10, 13);
+            this.l3725.TabIndex = 47;
+            this.l3725.Text = "-";
+            // 
+            // l3730
+            // 
+            this.l3730.AutoSize = true;
+            this.l3730.Location = new System.Drawing.Point(159, 120);
+            this.l3730.Name = "l3730";
+            this.l3730.Size = new System.Drawing.Size(10, 13);
+            this.l3730.TabIndex = 48;
+            this.l3730.Text = "-";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1063, 614);
+            this.Controls.Add(this.l3730);
+            this.Controls.Add(this.l3725);
             this.Controls.Add(this.RB4355);
             this.Controls.Add(this.RB4360);
             this.Controls.Add(this.RB4365);
@@ -619,6 +641,8 @@
         private System.Windows.Forms.Button RB4340;
         private System.Windows.Forms.Button RB4345;
         private System.Windows.Forms.Button RB4350;
+        private System.Windows.Forms.Label l3725;
+        private System.Windows.Forms.Label l3730;
     }
 }
 
