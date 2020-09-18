@@ -34,7 +34,6 @@ namespace bodyColorSeq
 
         public int total,one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty;
 
-     
 
         public string[] colorInfo=new string[20];
         public string[] fisInfo = new string[20];
@@ -525,7 +524,7 @@ namespace bodyColorSeq
             {
                 int a = total-1-j;
                 int b = j + 1;
-                listInfo.Items.Add("第"+b+"台车身颜色是"+"------"+colorInfo[a]);
+                listInfo.Items.Add("第"+b+"台车身颜色是"+"------"+colorInfo[a]+"滑橇号"+skidInfo[a]);
             }
 
         }
@@ -537,18 +536,26 @@ namespace bodyColorSeq
             toolStripStatusLabel1.Text = DateTime.Now.ToString();
         }
 
-        private void bodySkid_TextChanged(object sender, EventArgs e)
+
+        private void timer4_Tick(object sender, EventArgs e)
         {
+            timer4.Interval = 10000;
             if (bodySkid.Text == "....")
             {
-               
+
             }
             else
             {
                 string sqlstr = "insert into bodyColorSeq values('','" + bodyFis.Text + "','" + bodyColor.Text + "','" + bodySkid.Text + "','" + bodyType.Text + "','','') ";
                 operateDatabase.OrcGetCom(sqlstr);
+                timer4.Stop();
             }
-          
+        }
+
+        private void bodySkid_TextChanged(object sender, EventArgs e)
+        {
+
+            timer4.Start();
 
         }
 
