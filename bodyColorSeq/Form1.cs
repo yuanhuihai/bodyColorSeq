@@ -34,6 +34,8 @@ namespace bodyColorSeq
 
         public int total,one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty;
 
+     
+
         public string[] colorInfo=new string[20];
         public string[] fisInfo = new string[20];
         public string[] skidInfo = new string[20];
@@ -46,6 +48,11 @@ namespace bodyColorSeq
         {
             timer1.Start();
             timer2.Start();
+            timer3.Start();
+            toolStripStatusLabel2.Text = "程序版本 V 1.0.0.16";
+            toolStripStatusLabel2.Alignment = ToolStripItemAlignment.Right;
+            
+            
     
         }
 
@@ -516,39 +523,35 @@ namespace bodyColorSeq
             listInfo.Items.Clear();
             for (int j = 0; j < total; j++)
             {
-                int a = j + 1;
-                listInfo.Items.Add("第"+a+"台车身颜色是"+"------"+colorInfo[j]);
+                int a = total-1-j;
+                int b = j + 1;
+                listInfo.Items.Add("第"+b+"台车身颜色是"+"------"+colorInfo[a]);
             }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
 
-  
 
-
-        private void bodyFis_TextChanged(object sender, EventArgs e)
+        private void timer3_Tick(object sender, EventArgs e)
         {
-
-            string sqlstr = "insert into bodyColorSeq values('','" + bodyFis.Text + "','" + bodyColor.Text + "','" + bodySkid.Text + "','" + bodyType.Text + "') ";
-            operateDatabase.OrcGetCom(sqlstr);
+            timer3.Interval = 1000;
+            toolStripStatusLabel1.Text = DateTime.Now.ToString();
         }
+
+        private void bodySkid_TextChanged(object sender, EventArgs e)
+        {
+            if (bodySkid.Text == "....")
+            {
+               
+            }
+            else
+            {
+                string sqlstr = "insert into bodyColorSeq values('','" + bodyFis.Text + "','" + bodyColor.Text + "','" + bodySkid.Text + "','" + bodyType.Text + "') ";
+                operateDatabase.OrcGetCom(sqlstr);
+            }
+          
+
+        }
+
+
     }
 }

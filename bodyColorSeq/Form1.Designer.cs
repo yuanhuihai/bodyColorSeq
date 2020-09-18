@@ -100,7 +100,12 @@
             this.l3740 = new System.Windows.Forms.Label();
             this.l3815 = new System.Windows.Forms.Label();
             this.l3820 = new System.Windows.Forms.Label();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
             this.contextMenuStrip1.SuspendLayout();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // RB3725
@@ -341,6 +346,7 @@
             this.bodySkid.Name = "bodySkid";
             this.bodySkid.Size = new System.Drawing.Size(56, 20);
             this.bodySkid.TabIndex = 29;
+            this.bodySkid.TextChanged += new System.EventHandler(this.bodySkid_TextChanged);
             // 
             // bodyColor
             // 
@@ -355,7 +361,6 @@
             this.bodyFis.Name = "bodyFis";
             this.bodyFis.Size = new System.Drawing.Size(56, 20);
             this.bodyFis.TabIndex = 31;
-            this.bodyFis.TextChanged += new System.EventHandler(this.bodyFis_TextChanged);
             // 
             // timer1
             // 
@@ -706,11 +711,39 @@
             this.l3820.TabIndex = 67;
             this.l3820.Text = "-";
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1,
+            this.toolStripStatusLabel2});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 384);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(1063, 22);
+            this.statusStrip1.TabIndex = 68;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(118, 17);
+            this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
+            // 
+            // timer3
+            // 
+            this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
+            // 
+            // toolStripStatusLabel2
+            // 
+            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(118, 17);
+            this.toolStripStatusLabel2.Text = "toolStripStatusLabel2";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1063, 614);
+            this.ClientSize = new System.Drawing.Size(1063, 406);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.l3820);
             this.Controls.Add(this.l3815);
             this.Controls.Add(this.l3740);
@@ -780,6 +813,8 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.contextMenuStrip1.ResumeLayout(false);
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -857,6 +892,10 @@
         private System.Windows.Forms.Label l3740;
         private System.Windows.Forms.Label l3815;
         private System.Windows.Forms.Label l3820;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
+        private System.Windows.Forms.Timer timer3;
+        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
     }
 }
 
