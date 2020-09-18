@@ -69,7 +69,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.bodyNum = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.RB4355 = new System.Windows.Forms.Button();
             this.RB4360 = new System.Windows.Forms.Button();
             this.RB4365 = new System.Windows.Forms.Button();
@@ -82,8 +81,26 @@
             this.RB4350 = new System.Windows.Forms.Button();
             this.l3725 = new System.Windows.Forms.Label();
             this.l3730 = new System.Windows.Forms.Label();
+            this.listInfo = new System.Windows.Forms.ListBox();
+            this.l3735 = new System.Windows.Forms.Label();
+            this.l3810 = new System.Windows.Forms.Label();
+            this.l3805 = new System.Windows.Forms.Label();
+            this.l3795 = new System.Windows.Forms.Label();
+            this.l3800 = new System.Windows.Forms.Label();
+            this.l3790 = new System.Windows.Forms.Label();
+            this.l3780 = new System.Windows.Forms.Label();
+            this.l3785 = new System.Windows.Forms.Label();
+            this.l3775 = new System.Windows.Forms.Label();
+            this.l3770 = new System.Windows.Forms.Label();
+            this.l3765 = new System.Windows.Forms.Label();
+            this.l3760 = new System.Windows.Forms.Label();
+            this.l3755 = new System.Windows.Forms.Label();
+            this.l3750 = new System.Windows.Forms.Label();
+            this.l3745 = new System.Windows.Forms.Label();
+            this.l3740 = new System.Windows.Forms.Label();
+            this.l3815 = new System.Windows.Forms.Label();
+            this.l3820 = new System.Windows.Forms.Label();
             this.contextMenuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // RB3725
@@ -411,14 +428,6 @@
             this.bodyNum.Size = new System.Drawing.Size(22, 20);
             this.bodyNum.TabIndex = 35;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(44, 312);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(503, 299);
-            this.dataGridView1.TabIndex = 36;
-            // 
             // RB4355
             // 
             this.RB4355.Location = new System.Drawing.Point(494, 243);
@@ -527,11 +536,200 @@
             this.l3730.TabIndex = 48;
             this.l3730.Text = "-";
             // 
+            // listInfo
+            // 
+            this.listInfo.FormattingEnabled = true;
+            this.listInfo.Location = new System.Drawing.Point(865, 25);
+            this.listInfo.Name = "listInfo";
+            this.listInfo.Size = new System.Drawing.Size(161, 290);
+            this.listInfo.TabIndex = 49;
+            // 
+            // l3735
+            // 
+            this.l3735.AutoSize = true;
+            this.l3735.Location = new System.Drawing.Point(224, 120);
+            this.l3735.Name = "l3735";
+            this.l3735.Size = new System.Drawing.Size(10, 13);
+            this.l3735.TabIndex = 50;
+            this.l3735.Text = "-";
+            // 
+            // l3810
+            // 
+            this.l3810.AutoSize = true;
+            this.l3810.Location = new System.Drawing.Point(598, 201);
+            this.l3810.Name = "l3810";
+            this.l3810.Size = new System.Drawing.Size(10, 13);
+            this.l3810.TabIndex = 51;
+            this.l3810.Text = "-";
+            // 
+            // l3805
+            // 
+            this.l3805.AutoSize = true;
+            this.l3805.Location = new System.Drawing.Point(520, 201);
+            this.l3805.Name = "l3805";
+            this.l3805.Size = new System.Drawing.Size(10, 13);
+            this.l3805.TabIndex = 52;
+            this.l3805.Text = "-";
+            // 
+            // l3795
+            // 
+            this.l3795.AutoSize = true;
+            this.l3795.Location = new System.Drawing.Point(359, 201);
+            this.l3795.Name = "l3795";
+            this.l3795.Size = new System.Drawing.Size(10, 13);
+            this.l3795.TabIndex = 53;
+            this.l3795.Text = "-";
+            // 
+            // l3800
+            // 
+            this.l3800.AutoSize = true;
+            this.l3800.Location = new System.Drawing.Point(439, 201);
+            this.l3800.Name = "l3800";
+            this.l3800.Size = new System.Drawing.Size(10, 13);
+            this.l3800.TabIndex = 54;
+            this.l3800.Text = "-";
+            // 
+            // l3790
+            // 
+            this.l3790.AutoSize = true;
+            this.l3790.Location = new System.Drawing.Point(298, 201);
+            this.l3790.Name = "l3790";
+            this.l3790.Size = new System.Drawing.Size(10, 13);
+            this.l3790.TabIndex = 55;
+            this.l3790.Text = "-";
+            // 
+            // l3780
+            // 
+            this.l3780.AutoSize = true;
+            this.l3780.Location = new System.Drawing.Point(159, 201);
+            this.l3780.Name = "l3780";
+            this.l3780.Size = new System.Drawing.Size(10, 13);
+            this.l3780.TabIndex = 56;
+            this.l3780.Text = "-";
+            // 
+            // l3785
+            // 
+            this.l3785.AutoSize = true;
+            this.l3785.Location = new System.Drawing.Point(224, 201);
+            this.l3785.Name = "l3785";
+            this.l3785.Size = new System.Drawing.Size(10, 13);
+            this.l3785.TabIndex = 57;
+            this.l3785.Text = "-";
+            // 
+            // l3775
+            // 
+            this.l3775.AutoSize = true;
+            this.l3775.Location = new System.Drawing.Point(63, 201);
+            this.l3775.Name = "l3775";
+            this.l3775.Size = new System.Drawing.Size(10, 13);
+            this.l3775.TabIndex = 58;
+            this.l3775.Text = "-";
+            // 
+            // l3770
+            // 
+            this.l3770.AutoSize = true;
+            this.l3770.Location = new System.Drawing.Point(736, 120);
+            this.l3770.Name = "l3770";
+            this.l3770.Size = new System.Drawing.Size(10, 13);
+            this.l3770.TabIndex = 59;
+            this.l3770.Text = "-";
+            // 
+            // l3765
+            // 
+            this.l3765.AutoSize = true;
+            this.l3765.Location = new System.Drawing.Point(666, 120);
+            this.l3765.Name = "l3765";
+            this.l3765.Size = new System.Drawing.Size(10, 13);
+            this.l3765.TabIndex = 60;
+            this.l3765.Text = "-";
+            // 
+            // l3760
+            // 
+            this.l3760.AutoSize = true;
+            this.l3760.Location = new System.Drawing.Point(598, 120);
+            this.l3760.Name = "l3760";
+            this.l3760.Size = new System.Drawing.Size(10, 13);
+            this.l3760.TabIndex = 61;
+            this.l3760.Text = "-";
+            // 
+            // l3755
+            // 
+            this.l3755.AutoSize = true;
+            this.l3755.Location = new System.Drawing.Point(520, 120);
+            this.l3755.Name = "l3755";
+            this.l3755.Size = new System.Drawing.Size(10, 13);
+            this.l3755.TabIndex = 62;
+            this.l3755.Text = "-";
+            // 
+            // l3750
+            // 
+            this.l3750.AutoSize = true;
+            this.l3750.Location = new System.Drawing.Point(439, 120);
+            this.l3750.Name = "l3750";
+            this.l3750.Size = new System.Drawing.Size(10, 13);
+            this.l3750.TabIndex = 63;
+            this.l3750.Text = "-";
+            // 
+            // l3745
+            // 
+            this.l3745.AutoSize = true;
+            this.l3745.Location = new System.Drawing.Point(373, 120);
+            this.l3745.Name = "l3745";
+            this.l3745.Size = new System.Drawing.Size(10, 13);
+            this.l3745.TabIndex = 64;
+            this.l3745.Text = "-";
+            // 
+            // l3740
+            // 
+            this.l3740.AutoSize = true;
+            this.l3740.Location = new System.Drawing.Point(298, 120);
+            this.l3740.Name = "l3740";
+            this.l3740.Size = new System.Drawing.Size(10, 13);
+            this.l3740.TabIndex = 65;
+            this.l3740.Text = "-";
+            // 
+            // l3815
+            // 
+            this.l3815.AutoSize = true;
+            this.l3815.Location = new System.Drawing.Point(666, 201);
+            this.l3815.Name = "l3815";
+            this.l3815.Size = new System.Drawing.Size(10, 13);
+            this.l3815.TabIndex = 66;
+            this.l3815.Text = "-";
+            // 
+            // l3820
+            // 
+            this.l3820.AutoSize = true;
+            this.l3820.Location = new System.Drawing.Point(736, 201);
+            this.l3820.Name = "l3820";
+            this.l3820.Size = new System.Drawing.Size(10, 13);
+            this.l3820.TabIndex = 67;
+            this.l3820.Text = "-";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1063, 614);
+            this.Controls.Add(this.l3820);
+            this.Controls.Add(this.l3815);
+            this.Controls.Add(this.l3740);
+            this.Controls.Add(this.l3745);
+            this.Controls.Add(this.l3750);
+            this.Controls.Add(this.l3755);
+            this.Controls.Add(this.l3760);
+            this.Controls.Add(this.l3765);
+            this.Controls.Add(this.l3770);
+            this.Controls.Add(this.l3775);
+            this.Controls.Add(this.l3785);
+            this.Controls.Add(this.l3780);
+            this.Controls.Add(this.l3790);
+            this.Controls.Add(this.l3800);
+            this.Controls.Add(this.l3795);
+            this.Controls.Add(this.l3805);
+            this.Controls.Add(this.l3810);
+            this.Controls.Add(this.l3735);
+            this.Controls.Add(this.listInfo);
             this.Controls.Add(this.l3730);
             this.Controls.Add(this.l3725);
             this.Controls.Add(this.RB4355);
@@ -544,7 +742,6 @@
             this.Controls.Add(this.RB4340);
             this.Controls.Add(this.RB4345);
             this.Controls.Add(this.RB4350);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.bodyNum);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
@@ -583,7 +780,6 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.contextMenuStrip1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -630,7 +826,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox bodyNum;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button RB4355;
         private System.Windows.Forms.Button RB4360;
         private System.Windows.Forms.Button RB4365;
@@ -643,6 +838,25 @@
         private System.Windows.Forms.Button RB4350;
         private System.Windows.Forms.Label l3725;
         private System.Windows.Forms.Label l3730;
+        private System.Windows.Forms.ListBox listInfo;
+        private System.Windows.Forms.Label l3735;
+        private System.Windows.Forms.Label l3810;
+        private System.Windows.Forms.Label l3805;
+        private System.Windows.Forms.Label l3795;
+        private System.Windows.Forms.Label l3800;
+        private System.Windows.Forms.Label l3790;
+        private System.Windows.Forms.Label l3780;
+        private System.Windows.Forms.Label l3785;
+        private System.Windows.Forms.Label l3775;
+        private System.Windows.Forms.Label l3770;
+        private System.Windows.Forms.Label l3765;
+        private System.Windows.Forms.Label l3760;
+        private System.Windows.Forms.Label l3755;
+        private System.Windows.Forms.Label l3750;
+        private System.Windows.Forms.Label l3745;
+        private System.Windows.Forms.Label l3740;
+        private System.Windows.Forms.Label l3815;
+        private System.Windows.Forms.Label l3820;
     }
 }
 
