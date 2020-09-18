@@ -41,11 +41,13 @@ namespace bodyColorSeq
 
         public int twentyone, twentytwo, twentythree, twentyfour, twentyfive, twentysix, twentyseven, twentyeight, twentynine, thirty;
 
+        public int signalIn=0, signalOut=0;
+
        
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            timer1.Start();
+        
             timer2.Start();
             timer3.Start();
             toolStripStatusLabel2.Text = "程序版本 V 1.0.0.16";
@@ -113,15 +115,7 @@ namespace bodyColorSeq
 
         #endregion
 
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            timer1.Interval = 30000;
-          
-            bodySkid.Text = operatePLC.getCharValue("10.228.141.94", 960, 340, 4);
-            bodyType.Text = operatePLC.getCharValue("10.228.141.94", 960, 118, 3);
-            bodyColor.Text = operatePLC.getCharValue("10.228.141.94", 960, 132, 4);
-            bodyFis.Text = operatePLC.getCharValue("10.228.141.94", 960, 8, 8);
-        }
+   
 
 
         private void timer2_Tick(object sender, EventArgs e)
@@ -534,30 +528,27 @@ namespace bodyColorSeq
         {
             timer3.Interval = 1000;
             toolStripStatusLabel1.Text = DateTime.Now.ToString();
-        }
 
+            signalIn++;
+            signalOut++;
 
-        private void timer4_Tick(object sender, EventArgs e)
-        {
-            timer4.Interval = 10000;
-            if (bodySkid.Text == "....")
+            if (signalIn % 2 == 0)
             {
-
+                bodyIn.BackColor = Color.ForestGreen;
+                bodyOut.BackColor = Color.ForestGreen;
             }
             else
             {
-                string sqlstr = "insert into bodyColorSeq values('','" + bodyFis.Text + "','" + bodyColor.Text + "','" + bodySkid.Text + "','" + bodyType.Text + "','','') ";
-                operateDatabase.OrcGetCom(sqlstr);
-                timer4.Stop();
+                bodyIn.BackColor = Color.White;
+                bodyOut.BackColor = Color.White;
             }
-        }
 
-        private void bodySkid_TextChanged(object sender, EventArgs e)
-        {
+       }
 
-            timer4.Start();
 
-        }
+
+
+  
 
 
     }

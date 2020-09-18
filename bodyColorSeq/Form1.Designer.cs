@@ -50,16 +50,6 @@
             this.RB3810 = new System.Windows.Forms.Button();
             this.RB3815 = new System.Windows.Forms.Button();
             this.RB3820 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.bodyType = new System.Windows.Forms.TextBox();
-            this.bodySkid = new System.Windows.Forms.TextBox();
-            this.bodyColor = new System.Windows.Forms.TextBox();
-            this.bodyFis = new System.Windows.Forms.TextBox();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.showMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -102,11 +92,10 @@
             this.l3820 = new System.Windows.Forms.Label();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.timer4 = new System.Windows.Forms.Timer(this.components);
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.bodyIn = new System.Windows.Forms.Label();
+            this.bodyOut = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.contextMenuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -292,84 +281,6 @@
             this.RB3820.Text = "RB3820";
             this.RB3820.UseVisualStyleBackColor = true;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 13);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "来车信息";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(111, 30);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(31, 13);
-            this.label2.TabIndex = 24;
-            this.label2.Text = "车型";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(325, 30);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(31, 13);
-            this.label3.TabIndex = 26;
-            this.label3.Text = "颜色";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(213, 30);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 13);
-            this.label4.TabIndex = 25;
-            this.label4.Text = "滑橇号";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(421, 30);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(47, 13);
-            this.label6.TabIndex = 27;
-            this.label6.Text = "FIS编码";
-            // 
-            // bodyType
-            // 
-            this.bodyType.Location = new System.Drawing.Point(148, 27);
-            this.bodyType.Name = "bodyType";
-            this.bodyType.Size = new System.Drawing.Size(56, 20);
-            this.bodyType.TabIndex = 28;
-            // 
-            // bodySkid
-            // 
-            this.bodySkid.Location = new System.Drawing.Point(262, 27);
-            this.bodySkid.Name = "bodySkid";
-            this.bodySkid.Size = new System.Drawing.Size(56, 20);
-            this.bodySkid.TabIndex = 29;
-            this.bodySkid.TextChanged += new System.EventHandler(this.bodySkid_TextChanged);
-            // 
-            // bodyColor
-            // 
-            this.bodyColor.Location = new System.Drawing.Point(362, 27);
-            this.bodyColor.Name = "bodyColor";
-            this.bodyColor.Size = new System.Drawing.Size(56, 20);
-            this.bodyColor.TabIndex = 30;
-            // 
-            // bodyFis
-            // 
-            this.bodyFis.Location = new System.Drawing.Point(474, 27);
-            this.bodyFis.Name = "bodyFis";
-            this.bodyFis.Size = new System.Drawing.Size(56, 20);
-            this.bodyFis.TabIndex = 31;
-            // 
-            // timer1
-            // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
             // notifyIcon1
             // 
             this.notifyIcon1.ContextMenuStrip = this.contextMenuStrip1;
@@ -415,7 +326,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(704, 27);
+            this.label5.Location = new System.Drawing.Point(41, 25);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(55, 13);
             this.label5.TabIndex = 33;
@@ -424,7 +335,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(795, 27);
+            this.label7.Location = new System.Drawing.Point(132, 25);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(19, 13);
             this.label7.TabIndex = 34;
@@ -432,7 +343,7 @@
             // 
             // bodyNum
             // 
-            this.bodyNum.Location = new System.Drawing.Point(765, 25);
+            this.bodyNum.Location = new System.Drawing.Point(102, 23);
             this.bodyNum.Name = "bodyNum";
             this.bodyNum.Size = new System.Drawing.Size(22, 20);
             this.bodyNum.TabIndex = 35;
@@ -732,37 +643,33 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(118, 17);
             this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
             // 
-            // timer3
-            // 
-            this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
-            // 
             // toolStripStatusLabel2
             // 
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
             this.toolStripStatusLabel2.Size = new System.Drawing.Size(118, 17);
             this.toolStripStatusLabel2.Text = "toolStripStatusLabel2";
             // 
-            // timer4
+            // timer3
             // 
-            this.timer4.Tick += new System.EventHandler(this.timer4_Tick);
+            this.timer3.Tick += new System.EventHandler(this.timer3_Tick);
             // 
-            // label8
+            // bodyIn
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(45, 70);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(43, 13);
-            this.label8.TabIndex = 69;
-            this.label8.Text = "进车处";
+            this.bodyIn.AutoSize = true;
+            this.bodyIn.Location = new System.Drawing.Point(45, 70);
+            this.bodyIn.Name = "bodyIn";
+            this.bodyIn.Size = new System.Drawing.Size(43, 13);
+            this.bodyIn.TabIndex = 69;
+            this.bodyIn.Text = "进车处";
             // 
-            // label9
+            // bodyOut
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(744, 150);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(43, 13);
-            this.label9.TabIndex = 70;
-            this.label9.Text = "出车处";
+            this.bodyOut.AutoSize = true;
+            this.bodyOut.Location = new System.Drawing.Point(744, 150);
+            this.bodyOut.Name = "bodyOut";
+            this.bodyOut.Size = new System.Drawing.Size(43, 13);
+            this.bodyOut.TabIndex = 70;
+            this.bodyOut.Text = "出车处";
             // 
             // label10
             // 
@@ -779,8 +686,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1063, 406);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.bodyOut);
+            this.Controls.Add(this.bodyIn);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.l3820);
             this.Controls.Add(this.l3815);
@@ -816,15 +723,6 @@
             this.Controls.Add(this.bodyNum);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.bodyFis);
-            this.Controls.Add(this.bodyColor);
-            this.Controls.Add(this.bodySkid);
-            this.Controls.Add(this.bodyType);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.RB3805);
             this.Controls.Add(this.RB3810);
             this.Controls.Add(this.RB3815);
@@ -880,16 +778,6 @@
         private System.Windows.Forms.Button RB3810;
         private System.Windows.Forms.Button RB3815;
         private System.Windows.Forms.Button RB3820;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox bodyType;
-        private System.Windows.Forms.TextBox bodySkid;
-        private System.Windows.Forms.TextBox bodyColor;
-        private System.Windows.Forms.TextBox bodyFis;
-        private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem showMenuItem;
@@ -934,9 +822,8 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.Timer timer3;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel2;
-        private System.Windows.Forms.Timer timer4;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label bodyIn;
+        private System.Windows.Forms.Label bodyOut;
         private System.Windows.Forms.Label label10;
     }
 }
