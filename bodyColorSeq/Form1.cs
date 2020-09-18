@@ -545,7 +545,7 @@ namespace bodyColorSeq
             }
             else
             {
-                string sqlstr = "insert into bodyColorSeq values('','" + bodyFis.Text + "','" + bodyColor.Text + "','" + bodySkid.Text + "','" + bodyType.Text + "') ";
+                string sqlstr = "insert into bodyColorSeq values('','" + bodyFis.Text + "','" + bodyColor.Text + "','" + bodySkid.Text + "','" + bodyType.Text + "','','') ";
                 operateDatabase.OrcGetCom(sqlstr);
             }
           
