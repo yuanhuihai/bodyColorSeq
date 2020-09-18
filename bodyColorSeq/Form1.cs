@@ -35,14 +35,19 @@ namespace bodyColorSeq
         public int total,one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty;
 
 
-        public string[] colorInfo=new string[20];
-        public string[] fisInfo = new string[20];
-        public string[] skidInfo = new string[20];
+        public string[] colorInfo=new string[41];
+        public string[] fisInfo = new string[41];
+        public string[] skidInfo = new string[41];
 
         public int twentyone, twentytwo, twentythree, twentyfour, twentyfive, twentysix, twentyseven, twentyeight, twentynine, thirty;
 
         public int signalIn=0, signalOut=0;
 
+        public int mianzhun = 0;
+        public int totalbeformianzhun = 0;
+        public string mianzhunbody;
+
+ 
        
 
         private void Form1_Load(object sender, EventArgs e)
@@ -386,113 +391,61 @@ namespace bodyColorSeq
             {
                 RB3825.BackColor = Color.GreenYellow;
                 twentyone = 1;
+                l3825.Text = colorInfo[one + two + three + four + five + six + seven + eight + nine + ten + eleven + twelve + thirteen + fourteen + fifteen + sixteen + seventeen + eighteen + nineteen + twenty+twentyone - 1];
             }
             else
             {
                 RB3825.BackColor = Color.White;
                 twentyone = 0;
+                l3825.Text = "-";
             }
 
             if (operatePLC.getPlcMX("10.228.141.94", 365, 1, 3))
             {
                 RB4330.BackColor = Color.GreenYellow;
                 twentytwo = 1;
+                l4330.Text = colorInfo[one + two + three + four + five + six + seven + eight + nine + ten + eleven + twelve + thirteen + fourteen + fifteen + sixteen + seventeen + eighteen + nineteen + twenty + twentyone+twentytwo - 1];
             }
             else
             {
                 RB4330.BackColor = Color.White;
                 twentytwo = 0;
+                l4330.Text = "-";
             }
 
             #region RB4365--- RB4370
-            //if (operatePLC.getPlcMX("10.228.141.94", 331, 1, 3))
-            //{
-            //    RB4335.BackColor = Color.GreenYellow;
-            //    twentythree = 1;
-            //}
-            //else
-            //{
-            //    RB4335.BackColor = Color.White;
-            //    twentythree = 0;
-            //}
-
-            //if (operatePLC.getPlcMX("10.228.141.94", 334, 1, 3))
-            //{
-            //    RB4340.BackColor = Color.GreenYellow;
-            //    twentyfour = 1;
-            //}
-            //else
-            //{
-            //    RB4340.BackColor = Color.White;
-            //    twentyfour = 0;
-            //}
-            //if (operatePLC.getPlcMX("10.228.141.94", 331, 1, 3))
-            //{
-            //    RB4345.BackColor = Color.GreenYellow;
-            //    twentyfive = 1;
-            //}
-            //else
-            //{
-            //    RB4345.BackColor = Color.White;
-            //    twentyfive = 0;
-            //}
-            //if (operatePLC.getPlcMX("10.228.141.94", 334, 1, 3))
-            //{
-            //    RB4350.BackColor = Color.GreenYellow;
-            //    twentysix = 1;
-            //}
-            //else
-            //{
-            //    RB4350.BackColor = Color.White;
-            //    twentysix = 0;
-            //}
-            //if (operatePLC.getPlcMX("10.228.141.94", 331, 1, 3))
-            //{
-            //    RB4355.BackColor = Color.GreenYellow;
-            //    twentyseven = 1;
-            //}
-            //else
-            //{
-            //    RB4355.BackColor = Color.White;
-            //    twentyseven = 0;
-            //}
-            //if (operatePLC.getPlcMX("10.228.141.94", 334, 1, 3))
-            //{
-            //    RB4360.BackColor = Color.GreenYellow;
-            //    twentyeight = 1;
-            //}
-            //else
-            //{
-            //    RB4360.BackColor = Color.White;
-            //    twentyeight = 0;
-            //}
-            //if (operatePLC.getPlcMX("10.228.141.94", 331, 1, 3))
-            //{
-            //    RB4365.BackColor = Color.GreenYellow;
-            //    twentynine = 1;
-            //}
-            //else
-            //{
-            //    RB4365.BackColor = Color.White;
-            //    twentynine = 0;
-            //}
-
+            mianzhun = operatePLC.readPlcDbwValue("10.228.141.94", 0, 3, 31, 2);
             #endregion
             if (operatePLC.getPlcMX("10.228.141.94", 525, 1, 3))
             {
                 RB4370.BackColor = Color.GreenYellow;
                 thirty = 1;
+                l4370.Text = colorInfo[one + two + three + four + five + six + seven + eight + nine + ten + eleven + twelve + thirteen + fourteen + fifteen + sixteen + seventeen + eighteen + nineteen + twenty + twentyone + twentytwo + mianzhun - 1];
             }
             else
             {
                 RB4370.BackColor = Color.White;
                 thirty = 0;
+                l4370.Text = "-";
             }
 
 
+            if (thirty == 1)
+            {
+                ltotal.Text = "面漆准备间内有车身----" + mianzhun + "----台,从右到左对应的车身信息为右侧第"+2+"到"+(mianzhun+thirty)+"台车！";
+            }
+            else
+            {
+                ltotal.Text = "面漆准备间内有车身----" + mianzhun + "----台,从右到左对应的车身信息为右侧第" + 1 + "到" + mianzhun + "台车！";
+            }
+        
+           
 
-            
-            total = one + two + three + four + five + six + seven + eight + nine + ten + eleven + twelve + thirteen + fourteen + fifteen + sixteen + seventeen + eighteen + nineteen + twenty;
+
+         
+          
+
+            total = one + two + three + four + five + six + seven + eight + nine + ten + eleven + twelve + thirteen + fourteen + fifteen + sixteen + seventeen + eighteen + nineteen + twenty+twentyone+twentytwo+mianzhun+thirty;
             bodyNum.Text = Convert.ToString(total);
 
             string sql = "select * from (select * from BODYCOLORSEQ order by XUHAO desc ) where rownum<="+total;
@@ -534,13 +487,27 @@ namespace bodyColorSeq
 
             if (signalIn % 2 == 0)
             {
-                bodyIn.BackColor = Color.ForestGreen;
-                bodyOut.BackColor = Color.ForestGreen;
+                btn_areaone.BackColor = Color.Red;
+                btn_areatwo.BackColor = Color.Red;
+                btn_areathree.BackColor = Color.Red;
+                btn_lineonein.BackColor = Color.Red;
+                btn_linetwoin.BackColor = Color.Red;
+                btn_linethreein.BackColor = Color.Red;
+                btn_lineoneout.BackColor = Color.Red;
+                btn_linetwoout.BackColor = Color.Red;
+                btn_linethreeout.BackColor = Color.Red;
             }
             else
             {
-                bodyIn.BackColor = Color.White;
-                bodyOut.BackColor = Color.White;
+                btn_areaone.BackColor = Color.White;
+                btn_areatwo.BackColor = Color.White;
+                btn_areathree.BackColor = Color.White;
+                btn_lineonein.BackColor = Color.White;
+                btn_linetwoin.BackColor = Color.White;
+                btn_linethreein.BackColor = Color.White;
+                btn_lineoneout.BackColor = Color.White;
+                btn_linetwoout.BackColor = Color.White;
+                btn_linethreeout.BackColor = Color.White;
             }
 
        }
