@@ -189,12 +189,12 @@
             this.button6 = new System.Windows.Forms.Button();
             this.carToTCone = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
             this.colorBooth = new System.Windows.Forms.TextBox();
             this.colorGroup = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
             this.contextMenuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -875,6 +875,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.Location = new System.Drawing.Point(32, 70);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(91, 13);
@@ -1784,6 +1785,24 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "今日换色率";
             // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(161, 65);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(36, 13);
+            this.label23.TabIndex = 92;
+            this.label23.Text = "台/次";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(161, 30);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(36, 13);
+            this.label22.TabIndex = 89;
+            this.label22.Text = "台/次";
+            // 
             // colorBooth
             // 
             this.colorBooth.Location = new System.Drawing.Point(103, 62);
@@ -1817,24 +1836,6 @@
             this.label20.Size = new System.Drawing.Size(91, 13);
             this.label20.TabIndex = 89;
             this.label20.Text = "颜色编组站一区";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(161, 30);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(36, 13);
-            this.label22.TabIndex = 89;
-            this.label22.Text = "台/次";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(161, 65);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(36, 13);
-            this.label23.TabIndex = 92;
-            this.label23.Text = "台/次";
             // 
             // Form1
             // 
