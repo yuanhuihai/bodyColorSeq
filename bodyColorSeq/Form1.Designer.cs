@@ -71,7 +71,6 @@
             this.RB4350 = new System.Windows.Forms.Button();
             this.l3725 = new System.Windows.Forms.Label();
             this.l3730 = new System.Windows.Forms.Label();
-            this.listInfo = new System.Windows.Forms.ListBox();
             this.l3735 = new System.Windows.Forms.Label();
             this.l3810 = new System.Windows.Forms.Label();
             this.l3805 = new System.Windows.Forms.Label();
@@ -99,8 +98,6 @@
             this.l3825 = new System.Windows.Forms.Label();
             this.l4330 = new System.Windows.Forms.Label();
             this.l4370 = new System.Windows.Forms.Label();
-            this.ltotal = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -111,16 +108,34 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.RB6100 = new System.Windows.Forms.Button();
+            this.RB6105 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.RB6185 = new System.Windows.Forms.Button();
+            this.RB6190 = new System.Windows.Forms.Button();
+            this.RB6180 = new System.Windows.Forms.Button();
+            this.RB6175 = new System.Windows.Forms.Button();
+            this.RB6095 = new System.Windows.Forms.Button();
+            this.RB6075 = new System.Windows.Forms.Button();
+            this.RB6080 = new System.Windows.Forms.Button();
+            this.RB6090 = new System.Windows.Forms.Button();
+            this.RB6210 = new System.Windows.Forms.Button();
+            this.RB6195 = new System.Windows.Forms.Button();
+            this.RB6170 = new System.Windows.Forms.Button();
             this.RB6200 = new System.Windows.Forms.Button();
             this.RB6205 = new System.Windows.Forms.Button();
             this.RB6155 = new System.Windows.Forms.Button();
             this.RB6160 = new System.Windows.Forms.Button();
             this.RB6165 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
             this.RB4375 = new System.Windows.Forms.Button();
             this.RB6150 = new System.Windows.Forms.Button();
-            this.RB6170 = new System.Windows.Forms.Button();
-            this.RB6195 = new System.Windows.Forms.Button();
-            this.RB6210 = new System.Windows.Forms.Button();
             this.RB6215 = new System.Windows.Forms.Button();
             this.RB6220 = new System.Windows.Forms.Button();
             this.RB6140 = new System.Windows.Forms.Button();
@@ -128,65 +143,61 @@
             this.RB6240 = new System.Windows.Forms.Button();
             this.RB6115 = new System.Windows.Forms.Button();
             this.RB6110 = new System.Windows.Forms.Button();
-            this.RB6095 = new System.Windows.Forms.Button();
-            this.RB6075 = new System.Windows.Forms.Button();
-            this.RB6080 = new System.Windows.Forms.Button();
-            this.RB6090 = new System.Windows.Forms.Button();
-            this.RB6190 = new System.Windows.Forms.Button();
-            this.RB6175 = new System.Windows.Forms.Button();
-            this.RB6185 = new System.Windows.Forms.Button();
-            this.RB6180 = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.RB6100 = new System.Windows.Forms.Button();
-            this.RB6105 = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.bigreadyeight = new System.Windows.Forms.Label();
+            this.bigreadyseven = new System.Windows.Forms.Label();
+            this.bigreadyfive = new System.Windows.Forms.Label();
+            this.bigreadysix = new System.Windows.Forms.Label();
+            this.bigreadyone = new System.Windows.Forms.Label();
+            this.bigreadytwo = new System.Windows.Forms.Label();
+            this.bigreadythree = new System.Windows.Forms.Label();
+            this.bigreadyfour = new System.Windows.Forms.Label();
+            this.bigReadyLine = new System.Windows.Forms.Button();
+            this.label27 = new System.Windows.Forms.Label();
+            this.carToTCone = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
             this.btn_linetwoout = new System.Windows.Forms.Button();
             this.btn_linetwoin = new System.Windows.Forms.Button();
             this.btn_lineoneout = new System.Windows.Forms.Button();
             this.btn_lineonein = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
             this.btn_areathree = new System.Windows.Forms.Button();
             this.btn_areatwo = new System.Windows.Forms.Button();
             this.btn_areaone = new System.Windows.Forms.Button();
             this.btn_linethreein = new System.Windows.Forms.Button();
             this.btn_linethreeout = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
             this.button12 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.label16 = new System.Windows.Forms.Label();
-            this.button16 = new System.Windows.Forms.Button();
-            this.label17 = new System.Windows.Forms.Label();
             this.contextMenuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            this.groupBox7.SuspendLayout();
             this.SuspendLayout();
             // 
             // RB3725
             // 
-            this.RB3725.Location = new System.Drawing.Point(61, 34);
+            this.RB3725.Location = new System.Drawing.Point(61, 22);
             this.RB3725.Name = "RB3725";
             this.RB3725.Size = new System.Drawing.Size(75, 23);
             this.RB3725.TabIndex = 0;
@@ -195,7 +206,7 @@
             // 
             // RB3800
             // 
-            this.RB3800.Location = new System.Drawing.Point(437, 34);
+            this.RB3800.Location = new System.Drawing.Point(437, 21);
             this.RB3800.Name = "RB3800";
             this.RB3800.Size = new System.Drawing.Size(75, 23);
             this.RB3800.TabIndex = 2;
@@ -204,7 +215,7 @@
             // 
             // RB3795
             // 
-            this.RB3795.Location = new System.Drawing.Point(361, 34);
+            this.RB3795.Location = new System.Drawing.Point(361, 21);
             this.RB3795.Name = "RB3795";
             this.RB3795.Size = new System.Drawing.Size(75, 23);
             this.RB3795.TabIndex = 3;
@@ -213,7 +224,7 @@
             // 
             // RB3790
             // 
-            this.RB3790.Location = new System.Drawing.Point(287, 34);
+            this.RB3790.Location = new System.Drawing.Point(287, 21);
             this.RB3790.Name = "RB3790";
             this.RB3790.Size = new System.Drawing.Size(75, 23);
             this.RB3790.TabIndex = 4;
@@ -222,7 +233,7 @@
             // 
             // RB3785
             // 
-            this.RB3785.Location = new System.Drawing.Point(213, 34);
+            this.RB3785.Location = new System.Drawing.Point(213, 21);
             this.RB3785.Name = "RB3785";
             this.RB3785.Size = new System.Drawing.Size(75, 23);
             this.RB3785.TabIndex = 5;
@@ -231,7 +242,7 @@
             // 
             // RB3780
             // 
-            this.RB3780.Location = new System.Drawing.Point(137, 34);
+            this.RB3780.Location = new System.Drawing.Point(137, 21);
             this.RB3780.Name = "RB3780";
             this.RB3780.Size = new System.Drawing.Size(75, 23);
             this.RB3780.TabIndex = 6;
@@ -240,7 +251,7 @@
             // 
             // RB3775
             // 
-            this.RB3775.Location = new System.Drawing.Point(58, 34);
+            this.RB3775.Location = new System.Drawing.Point(58, 21);
             this.RB3775.Name = "RB3775";
             this.RB3775.Size = new System.Drawing.Size(75, 23);
             this.RB3775.TabIndex = 7;
@@ -249,7 +260,7 @@
             // 
             // RB3770
             // 
-            this.RB3770.Location = new System.Drawing.Point(736, 34);
+            this.RB3770.Location = new System.Drawing.Point(736, 22);
             this.RB3770.Name = "RB3770";
             this.RB3770.Size = new System.Drawing.Size(75, 23);
             this.RB3770.TabIndex = 8;
@@ -258,7 +269,7 @@
             // 
             // RB3765
             // 
-            this.RB3765.Location = new System.Drawing.Point(661, 34);
+            this.RB3765.Location = new System.Drawing.Point(661, 22);
             this.RB3765.Name = "RB3765";
             this.RB3765.Size = new System.Drawing.Size(75, 23);
             this.RB3765.TabIndex = 9;
@@ -267,7 +278,7 @@
             // 
             // RB3760
             // 
-            this.RB3760.Location = new System.Drawing.Point(586, 34);
+            this.RB3760.Location = new System.Drawing.Point(586, 22);
             this.RB3760.Name = "RB3760";
             this.RB3760.Size = new System.Drawing.Size(75, 23);
             this.RB3760.TabIndex = 10;
@@ -276,7 +287,7 @@
             // 
             // RB3755
             // 
-            this.RB3755.Location = new System.Drawing.Point(511, 34);
+            this.RB3755.Location = new System.Drawing.Point(511, 22);
             this.RB3755.Name = "RB3755";
             this.RB3755.Size = new System.Drawing.Size(75, 23);
             this.RB3755.TabIndex = 11;
@@ -285,7 +296,7 @@
             // 
             // RB3750
             // 
-            this.RB3750.Location = new System.Drawing.Point(436, 34);
+            this.RB3750.Location = new System.Drawing.Point(436, 22);
             this.RB3750.Name = "RB3750";
             this.RB3750.Size = new System.Drawing.Size(75, 23);
             this.RB3750.TabIndex = 12;
@@ -294,7 +305,7 @@
             // 
             // RB3745
             // 
-            this.RB3745.Location = new System.Drawing.Point(361, 34);
+            this.RB3745.Location = new System.Drawing.Point(361, 22);
             this.RB3745.Name = "RB3745";
             this.RB3745.Size = new System.Drawing.Size(75, 23);
             this.RB3745.TabIndex = 13;
@@ -303,7 +314,7 @@
             // 
             // RB3740
             // 
-            this.RB3740.Location = new System.Drawing.Point(286, 34);
+            this.RB3740.Location = new System.Drawing.Point(286, 22);
             this.RB3740.Name = "RB3740";
             this.RB3740.Size = new System.Drawing.Size(75, 23);
             this.RB3740.TabIndex = 14;
@@ -312,7 +323,7 @@
             // 
             // RB3735
             // 
-            this.RB3735.Location = new System.Drawing.Point(211, 34);
+            this.RB3735.Location = new System.Drawing.Point(211, 22);
             this.RB3735.Name = "RB3735";
             this.RB3735.Size = new System.Drawing.Size(75, 23);
             this.RB3735.TabIndex = 15;
@@ -321,7 +332,7 @@
             // 
             // RB3730
             // 
-            this.RB3730.Location = new System.Drawing.Point(136, 34);
+            this.RB3730.Location = new System.Drawing.Point(136, 22);
             this.RB3730.Name = "RB3730";
             this.RB3730.Size = new System.Drawing.Size(75, 23);
             this.RB3730.TabIndex = 16;
@@ -330,7 +341,7 @@
             // 
             // RB3805
             // 
-            this.RB3805.Location = new System.Drawing.Point(512, 34);
+            this.RB3805.Location = new System.Drawing.Point(512, 21);
             this.RB3805.Name = "RB3805";
             this.RB3805.Size = new System.Drawing.Size(75, 23);
             this.RB3805.TabIndex = 22;
@@ -339,7 +350,7 @@
             // 
             // RB3810
             // 
-            this.RB3810.Location = new System.Drawing.Point(586, 34);
+            this.RB3810.Location = new System.Drawing.Point(586, 21);
             this.RB3810.Name = "RB3810";
             this.RB3810.Size = new System.Drawing.Size(75, 23);
             this.RB3810.TabIndex = 21;
@@ -348,7 +359,7 @@
             // 
             // RB3815
             // 
-            this.RB3815.Location = new System.Drawing.Point(662, 34);
+            this.RB3815.Location = new System.Drawing.Point(662, 21);
             this.RB3815.Name = "RB3815";
             this.RB3815.Size = new System.Drawing.Size(75, 23);
             this.RB3815.TabIndex = 20;
@@ -357,7 +368,7 @@
             // 
             // RB3820
             // 
-            this.RB3820.Location = new System.Drawing.Point(741, 34);
+            this.RB3820.Location = new System.Drawing.Point(741, 21);
             this.RB3820.Name = "RB3820";
             this.RB3820.Size = new System.Drawing.Size(75, 23);
             this.RB3820.TabIndex = 19;
@@ -433,7 +444,7 @@
             // 
             // RB4355
             // 
-            this.RB4355.Location = new System.Drawing.Point(509, 47);
+            this.RB4355.Location = new System.Drawing.Point(509, 22);
             this.RB4355.Name = "RB4355";
             this.RB4355.Size = new System.Drawing.Size(75, 23);
             this.RB4355.TabIndex = 46;
@@ -442,7 +453,7 @@
             // 
             // RB4360
             // 
-            this.RB4360.Location = new System.Drawing.Point(582, 47);
+            this.RB4360.Location = new System.Drawing.Point(582, 22);
             this.RB4360.Name = "RB4360";
             this.RB4360.Size = new System.Drawing.Size(75, 23);
             this.RB4360.TabIndex = 45;
@@ -451,7 +462,7 @@
             // 
             // RB4365
             // 
-            this.RB4365.Location = new System.Drawing.Point(654, 47);
+            this.RB4365.Location = new System.Drawing.Point(654, 22);
             this.RB4365.Name = "RB4365";
             this.RB4365.Size = new System.Drawing.Size(75, 23);
             this.RB4365.TabIndex = 44;
@@ -460,7 +471,7 @@
             // 
             // RB4370
             // 
-            this.RB4370.Location = new System.Drawing.Point(742, 47);
+            this.RB4370.Location = new System.Drawing.Point(742, 22);
             this.RB4370.Name = "RB4370";
             this.RB4370.Size = new System.Drawing.Size(75, 23);
             this.RB4370.TabIndex = 43;
@@ -469,7 +480,7 @@
             // 
             // RB3825
             // 
-            this.RB3825.Location = new System.Drawing.Point(59, 47);
+            this.RB3825.Location = new System.Drawing.Point(59, 22);
             this.RB3825.Name = "RB3825";
             this.RB3825.Size = new System.Drawing.Size(75, 23);
             this.RB3825.TabIndex = 42;
@@ -478,7 +489,7 @@
             // 
             // RB4330
             // 
-            this.RB4330.Location = new System.Drawing.Point(138, 47);
+            this.RB4330.Location = new System.Drawing.Point(138, 22);
             this.RB4330.Name = "RB4330";
             this.RB4330.Size = new System.Drawing.Size(75, 23);
             this.RB4330.TabIndex = 41;
@@ -487,7 +498,7 @@
             // 
             // RB4335
             // 
-            this.RB4335.Location = new System.Drawing.Point(220, 47);
+            this.RB4335.Location = new System.Drawing.Point(220, 22);
             this.RB4335.Name = "RB4335";
             this.RB4335.Size = new System.Drawing.Size(75, 23);
             this.RB4335.TabIndex = 40;
@@ -496,7 +507,7 @@
             // 
             // RB4340
             // 
-            this.RB4340.Location = new System.Drawing.Point(292, 47);
+            this.RB4340.Location = new System.Drawing.Point(292, 22);
             this.RB4340.Name = "RB4340";
             this.RB4340.Size = new System.Drawing.Size(75, 23);
             this.RB4340.TabIndex = 39;
@@ -505,7 +516,7 @@
             // 
             // RB4345
             // 
-            this.RB4345.Location = new System.Drawing.Point(365, 47);
+            this.RB4345.Location = new System.Drawing.Point(365, 22);
             this.RB4345.Name = "RB4345";
             this.RB4345.Size = new System.Drawing.Size(75, 23);
             this.RB4345.TabIndex = 38;
@@ -514,7 +525,7 @@
             // 
             // RB4350
             // 
-            this.RB4350.Location = new System.Drawing.Point(438, 47);
+            this.RB4350.Location = new System.Drawing.Point(438, 22);
             this.RB4350.Name = "RB4350";
             this.RB4350.Size = new System.Drawing.Size(75, 23);
             this.RB4350.TabIndex = 37;
@@ -524,7 +535,7 @@
             // l3725
             // 
             this.l3725.AutoSize = true;
-            this.l3725.Location = new System.Drawing.Point(80, 68);
+            this.l3725.Location = new System.Drawing.Point(80, 56);
             this.l3725.Name = "l3725";
             this.l3725.Size = new System.Drawing.Size(10, 13);
             this.l3725.TabIndex = 47;
@@ -533,24 +544,16 @@
             // l3730
             // 
             this.l3730.AutoSize = true;
-            this.l3730.Location = new System.Drawing.Point(176, 68);
+            this.l3730.Location = new System.Drawing.Point(176, 56);
             this.l3730.Name = "l3730";
             this.l3730.Size = new System.Drawing.Size(10, 13);
             this.l3730.TabIndex = 48;
             this.l3730.Text = "-";
             // 
-            // listInfo
-            // 
-            this.listInfo.FormattingEnabled = true;
-            this.listInfo.Location = new System.Drawing.Point(11, 16);
-            this.listInfo.Name = "listInfo";
-            this.listInfo.Size = new System.Drawing.Size(223, 433);
-            this.listInfo.TabIndex = 49;
-            // 
             // l3735
             // 
             this.l3735.AutoSize = true;
-            this.l3735.Location = new System.Drawing.Point(241, 68);
+            this.l3735.Location = new System.Drawing.Point(241, 56);
             this.l3735.Name = "l3735";
             this.l3735.Size = new System.Drawing.Size(10, 13);
             this.l3735.TabIndex = 50;
@@ -559,7 +562,7 @@
             // l3810
             // 
             this.l3810.AutoSize = true;
-            this.l3810.Location = new System.Drawing.Point(612, 69);
+            this.l3810.Location = new System.Drawing.Point(612, 56);
             this.l3810.Name = "l3810";
             this.l3810.Size = new System.Drawing.Size(10, 13);
             this.l3810.TabIndex = 51;
@@ -568,7 +571,7 @@
             // l3805
             // 
             this.l3805.AutoSize = true;
-            this.l3805.Location = new System.Drawing.Point(534, 69);
+            this.l3805.Location = new System.Drawing.Point(534, 56);
             this.l3805.Name = "l3805";
             this.l3805.Size = new System.Drawing.Size(10, 13);
             this.l3805.TabIndex = 52;
@@ -577,7 +580,7 @@
             // l3795
             // 
             this.l3795.AutoSize = true;
-            this.l3795.Location = new System.Drawing.Point(373, 69);
+            this.l3795.Location = new System.Drawing.Point(373, 56);
             this.l3795.Name = "l3795";
             this.l3795.Size = new System.Drawing.Size(10, 13);
             this.l3795.TabIndex = 53;
@@ -586,7 +589,7 @@
             // l3800
             // 
             this.l3800.AutoSize = true;
-            this.l3800.Location = new System.Drawing.Point(453, 69);
+            this.l3800.Location = new System.Drawing.Point(453, 56);
             this.l3800.Name = "l3800";
             this.l3800.Size = new System.Drawing.Size(10, 13);
             this.l3800.TabIndex = 54;
@@ -595,7 +598,7 @@
             // l3790
             // 
             this.l3790.AutoSize = true;
-            this.l3790.Location = new System.Drawing.Point(312, 69);
+            this.l3790.Location = new System.Drawing.Point(312, 56);
             this.l3790.Name = "l3790";
             this.l3790.Size = new System.Drawing.Size(10, 13);
             this.l3790.TabIndex = 55;
@@ -604,7 +607,7 @@
             // l3780
             // 
             this.l3780.AutoSize = true;
-            this.l3780.Location = new System.Drawing.Point(173, 69);
+            this.l3780.Location = new System.Drawing.Point(173, 56);
             this.l3780.Name = "l3780";
             this.l3780.Size = new System.Drawing.Size(10, 13);
             this.l3780.TabIndex = 56;
@@ -613,7 +616,7 @@
             // l3785
             // 
             this.l3785.AutoSize = true;
-            this.l3785.Location = new System.Drawing.Point(238, 69);
+            this.l3785.Location = new System.Drawing.Point(238, 56);
             this.l3785.Name = "l3785";
             this.l3785.Size = new System.Drawing.Size(10, 13);
             this.l3785.TabIndex = 57;
@@ -622,7 +625,7 @@
             // l3775
             // 
             this.l3775.AutoSize = true;
-            this.l3775.Location = new System.Drawing.Point(77, 69);
+            this.l3775.Location = new System.Drawing.Point(77, 56);
             this.l3775.Name = "l3775";
             this.l3775.Size = new System.Drawing.Size(10, 13);
             this.l3775.TabIndex = 58;
@@ -631,7 +634,7 @@
             // l3770
             // 
             this.l3770.AutoSize = true;
-            this.l3770.Location = new System.Drawing.Point(753, 68);
+            this.l3770.Location = new System.Drawing.Point(753, 56);
             this.l3770.Name = "l3770";
             this.l3770.Size = new System.Drawing.Size(10, 13);
             this.l3770.TabIndex = 59;
@@ -640,7 +643,7 @@
             // l3765
             // 
             this.l3765.AutoSize = true;
-            this.l3765.Location = new System.Drawing.Point(683, 68);
+            this.l3765.Location = new System.Drawing.Point(683, 56);
             this.l3765.Name = "l3765";
             this.l3765.Size = new System.Drawing.Size(10, 13);
             this.l3765.TabIndex = 60;
@@ -649,7 +652,7 @@
             // l3760
             // 
             this.l3760.AutoSize = true;
-            this.l3760.Location = new System.Drawing.Point(615, 68);
+            this.l3760.Location = new System.Drawing.Point(615, 56);
             this.l3760.Name = "l3760";
             this.l3760.Size = new System.Drawing.Size(10, 13);
             this.l3760.TabIndex = 61;
@@ -658,7 +661,7 @@
             // l3755
             // 
             this.l3755.AutoSize = true;
-            this.l3755.Location = new System.Drawing.Point(537, 68);
+            this.l3755.Location = new System.Drawing.Point(537, 56);
             this.l3755.Name = "l3755";
             this.l3755.Size = new System.Drawing.Size(10, 13);
             this.l3755.TabIndex = 62;
@@ -667,7 +670,7 @@
             // l3750
             // 
             this.l3750.AutoSize = true;
-            this.l3750.Location = new System.Drawing.Point(456, 68);
+            this.l3750.Location = new System.Drawing.Point(456, 56);
             this.l3750.Name = "l3750";
             this.l3750.Size = new System.Drawing.Size(10, 13);
             this.l3750.TabIndex = 63;
@@ -676,7 +679,7 @@
             // l3745
             // 
             this.l3745.AutoSize = true;
-            this.l3745.Location = new System.Drawing.Point(390, 68);
+            this.l3745.Location = new System.Drawing.Point(390, 56);
             this.l3745.Name = "l3745";
             this.l3745.Size = new System.Drawing.Size(10, 13);
             this.l3745.TabIndex = 64;
@@ -685,7 +688,7 @@
             // l3740
             // 
             this.l3740.AutoSize = true;
-            this.l3740.Location = new System.Drawing.Point(315, 68);
+            this.l3740.Location = new System.Drawing.Point(315, 56);
             this.l3740.Name = "l3740";
             this.l3740.Size = new System.Drawing.Size(10, 13);
             this.l3740.TabIndex = 65;
@@ -694,7 +697,7 @@
             // l3815
             // 
             this.l3815.AutoSize = true;
-            this.l3815.Location = new System.Drawing.Point(680, 69);
+            this.l3815.Location = new System.Drawing.Point(680, 56);
             this.l3815.Name = "l3815";
             this.l3815.Size = new System.Drawing.Size(10, 13);
             this.l3815.TabIndex = 66;
@@ -703,7 +706,7 @@
             // l3820
             // 
             this.l3820.AutoSize = true;
-            this.l3820.Location = new System.Drawing.Point(750, 69);
+            this.l3820.Location = new System.Drawing.Point(750, 56);
             this.l3820.Name = "l3820";
             this.l3820.Size = new System.Drawing.Size(10, 13);
             this.l3820.TabIndex = 67;
@@ -714,9 +717,9 @@
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.toolStripStatusLabel2});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 861);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 676);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1413, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(1359, 22);
             this.statusStrip1.TabIndex = 68;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -739,7 +742,7 @@
             // bodyIn
             // 
             this.bodyIn.AutoSize = true;
-            this.bodyIn.Location = new System.Drawing.Point(8, 68);
+            this.bodyIn.Location = new System.Drawing.Point(8, 56);
             this.bodyIn.Name = "bodyIn";
             this.bodyIn.Size = new System.Drawing.Size(43, 13);
             this.bodyIn.TabIndex = 69;
@@ -748,7 +751,7 @@
             // bodyOut
             // 
             this.bodyOut.AutoSize = true;
-            this.bodyOut.Location = new System.Drawing.Point(826, 88);
+            this.bodyOut.Location = new System.Drawing.Point(826, 63);
             this.bodyOut.Name = "bodyOut";
             this.bodyOut.Size = new System.Drawing.Size(43, 13);
             this.bodyOut.TabIndex = 70;
@@ -757,7 +760,7 @@
             // l3825
             // 
             this.l3825.AutoSize = true;
-            this.l3825.Location = new System.Drawing.Point(78, 84);
+            this.l3825.Location = new System.Drawing.Point(78, 59);
             this.l3825.Name = "l3825";
             this.l3825.Size = new System.Drawing.Size(10, 13);
             this.l3825.TabIndex = 72;
@@ -766,7 +769,7 @@
             // l4330
             // 
             this.l4330.AutoSize = true;
-            this.l4330.Location = new System.Drawing.Point(174, 84);
+            this.l4330.Location = new System.Drawing.Point(174, 59);
             this.l4330.Name = "l4330";
             this.l4330.Size = new System.Drawing.Size(10, 13);
             this.l4330.TabIndex = 73;
@@ -775,33 +778,16 @@
             // l4370
             // 
             this.l4370.AutoSize = true;
-            this.l4370.Location = new System.Drawing.Point(777, 84);
+            this.l4370.Location = new System.Drawing.Point(777, 59);
             this.l4370.Name = "l4370";
             this.l4370.Size = new System.Drawing.Size(10, 13);
             this.l4370.TabIndex = 74;
             this.l4370.Text = "-";
             // 
-            // ltotal
-            // 
-            this.ltotal.AutoSize = true;
-            this.ltotal.Location = new System.Drawing.Point(260, 84);
-            this.ltotal.Name = "ltotal";
-            this.ltotal.Size = new System.Drawing.Size(10, 13);
-            this.ltotal.TabIndex = 75;
-            this.ltotal.Text = "-";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.listInfo);
-            this.groupBox1.Location = new System.Drawing.Point(1174, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(235, 455);
-            this.groupBox1.TabIndex = 78;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "出口处出车信息";
-            // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label18);
+            this.groupBox2.Controls.Add(this.button17);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label3);
@@ -813,9 +799,9 @@
             this.groupBox2.Controls.Add(this.btn_areaone);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Location = new System.Drawing.Point(163, 25);
+            this.groupBox2.Location = new System.Drawing.Point(178, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(489, 100);
+            this.groupBox2.Size = new System.Drawing.Size(489, 161);
             this.groupBox2.TabIndex = 79;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "车身流方向";
@@ -823,7 +809,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(304, 75);
+            this.label6.Location = new System.Drawing.Point(304, 43);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(40, 13);
             this.label6.TabIndex = 86;
@@ -832,7 +818,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(226, 75);
+            this.label4.Location = new System.Drawing.Point(226, 43);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(40, 13);
             this.label4.TabIndex = 85;
@@ -841,7 +827,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(140, 73);
+            this.label3.Location = new System.Drawing.Point(140, 41);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 13);
             this.label3.TabIndex = 84;
@@ -850,7 +836,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(382, 45);
+            this.label2.Location = new System.Drawing.Point(378, 70);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 13);
             this.label2.TabIndex = 83;
@@ -859,7 +845,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 45);
+            this.label1.Location = new System.Drawing.Point(32, 70);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 13);
             this.label1.TabIndex = 80;
@@ -890,9 +876,9 @@
             this.groupBox3.Controls.Add(this.l3745);
             this.groupBox3.Controls.Add(this.l3755);
             this.groupBox3.Controls.Add(this.l3750);
-            this.groupBox3.Location = new System.Drawing.Point(12, 125);
+            this.groupBox3.Location = new System.Drawing.Point(24, 171);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(874, 100);
+            this.groupBox3.Size = new System.Drawing.Size(874, 80);
             this.groupBox3.TabIndex = 80;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "区域-1";
@@ -921,15 +907,24 @@
             this.groupBox4.Controls.Add(this.l3790);
             this.groupBox4.Controls.Add(this.l3785);
             this.groupBox4.Controls.Add(this.l3780);
-            this.groupBox4.Location = new System.Drawing.Point(12, 225);
+            this.groupBox4.Location = new System.Drawing.Point(24, 257);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(874, 100);
+            this.groupBox4.Size = new System.Drawing.Size(874, 81);
             this.groupBox4.TabIndex = 81;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "区域-2";
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.label27);
+            this.groupBox5.Controls.Add(this.bigreadyone);
+            this.groupBox5.Controls.Add(this.bigreadytwo);
+            this.groupBox5.Controls.Add(this.bigreadythree);
+            this.groupBox5.Controls.Add(this.bigreadyfour);
+            this.groupBox5.Controls.Add(this.bigreadyfive);
+            this.groupBox5.Controls.Add(this.bigreadysix);
+            this.groupBox5.Controls.Add(this.bigreadyseven);
+            this.groupBox5.Controls.Add(this.bigreadyeight);
             this.groupBox5.Controls.Add(this.btn_linethreein);
             this.groupBox5.Controls.Add(this.RB3825);
             this.groupBox5.Controls.Add(this.RB4350);
@@ -940,16 +935,16 @@
             this.groupBox5.Controls.Add(this.bodyOut);
             this.groupBox5.Controls.Add(this.btn_linethreeout);
             this.groupBox5.Controls.Add(this.RB4370);
-            this.groupBox5.Controls.Add(this.ltotal);
             this.groupBox5.Controls.Add(this.RB4365);
             this.groupBox5.Controls.Add(this.l4370);
             this.groupBox5.Controls.Add(this.RB4360);
             this.groupBox5.Controls.Add(this.l4330);
             this.groupBox5.Controls.Add(this.RB4355);
             this.groupBox5.Controls.Add(this.l3825);
-            this.groupBox5.Location = new System.Drawing.Point(12, 327);
+            this.groupBox5.Controls.Add(this.bigReadyLine);
+            this.groupBox5.Location = new System.Drawing.Point(25, 344);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(874, 109);
+            this.groupBox5.Size = new System.Drawing.Size(874, 110);
             this.groupBox5.TabIndex = 82;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "区域-3";
@@ -967,7 +962,6 @@
             this.groupBox6.Controls.Add(this.label9);
             this.groupBox6.Controls.Add(this.button12);
             this.groupBox6.Controls.Add(this.label8);
-            this.groupBox6.Controls.Add(this.button11);
             this.groupBox6.Controls.Add(this.button10);
             this.groupBox6.Controls.Add(this.button7);
             this.groupBox6.Controls.Add(this.button5);
@@ -989,16 +983,189 @@
             this.groupBox6.Controls.Add(this.RB6165);
             this.groupBox6.Controls.Add(this.button1);
             this.groupBox6.Controls.Add(this.button16);
-            this.groupBox6.Location = new System.Drawing.Point(12, 441);
+            this.groupBox6.Location = new System.Drawing.Point(24, 454);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(874, 236);
+            this.groupBox6.Size = new System.Drawing.Size(874, 222);
             this.groupBox6.TabIndex = 83;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "返修区域";
             // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(333, 182);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(43, 13);
+            this.label17.TabIndex = 111;
+            this.label17.Text = "返修间";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(193, 32);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(43, 13);
+            this.label16.TabIndex = 109;
+            this.label16.Text = "钣金间";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(371, 32);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(15, 13);
+            this.label13.TabIndex = 103;
+            this.label13.Text = "R";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(544, 143);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(15, 13);
+            this.label12.TabIndex = 79;
+            this.label12.Text = "R";
+            // 
+            // RB6100
+            // 
+            this.RB6100.Location = new System.Drawing.Point(655, 137);
+            this.RB6100.Name = "RB6100";
+            this.RB6100.Size = new System.Drawing.Size(75, 23);
+            this.RB6100.TabIndex = 101;
+            this.RB6100.Text = "RB6100";
+            this.RB6100.UseVisualStyleBackColor = true;
+            // 
+            // RB6105
+            // 
+            this.RB6105.Location = new System.Drawing.Point(734, 137);
+            this.RB6105.Name = "RB6105";
+            this.RB6105.Size = new System.Drawing.Size(75, 23);
+            this.RB6105.TabIndex = 102;
+            this.RB6105.Text = "RB6105";
+            this.RB6105.UseVisualStyleBackColor = true;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(248, 170);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(55, 13);
+            this.label9.TabIndex = 100;
+            this.label9.Text = "修饰来车";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(813, 8);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(55, 13);
+            this.label8.TabIndex = 79;
+            this.label8.Text = "面准来车";
+            // 
+            // RB6185
+            // 
+            this.RB6185.Location = new System.Drawing.Point(231, 79);
+            this.RB6185.Name = "RB6185";
+            this.RB6185.Size = new System.Drawing.Size(64, 23);
+            this.RB6185.TabIndex = 96;
+            this.RB6185.Text = "RB6185";
+            this.RB6185.UseVisualStyleBackColor = true;
+            // 
+            // RB6190
+            // 
+            this.RB6190.Location = new System.Drawing.Point(407, 79);
+            this.RB6190.Name = "RB6190";
+            this.RB6190.Size = new System.Drawing.Size(75, 23);
+            this.RB6190.TabIndex = 87;
+            this.RB6190.Text = "RB6190";
+            this.RB6190.UseVisualStyleBackColor = true;
+            // 
+            // RB6180
+            // 
+            this.RB6180.Location = new System.Drawing.Point(324, 27);
+            this.RB6180.Name = "RB6180";
+            this.RB6180.Size = new System.Drawing.Size(64, 23);
+            this.RB6180.TabIndex = 94;
+            this.RB6180.Text = "RB6180";
+            this.RB6180.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RB6180.UseVisualStyleBackColor = true;
+            // 
+            // RB6175
+            // 
+            this.RB6175.Location = new System.Drawing.Point(407, 27);
+            this.RB6175.Name = "RB6175";
+            this.RB6175.Size = new System.Drawing.Size(75, 23);
+            this.RB6175.TabIndex = 86;
+            this.RB6175.Text = "RB6175";
+            this.RB6175.UseVisualStyleBackColor = true;
+            // 
+            // RB6095
+            // 
+            this.RB6095.Location = new System.Drawing.Point(568, 137);
+            this.RB6095.Name = "RB6095";
+            this.RB6095.Size = new System.Drawing.Size(75, 23);
+            this.RB6095.TabIndex = 85;
+            this.RB6095.Text = "RB6095";
+            this.RB6095.UseVisualStyleBackColor = true;
+            // 
+            // RB6075
+            // 
+            this.RB6075.Location = new System.Drawing.Point(328, 137);
+            this.RB6075.Name = "RB6075";
+            this.RB6075.Size = new System.Drawing.Size(75, 23);
+            this.RB6075.TabIndex = 84;
+            this.RB6075.Text = "RB6075";
+            this.RB6075.UseVisualStyleBackColor = true;
+            // 
+            // RB6080
+            // 
+            this.RB6080.Location = new System.Drawing.Point(409, 137);
+            this.RB6080.Name = "RB6080";
+            this.RB6080.Size = new System.Drawing.Size(75, 23);
+            this.RB6080.TabIndex = 82;
+            this.RB6080.Text = "RB6080";
+            this.RB6080.UseVisualStyleBackColor = true;
+            // 
+            // RB6090
+            // 
+            this.RB6090.Location = new System.Drawing.Point(488, 137);
+            this.RB6090.Name = "RB6090";
+            this.RB6090.Size = new System.Drawing.Size(75, 23);
+            this.RB6090.TabIndex = 83;
+            this.RB6090.Text = "RB6090";
+            this.RB6090.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.RB6090.UseVisualStyleBackColor = true;
+            // 
+            // RB6210
+            // 
+            this.RB6210.Location = new System.Drawing.Point(731, 78);
+            this.RB6210.Name = "RB6210";
+            this.RB6210.Size = new System.Drawing.Size(75, 23);
+            this.RB6210.TabIndex = 81;
+            this.RB6210.Text = "RB6210";
+            this.RB6210.UseVisualStyleBackColor = true;
+            // 
+            // RB6195
+            // 
+            this.RB6195.Location = new System.Drawing.Point(491, 78);
+            this.RB6195.Name = "RB6195";
+            this.RB6195.Size = new System.Drawing.Size(75, 23);
+            this.RB6195.TabIndex = 80;
+            this.RB6195.Text = "RB6195";
+            this.RB6195.UseVisualStyleBackColor = true;
+            // 
+            // RB6170
+            // 
+            this.RB6170.Location = new System.Drawing.Point(491, 26);
+            this.RB6170.Name = "RB6170";
+            this.RB6170.Size = new System.Drawing.Size(75, 23);
+            this.RB6170.TabIndex = 79;
+            this.RB6170.Text = "RB6170";
+            this.RB6170.UseVisualStyleBackColor = true;
+            // 
             // RB6200
             // 
-            this.RB6200.Location = new System.Drawing.Point(572, 102);
+            this.RB6200.Location = new System.Drawing.Point(572, 78);
             this.RB6200.Name = "RB6200";
             this.RB6200.Size = new System.Drawing.Size(75, 23);
             this.RB6200.TabIndex = 37;
@@ -1007,7 +1174,7 @@
             // 
             // RB6205
             // 
-            this.RB6205.Location = new System.Drawing.Point(651, 102);
+            this.RB6205.Location = new System.Drawing.Point(651, 78);
             this.RB6205.Name = "RB6205";
             this.RB6205.Size = new System.Drawing.Size(75, 23);
             this.RB6205.TabIndex = 38;
@@ -1016,7 +1183,7 @@
             // 
             // RB6155
             // 
-            this.RB6155.Location = new System.Drawing.Point(731, 49);
+            this.RB6155.Location = new System.Drawing.Point(731, 25);
             this.RB6155.Name = "RB6155";
             this.RB6155.Size = new System.Drawing.Size(75, 23);
             this.RB6155.TabIndex = 44;
@@ -1025,7 +1192,7 @@
             // 
             // RB6160
             // 
-            this.RB6160.Location = new System.Drawing.Point(651, 49);
+            this.RB6160.Location = new System.Drawing.Point(651, 25);
             this.RB6160.Name = "RB6160";
             this.RB6160.Size = new System.Drawing.Size(75, 23);
             this.RB6160.TabIndex = 45;
@@ -1034,16 +1201,34 @@
             // 
             // RB6165
             // 
-            this.RB6165.Location = new System.Drawing.Point(571, 50);
+            this.RB6165.Location = new System.Drawing.Point(571, 26);
             this.RB6165.Name = "RB6165";
             this.RB6165.Size = new System.Drawing.Size(75, 23);
             this.RB6165.TabIndex = 46;
             this.RB6165.Text = "RB6165";
             this.RB6165.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Location = new System.Drawing.Point(186, 26);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(119, 88);
+            this.button1.TabIndex = 78;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button16
+            // 
+            this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button16.Location = new System.Drawing.Point(318, 120);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(248, 88);
+            this.button16.TabIndex = 110;
+            this.button16.UseVisualStyleBackColor = true;
+            // 
             // RB4375
             // 
-            this.RB4375.Location = new System.Drawing.Point(908, 378);
+            this.RB4375.Location = new System.Drawing.Point(25, 29);
             this.RB4375.Name = "RB4375";
             this.RB4375.Size = new System.Drawing.Size(64, 23);
             this.RB4375.TabIndex = 79;
@@ -1052,43 +1237,16 @@
             // 
             // RB6150
             // 
-            this.RB6150.Location = new System.Drawing.Point(908, 489);
+            this.RB6150.Location = new System.Drawing.Point(25, 140);
             this.RB6150.Name = "RB6150";
             this.RB6150.Size = new System.Drawing.Size(64, 23);
             this.RB6150.TabIndex = 86;
             this.RB6150.Text = "RB6150";
             this.RB6150.UseVisualStyleBackColor = true;
             // 
-            // RB6170
-            // 
-            this.RB6170.Location = new System.Drawing.Point(491, 50);
-            this.RB6170.Name = "RB6170";
-            this.RB6170.Size = new System.Drawing.Size(75, 23);
-            this.RB6170.TabIndex = 79;
-            this.RB6170.Text = "RB6170";
-            this.RB6170.UseVisualStyleBackColor = true;
-            // 
-            // RB6195
-            // 
-            this.RB6195.Location = new System.Drawing.Point(491, 102);
-            this.RB6195.Name = "RB6195";
-            this.RB6195.Size = new System.Drawing.Size(75, 23);
-            this.RB6195.TabIndex = 80;
-            this.RB6195.Text = "RB6195";
-            this.RB6195.UseVisualStyleBackColor = true;
-            // 
-            // RB6210
-            // 
-            this.RB6210.Location = new System.Drawing.Point(731, 102);
-            this.RB6210.Name = "RB6210";
-            this.RB6210.Size = new System.Drawing.Size(75, 23);
-            this.RB6210.TabIndex = 81;
-            this.RB6210.Text = "RB6210";
-            this.RB6210.UseVisualStyleBackColor = true;
-            // 
             // RB6215
             // 
-            this.RB6215.Location = new System.Drawing.Point(910, 542);
+            this.RB6215.Location = new System.Drawing.Point(27, 193);
             this.RB6215.Name = "RB6215";
             this.RB6215.Size = new System.Drawing.Size(64, 23);
             this.RB6215.TabIndex = 82;
@@ -1097,7 +1255,7 @@
             // 
             // RB6220
             // 
-            this.RB6220.Location = new System.Drawing.Point(994, 543);
+            this.RB6220.Location = new System.Drawing.Point(111, 194);
             this.RB6220.Name = "RB6220";
             this.RB6220.Size = new System.Drawing.Size(75, 23);
             this.RB6220.TabIndex = 83;
@@ -1107,7 +1265,7 @@
             // 
             // RB6140
             // 
-            this.RB6140.Location = new System.Drawing.Point(994, 490);
+            this.RB6140.Location = new System.Drawing.Point(111, 141);
             this.RB6140.Name = "RB6140";
             this.RB6140.Size = new System.Drawing.Size(75, 23);
             this.RB6140.TabIndex = 82;
@@ -1117,7 +1275,7 @@
             // 
             // RB6225
             // 
-            this.RB6225.Location = new System.Drawing.Point(1099, 491);
+            this.RB6225.Location = new System.Drawing.Point(216, 142);
             this.RB6225.Name = "RB6225";
             this.RB6225.Size = new System.Drawing.Size(64, 23);
             this.RB6225.TabIndex = 89;
@@ -1126,7 +1284,7 @@
             // 
             // RB6240
             // 
-            this.RB6240.Location = new System.Drawing.Point(1184, 542);
+            this.RB6240.Location = new System.Drawing.Point(301, 193);
             this.RB6240.Name = "RB6240";
             this.RB6240.Size = new System.Drawing.Size(64, 23);
             this.RB6240.TabIndex = 90;
@@ -1135,7 +1293,7 @@
             // 
             // RB6115
             // 
-            this.RB6115.Location = new System.Drawing.Point(994, 601);
+            this.RB6115.Location = new System.Drawing.Point(111, 252);
             this.RB6115.Name = "RB6115";
             this.RB6115.Size = new System.Drawing.Size(75, 23);
             this.RB6115.TabIndex = 91;
@@ -1145,109 +1303,17 @@
             // 
             // RB6110
             // 
-            this.RB6110.Location = new System.Drawing.Point(910, 601);
+            this.RB6110.Location = new System.Drawing.Point(27, 252);
             this.RB6110.Name = "RB6110";
             this.RB6110.Size = new System.Drawing.Size(64, 23);
             this.RB6110.TabIndex = 92;
             this.RB6110.Text = "RB6110";
             this.RB6110.UseVisualStyleBackColor = true;
             // 
-            // RB6095
-            // 
-            this.RB6095.Location = new System.Drawing.Point(568, 161);
-            this.RB6095.Name = "RB6095";
-            this.RB6095.Size = new System.Drawing.Size(75, 23);
-            this.RB6095.TabIndex = 85;
-            this.RB6095.Text = "RB6095";
-            this.RB6095.UseVisualStyleBackColor = true;
-            // 
-            // RB6075
-            // 
-            this.RB6075.Location = new System.Drawing.Point(328, 161);
-            this.RB6075.Name = "RB6075";
-            this.RB6075.Size = new System.Drawing.Size(75, 23);
-            this.RB6075.TabIndex = 84;
-            this.RB6075.Text = "RB6075";
-            this.RB6075.UseVisualStyleBackColor = true;
-            // 
-            // RB6080
-            // 
-            this.RB6080.Location = new System.Drawing.Point(409, 161);
-            this.RB6080.Name = "RB6080";
-            this.RB6080.Size = new System.Drawing.Size(75, 23);
-            this.RB6080.TabIndex = 82;
-            this.RB6080.Text = "RB6080";
-            this.RB6080.UseVisualStyleBackColor = true;
-            // 
-            // RB6090
-            // 
-            this.RB6090.Location = new System.Drawing.Point(488, 161);
-            this.RB6090.Name = "RB6090";
-            this.RB6090.Size = new System.Drawing.Size(75, 23);
-            this.RB6090.TabIndex = 83;
-            this.RB6090.Text = "RB6090";
-            this.RB6090.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RB6090.UseVisualStyleBackColor = true;
-            // 
-            // RB6190
-            // 
-            this.RB6190.Location = new System.Drawing.Point(407, 103);
-            this.RB6190.Name = "RB6190";
-            this.RB6190.Size = new System.Drawing.Size(75, 23);
-            this.RB6190.TabIndex = 87;
-            this.RB6190.Text = "RB6190";
-            this.RB6190.UseVisualStyleBackColor = true;
-            // 
-            // RB6175
-            // 
-            this.RB6175.Location = new System.Drawing.Point(407, 51);
-            this.RB6175.Name = "RB6175";
-            this.RB6175.Size = new System.Drawing.Size(75, 23);
-            this.RB6175.TabIndex = 86;
-            this.RB6175.Text = "RB6175";
-            this.RB6175.UseVisualStyleBackColor = true;
-            // 
-            // RB6185
-            // 
-            this.RB6185.Location = new System.Drawing.Point(231, 103);
-            this.RB6185.Name = "RB6185";
-            this.RB6185.Size = new System.Drawing.Size(64, 23);
-            this.RB6185.TabIndex = 96;
-            this.RB6185.Text = "RB6185";
-            this.RB6185.UseVisualStyleBackColor = true;
-            // 
-            // RB6180
-            // 
-            this.RB6180.Location = new System.Drawing.Point(324, 51);
-            this.RB6180.Name = "RB6180";
-            this.RB6180.Size = new System.Drawing.Size(64, 23);
-            this.RB6180.TabIndex = 94;
-            this.RB6180.Text = "RB6180";
-            this.RB6180.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RB6180.UseVisualStyleBackColor = true;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(813, 32);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(55, 13);
-            this.label8.TabIndex = 79;
-            this.label8.Text = "面准来车";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(248, 194);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(55, 13);
-            this.label9.TabIndex = 100;
-            this.label9.Text = "修饰来车";
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(1196, 593);
+            this.label10.Location = new System.Drawing.Point(313, 244);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(43, 13);
             this.label10.TabIndex = 101;
@@ -1256,7 +1322,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(1013, 415);
+            this.label11.Location = new System.Drawing.Point(130, 66);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(79, 13);
             this.label11.TabIndex = 79;
@@ -1266,46 +1332,10 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // RB6100
-            // 
-            this.RB6100.Location = new System.Drawing.Point(655, 161);
-            this.RB6100.Name = "RB6100";
-            this.RB6100.Size = new System.Drawing.Size(75, 23);
-            this.RB6100.TabIndex = 101;
-            this.RB6100.Text = "RB6100";
-            this.RB6100.UseVisualStyleBackColor = true;
-            // 
-            // RB6105
-            // 
-            this.RB6105.Location = new System.Drawing.Point(734, 161);
-            this.RB6105.Name = "RB6105";
-            this.RB6105.Size = new System.Drawing.Size(75, 23);
-            this.RB6105.TabIndex = 102;
-            this.RB6105.Text = "RB6105";
-            this.RB6105.UseVisualStyleBackColor = true;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(544, 167);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(15, 13);
-            this.label12.TabIndex = 79;
-            this.label12.Text = "R";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(371, 56);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(15, 13);
-            this.label13.TabIndex = 103;
-            this.label13.Text = "R";
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(1047, 549);
+            this.label14.Location = new System.Drawing.Point(164, 199);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(15, 13);
             this.label14.TabIndex = 102;
@@ -1314,17 +1344,212 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(1047, 606);
+            this.label15.Location = new System.Drawing.Point(164, 258);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(15, 13);
             this.label15.TabIndex = 103;
             this.label15.Text = "R";
             // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.RB4375);
+            this.groupBox7.Controls.Add(this.button9);
+            this.groupBox7.Controls.Add(this.button3);
+            this.groupBox7.Controls.Add(this.button14);
+            this.groupBox7.Controls.Add(this.button4);
+            this.groupBox7.Controls.Add(this.RB6150);
+            this.groupBox7.Controls.Add(this.button2);
+            this.groupBox7.Controls.Add(this.RB6140);
+            this.groupBox7.Controls.Add(this.label15);
+            this.groupBox7.Controls.Add(this.RB6215);
+            this.groupBox7.Controls.Add(this.label14);
+            this.groupBox7.Controls.Add(this.button11);
+            this.groupBox7.Controls.Add(this.RB6220);
+            this.groupBox7.Controls.Add(this.label11);
+            this.groupBox7.Controls.Add(this.RB6225);
+            this.groupBox7.Controls.Add(this.button15);
+            this.groupBox7.Controls.Add(this.RB6240);
+            this.groupBox7.Controls.Add(this.label10);
+            this.groupBox7.Controls.Add(this.RB6115);
+            this.groupBox7.Controls.Add(this.button6);
+            this.groupBox7.Controls.Add(this.RB6110);
+            this.groupBox7.Location = new System.Drawing.Point(931, 338);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(375, 286);
+            this.groupBox7.TabIndex = 107;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "换向区域";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(304, 141);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(55, 13);
+            this.label18.TabIndex = 88;
+            this.label18.Text = "返修区域";
+            // 
+            // bigreadyeight
+            // 
+            this.bigreadyeight.AutoSize = true;
+            this.bigreadyeight.Location = new System.Drawing.Point(691, 61);
+            this.bigreadyeight.Name = "bigreadyeight";
+            this.bigreadyeight.Size = new System.Drawing.Size(10, 13);
+            this.bigreadyeight.TabIndex = 79;
+            this.bigreadyeight.Text = "-";
+            // 
+            // bigreadyseven
+            // 
+            this.bigreadyseven.AutoSize = true;
+            this.bigreadyseven.Location = new System.Drawing.Point(641, 61);
+            this.bigreadyseven.Name = "bigreadyseven";
+            this.bigreadyseven.Size = new System.Drawing.Size(10, 13);
+            this.bigreadyseven.TabIndex = 80;
+            this.bigreadyseven.Text = "-";
+            // 
+            // bigreadyfive
+            // 
+            this.bigreadyfive.AutoSize = true;
+            this.bigreadyfive.Location = new System.Drawing.Point(535, 61);
+            this.bigreadyfive.Name = "bigreadyfive";
+            this.bigreadyfive.Size = new System.Drawing.Size(10, 13);
+            this.bigreadyfive.TabIndex = 82;
+            this.bigreadyfive.Text = "-";
+            // 
+            // bigreadysix
+            // 
+            this.bigreadysix.AutoSize = true;
+            this.bigreadysix.Location = new System.Drawing.Point(594, 61);
+            this.bigreadysix.Name = "bigreadysix";
+            this.bigreadysix.Size = new System.Drawing.Size(10, 13);
+            this.bigreadysix.TabIndex = 81;
+            this.bigreadysix.Text = "-";
+            // 
+            // bigreadyone
+            // 
+            this.bigreadyone.AutoSize = true;
+            this.bigreadyone.Location = new System.Drawing.Point(267, 58);
+            this.bigreadyone.Name = "bigreadyone";
+            this.bigreadyone.Size = new System.Drawing.Size(10, 13);
+            this.bigreadyone.TabIndex = 86;
+            this.bigreadyone.Text = "-";
+            // 
+            // bigreadytwo
+            // 
+            this.bigreadytwo.AutoSize = true;
+            this.bigreadytwo.Location = new System.Drawing.Point(327, 59);
+            this.bigreadytwo.Name = "bigreadytwo";
+            this.bigreadytwo.Size = new System.Drawing.Size(10, 13);
+            this.bigreadytwo.TabIndex = 85;
+            this.bigreadytwo.Text = "-";
+            // 
+            // bigreadythree
+            // 
+            this.bigreadythree.AutoSize = true;
+            this.bigreadythree.Location = new System.Drawing.Point(397, 61);
+            this.bigreadythree.Name = "bigreadythree";
+            this.bigreadythree.Size = new System.Drawing.Size(10, 13);
+            this.bigreadythree.TabIndex = 84;
+            this.bigreadythree.Text = "-";
+            // 
+            // bigreadyfour
+            // 
+            this.bigreadyfour.AutoSize = true;
+            this.bigreadyfour.Location = new System.Drawing.Point(470, 60);
+            this.bigreadyfour.Name = "bigreadyfour";
+            this.bigreadyfour.Size = new System.Drawing.Size(10, 13);
+            this.bigreadyfour.TabIndex = 83;
+            this.bigreadyfour.Text = "-";
+            // 
+            // bigReadyLine
+            // 
+            this.bigReadyLine.Location = new System.Drawing.Point(212, 14);
+            this.bigReadyLine.Name = "bigReadyLine";
+            this.bigReadyLine.Size = new System.Drawing.Size(517, 90);
+            this.bigReadyLine.TabIndex = 87;
+            this.bigReadyLine.UseVisualStyleBackColor = true;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(228, 83);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(55, 13);
+            this.label27.TabIndex = 88;
+            this.label27.Text = "面准大线";
+            // 
+            // carToTCone
+            // 
+            this.carToTCone.Location = new System.Drawing.Point(1203, 18);
+            this.carToTCone.Name = "carToTCone";
+            this.carToTCone.Size = new System.Drawing.Size(131, 23);
+            this.carToTCone.TabIndex = 108;
+            this.carToTCone.Text = "去往面漆-1车身明细";
+            this.carToTCone.UseVisualStyleBackColor = true;
+            this.carToTCone.Click += new System.EventHandler(this.carToTCone_Click);
+            // 
+            // button9
+            // 
+            this.button9.BackgroundImage = global::bodyColorSeq.Properties.Resources.skid;
+            this.button9.Location = new System.Drawing.Point(9, 22);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(15, 161);
+            this.button9.TabIndex = 43;
+            this.button9.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImage = global::bodyColorSeq.Properties.Resources.skid;
+            this.button3.Location = new System.Drawing.Point(282, 138);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(15, 148);
+            this.button3.TabIndex = 106;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button14
+            // 
+            this.button14.BackgroundImage = global::bodyColorSeq.Properties.Resources.arrow1;
+            this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button14.Location = new System.Drawing.Point(47, 62);
+            this.button14.Name = "button14";
+            this.button14.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button14.Size = new System.Drawing.Size(25, 64);
+            this.button14.TabIndex = 85;
+            this.button14.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.BackgroundImage = global::bodyColorSeq.Properties.Resources.skid;
+            this.button4.Location = new System.Drawing.Point(196, 138);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(15, 148);
+            this.button4.TabIndex = 105;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.BackgroundImage = global::bodyColorSeq.Properties.Resources.skid;
+            this.button2.Location = new System.Drawing.Point(95, 22);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(15, 161);
+            this.button2.TabIndex = 104;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button11
+            // 
+            this.button11.BackgroundImage = global::bodyColorSeq.Properties.Resources.leftarrow;
+            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button11.Location = new System.Drawing.Point(-235, -81);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(58, 23);
+            this.button11.TabIndex = 79;
+            this.button11.UseVisualStyleBackColor = true;
+            // 
             // button15
             // 
             this.button15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button15.BackgroundImage")));
             this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button15.Location = new System.Drawing.Point(1006, 376);
+            this.button15.Location = new System.Drawing.Point(123, 27);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(109, 25);
             this.button15.TabIndex = 79;
@@ -1334,38 +1559,18 @@
             // 
             this.button6.BackgroundImage = global::bodyColorSeq.Properties.Resources.arrow1;
             this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button6.Location = new System.Drawing.Point(1116, 542);
+            this.button6.Location = new System.Drawing.Point(233, 193);
             this.button6.Name = "button6";
             this.button6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button6.Size = new System.Drawing.Size(25, 64);
             this.button6.TabIndex = 93;
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // button14
-            // 
-            this.button14.BackgroundImage = global::bodyColorSeq.Properties.Resources.arrow1;
-            this.button14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button14.Location = new System.Drawing.Point(930, 411);
-            this.button14.Name = "button14";
-            this.button14.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button14.Size = new System.Drawing.Size(25, 64);
-            this.button14.TabIndex = 85;
-            this.button14.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            this.button9.BackgroundImage = global::bodyColorSeq.Properties.Resources.skid;
-            this.button9.Location = new System.Drawing.Point(892, 371);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(15, 161);
-            this.button9.TabIndex = 43;
-            this.button9.UseVisualStyleBackColor = true;
-            // 
             // btn_linetwoout
             // 
             this.btn_linetwoout.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_linetwoout.BackgroundImage")));
             this.btn_linetwoout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_linetwoout.Location = new System.Drawing.Point(827, 32);
+            this.btn_linetwoout.Location = new System.Drawing.Point(827, 19);
             this.btn_linetwoout.Name = "btn_linetwoout";
             this.btn_linetwoout.Size = new System.Drawing.Size(42, 27);
             this.btn_linetwoout.TabIndex = 78;
@@ -1375,7 +1580,7 @@
             // 
             this.btn_linetwoin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_linetwoin.BackgroundImage")));
             this.btn_linetwoin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_linetwoin.Location = new System.Drawing.Point(10, 32);
+            this.btn_linetwoin.Location = new System.Drawing.Point(10, 19);
             this.btn_linetwoin.Name = "btn_linetwoin";
             this.btn_linetwoin.Size = new System.Drawing.Size(42, 27);
             this.btn_linetwoin.TabIndex = 77;
@@ -1385,7 +1590,7 @@
             // 
             this.btn_lineoneout.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_lineoneout.BackgroundImage")));
             this.btn_lineoneout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_lineoneout.Location = new System.Drawing.Point(826, 32);
+            this.btn_lineoneout.Location = new System.Drawing.Point(826, 20);
             this.btn_lineoneout.Name = "btn_lineoneout";
             this.btn_lineoneout.Size = new System.Drawing.Size(42, 27);
             this.btn_lineoneout.TabIndex = 79;
@@ -1395,17 +1600,27 @@
             // 
             this.btn_lineonein.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_lineonein.BackgroundImage")));
             this.btn_lineonein.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_lineonein.Location = new System.Drawing.Point(6, 32);
+            this.btn_lineonein.Location = new System.Drawing.Point(6, 20);
             this.btn_lineonein.Name = "btn_lineonein";
             this.btn_lineonein.Size = new System.Drawing.Size(41, 27);
             this.btn_lineonein.TabIndex = 76;
             this.btn_lineonein.UseVisualStyleBackColor = true;
             // 
+            // button17
+            // 
+            this.button17.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button17.BackgroundImage")));
+            this.button17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button17.Location = new System.Drawing.Point(293, 101);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(69, 27);
+            this.button17.TabIndex = 87;
+            this.button17.UseVisualStyleBackColor = true;
+            // 
             // btn_areathree
             // 
             this.btn_areathree.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_areathree.BackgroundImage")));
             this.btn_areathree.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_areathree.Location = new System.Drawing.Point(293, 38);
+            this.btn_areathree.Location = new System.Drawing.Point(293, 63);
             this.btn_areathree.Name = "btn_areathree";
             this.btn_areathree.Size = new System.Drawing.Size(69, 27);
             this.btn_areathree.TabIndex = 82;
@@ -1415,7 +1630,7 @@
             // 
             this.btn_areatwo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_areatwo.BackgroundImage")));
             this.btn_areatwo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_areatwo.Location = new System.Drawing.Point(212, 38);
+            this.btn_areatwo.Location = new System.Drawing.Point(212, 63);
             this.btn_areatwo.Name = "btn_areatwo";
             this.btn_areatwo.Size = new System.Drawing.Size(69, 27);
             this.btn_areatwo.TabIndex = 81;
@@ -1425,7 +1640,7 @@
             // 
             this.btn_areaone.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_areaone.BackgroundImage")));
             this.btn_areaone.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_areaone.Location = new System.Drawing.Point(124, 38);
+            this.btn_areaone.Location = new System.Drawing.Point(124, 63);
             this.btn_areaone.Name = "btn_areaone";
             this.btn_areaone.Size = new System.Drawing.Size(69, 27);
             this.btn_areaone.TabIndex = 80;
@@ -1435,7 +1650,7 @@
             // 
             this.btn_linethreein.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_linethreein.BackgroundImage")));
             this.btn_linethreein.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_linethreein.Location = new System.Drawing.Point(14, 47);
+            this.btn_linethreein.Location = new System.Drawing.Point(14, 22);
             this.btn_linethreein.Name = "btn_linethreein";
             this.btn_linethreein.Size = new System.Drawing.Size(33, 27);
             this.btn_linethreein.TabIndex = 78;
@@ -1445,38 +1660,46 @@
             // 
             this.btn_linethreeout.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_linethreeout.BackgroundImage")));
             this.btn_linethreeout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_linethreeout.Location = new System.Drawing.Point(826, 47);
+            this.btn_linethreeout.Location = new System.Drawing.Point(826, 22);
             this.btn_linethreeout.Name = "btn_linethreeout";
             this.btn_linethreeout.Size = new System.Drawing.Size(40, 27);
             this.btn_linethreeout.TabIndex = 77;
             this.btn_linethreeout.UseVisualStyleBackColor = true;
             // 
+            // button8
+            // 
+            this.button8.BackgroundImage = global::bodyColorSeq.Properties.Resources.skid;
+            this.button8.Location = new System.Drawing.Point(392, 20);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(15, 94);
+            this.button8.TabIndex = 108;
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button13
+            // 
+            this.button13.BackgroundImage = global::bodyColorSeq.Properties.Resources.skid;
+            this.button13.Location = new System.Drawing.Point(306, 20);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(15, 94);
+            this.button13.TabIndex = 107;
+            this.button13.UseVisualStyleBackColor = true;
+            // 
             // button12
             // 
             this.button12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button12.BackgroundImage")));
             this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button12.Location = new System.Drawing.Point(250, 161);
+            this.button12.Location = new System.Drawing.Point(250, 137);
             this.button12.Name = "button12";
             this.button12.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button12.Size = new System.Drawing.Size(55, 23);
             this.button12.TabIndex = 99;
             this.button12.UseVisualStyleBackColor = true;
             // 
-            // button11
-            // 
-            this.button11.BackgroundImage = global::bodyColorSeq.Properties.Resources.leftarrow;
-            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button11.Location = new System.Drawing.Point(809, 50);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(58, 23);
-            this.button11.TabIndex = 79;
-            this.button11.UseVisualStyleBackColor = true;
-            // 
             // button10
             // 
             this.button10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button10.BackgroundImage")));
             this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button10.Location = new System.Drawing.Point(814, 161);
+            this.button10.Location = new System.Drawing.Point(814, 137);
             this.button10.Name = "button10";
             this.button10.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button10.Size = new System.Drawing.Size(55, 23);
@@ -1487,7 +1710,7 @@
             // 
             this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
             this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button7.Location = new System.Drawing.Point(813, 103);
+            this.button7.Location = new System.Drawing.Point(813, 79);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(55, 23);
             this.button7.TabIndex = 87;
@@ -1497,123 +1720,23 @@
             // 
             this.button5.BackgroundImage = global::bodyColorSeq.Properties.Resources.arrow1;
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button5.Location = new System.Drawing.Point(343, 85);
+            this.button5.Location = new System.Drawing.Point(343, 61);
             this.button5.Name = "button5";
             this.button5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.button5.Size = new System.Drawing.Size(25, 47);
             this.button5.TabIndex = 93;
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // button1
-            // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Location = new System.Drawing.Point(186, 50);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 88);
-            this.button1.TabIndex = 78;
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.BackgroundImage = global::bodyColorSeq.Properties.Resources.skid;
-            this.button2.Location = new System.Drawing.Point(978, 371);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(15, 161);
-            this.button2.TabIndex = 104;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.BackgroundImage = global::bodyColorSeq.Properties.Resources.skid;
-            this.button3.Location = new System.Drawing.Point(1165, 487);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(15, 148);
-            this.button3.TabIndex = 106;
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.BackgroundImage = global::bodyColorSeq.Properties.Resources.skid;
-            this.button4.Location = new System.Drawing.Point(1079, 487);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(15, 148);
-            this.button4.TabIndex = 105;
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.BackgroundImage = global::bodyColorSeq.Properties.Resources.skid;
-            this.button8.Location = new System.Drawing.Point(392, 44);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(15, 94);
-            this.button8.TabIndex = 108;
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // button13
-            // 
-            this.button13.BackgroundImage = global::bodyColorSeq.Properties.Resources.skid;
-            this.button13.Location = new System.Drawing.Point(306, 44);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(15, 94);
-            this.button13.TabIndex = 107;
-            this.button13.UseVisualStyleBackColor = true;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(193, 56);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(43, 13);
-            this.label16.TabIndex = 109;
-            this.label16.Text = "钣金间";
-            // 
-            // button16
-            // 
-            this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button16.Location = new System.Drawing.Point(318, 144);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(248, 88);
-            this.button16.TabIndex = 110;
-            this.button16.UseVisualStyleBackColor = true;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(333, 206);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(43, 13);
-            this.label17.TabIndex = 111;
-            this.label17.Text = "返修间";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1413, 883);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.button15);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.RB6110);
-            this.Controls.Add(this.RB6115);
-            this.Controls.Add(this.RB6240);
-            this.Controls.Add(this.RB6225);
-            this.Controls.Add(this.RB6220);
-            this.Controls.Add(this.RB6215);
-            this.Controls.Add(this.RB6140);
-            this.Controls.Add(this.RB6150);
-            this.Controls.Add(this.button14);
-            this.Controls.Add(this.RB4375);
-            this.Controls.Add(this.button9);
+            this.ClientSize = new System.Drawing.Size(1359, 698);
+            this.Controls.Add(this.carToTCone);
+            this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox6);
@@ -1625,7 +1748,6 @@
             this.contextMenuStrip1.ResumeLayout(false);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -1636,6 +1758,8 @@
             this.groupBox5.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1684,7 +1808,6 @@
         private System.Windows.Forms.Button RB4350;
         private System.Windows.Forms.Label l3725;
         private System.Windows.Forms.Label l3730;
-        private System.Windows.Forms.ListBox listInfo;
         private System.Windows.Forms.Label l3735;
         private System.Windows.Forms.Label l3810;
         private System.Windows.Forms.Label l3805;
@@ -1712,10 +1835,8 @@
         private System.Windows.Forms.Label l3825;
         private System.Windows.Forms.Label l4330;
         private System.Windows.Forms.Label l4370;
-        private System.Windows.Forms.Label ltotal;
         private System.Windows.Forms.Button btn_lineonein;
         private System.Windows.Forms.Button btn_linethreeout;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;
@@ -1787,6 +1908,20 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label bigreadyone;
+        private System.Windows.Forms.Label bigreadytwo;
+        private System.Windows.Forms.Label bigreadythree;
+        private System.Windows.Forms.Label bigreadyfour;
+        private System.Windows.Forms.Label bigreadyfive;
+        private System.Windows.Forms.Label bigreadysix;
+        private System.Windows.Forms.Label bigreadyseven;
+        private System.Windows.Forms.Label bigreadyeight;
+        private System.Windows.Forms.Button bigReadyLine;
+        private System.Windows.Forms.Button carToTCone;
     }
 }
 

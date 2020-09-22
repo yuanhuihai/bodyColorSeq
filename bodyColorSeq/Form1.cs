@@ -59,6 +59,7 @@ namespace bodyColorSeq
             timer3.Start();
             toolStripStatusLabel2.Text = "程序版本 V 1.0.0.16";
             toolStripStatusLabel2.Alignment = ToolStripItemAlignment.Right;
+            bigReadyLine.BackColor = Color.HotPink;
             
             
     
@@ -123,6 +124,16 @@ namespace bodyColorSeq
         #endregion
 
 
+
+        #region 跳转其他窗口
+
+        private void carToTCone_Click(object sender, EventArgs e)
+        {
+            bodyToTopCoatOneInfo frm = new bodyToTopCoatOneInfo();
+            frm.Show();
+
+        }
+        #endregion
         //获取返修区域车身信息
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -686,7 +697,7 @@ namespace bodyColorSeq
             }
 
             #region RB4365--- RB4370
-            mianzhun = operatePLC.readPlcDbwValue("10.228.141.94", 0, 3, 31, 2);
+            mianzhun = operatePLC.readPlcDbwValue("10.228.141.94", 0, 3, 31, 2);//获取大链车身信息
             #endregion
             if (operatePLC.getPlcMX("10.228.141.94", 525, 1, 3))
             {
@@ -704,11 +715,127 @@ namespace bodyColorSeq
 
             if (thirty == 1)
             {
-                ltotal.Text = "面漆准备间内有车身----" + mianzhun + "----台,从右到左对应的车身信息为右侧第"+2+"到"+(mianzhun+thirty)+"台车！";
+     
+
+                switch (mianzhun)
+                {
+                    case 8:
+                        bigreadyeight.Text = colorInfo[1];
+                        bigreadyseven.Text = colorInfo[2];
+                        bigreadysix.Text = colorInfo[3];
+                        bigreadyfive.Text = colorInfo[4];
+                        bigreadyfour.Text = colorInfo[5];
+                        bigreadythree.Text = colorInfo[6];
+                        bigreadytwo.Text = colorInfo[7];
+                        bigreadyone.Text = colorInfo[8];
+                        break;
+                    case 7:
+                        bigreadyeight.Text = colorInfo[1];
+                        bigreadyseven.Text = colorInfo[2];
+                        bigreadysix.Text = colorInfo[3];
+                        bigreadyfive.Text = colorInfo[4];
+                        bigreadyfour.Text = colorInfo[5];
+                        bigreadythree.Text = colorInfo[6];
+                        bigreadytwo.Text = colorInfo[7];
+                        break;
+                    case 6:
+                        bigreadyeight.Text = colorInfo[1];
+                        bigreadyseven.Text = colorInfo[2];
+                        bigreadysix.Text = colorInfo[3];
+                        bigreadyfive.Text = colorInfo[4];
+                        bigreadyfour.Text = colorInfo[5];
+                        bigreadythree.Text = colorInfo[6];
+                        break;
+                    case 5:
+                        bigreadyeight.Text = colorInfo[1];
+                        bigreadyseven.Text = colorInfo[2];
+                        bigreadysix.Text = colorInfo[3];
+                        bigreadyfive.Text = colorInfo[4];
+                        bigreadyfour.Text = colorInfo[5];
+                        break;
+                    case 4:
+                        bigreadyeight.Text = colorInfo[1];
+                        bigreadyseven.Text = colorInfo[2];
+                        bigreadysix.Text = colorInfo[3];
+                        bigreadyfive.Text = colorInfo[4];
+                        break;
+                    case 3:
+                        bigreadyeight.Text = colorInfo[1];
+                        bigreadyseven.Text = colorInfo[2];
+                        bigreadysix.Text = colorInfo[3];
+                        break;
+                    case 2:
+                        bigreadyeight.Text = colorInfo[1];
+                        bigreadyseven.Text = colorInfo[2];
+                        break;
+                    case 1:
+                        bigreadyeight.Text = colorInfo[1];
+                        break;
+
+                }
             }
             else
             {
-                ltotal.Text = "面漆准备间内有车身----" + mianzhun + "----台,从右到左对应的车身信息为右侧第" + 1 + "到" + mianzhun + "台车！";
+              
+                switch (mianzhun)
+                {
+                    case 8:
+                        bigreadyeight.Text = colorInfo[0];
+                        bigreadyseven.Text = colorInfo[1];
+                        bigreadysix.Text = colorInfo[2];
+                        bigreadyfive.Text = colorInfo[3];
+                        bigreadyfour.Text = colorInfo[4];
+                        bigreadythree.Text = colorInfo[5];
+                        bigreadytwo.Text = colorInfo[6];
+                        bigreadyone.Text = colorInfo[7];
+                        break;
+                    case 7:
+                        bigreadyeight.Text = colorInfo[0];
+                        bigreadyseven.Text = colorInfo[1];
+                        bigreadysix.Text = colorInfo[2];
+                        bigreadyfive.Text = colorInfo[3];
+                        bigreadyfour.Text = colorInfo[4];
+                        bigreadythree.Text = colorInfo[5];
+                        bigreadytwo.Text = colorInfo[6];
+                        break;
+                    case 6:
+                        bigreadyeight.Text = colorInfo[0];
+                        bigreadyseven.Text = colorInfo[1];
+                        bigreadysix.Text = colorInfo[2];
+                        bigreadyfive.Text = colorInfo[3];
+                        bigreadyfour.Text = colorInfo[4];
+                        bigreadythree.Text = colorInfo[5];
+           
+                        break;
+                    case 5:
+                        bigreadyeight.Text = colorInfo[0];
+                        bigreadyseven.Text = colorInfo[1];
+                        bigreadysix.Text = colorInfo[2];
+                        bigreadyfive.Text = colorInfo[3];
+                        bigreadyfour.Text = colorInfo[4];
+      
+                        break;
+                    case 4:
+                        bigreadyeight.Text = colorInfo[0];
+                        bigreadyseven.Text = colorInfo[1];
+                        bigreadysix.Text = colorInfo[2];
+                        bigreadyfive.Text = colorInfo[3];
+           
+                        break;
+                    case 3:
+                        bigreadyeight.Text = colorInfo[0];
+                        bigreadyseven.Text = colorInfo[1];
+                        bigreadysix.Text = colorInfo[2];
+                        break;
+                    case 2:
+                        bigreadyeight.Text = colorInfo[0];
+                        bigreadyseven.Text = colorInfo[1];
+                        break;
+                    case 1:
+                        bigreadyeight.Text = colorInfo[0];
+                        break;
+
+                }
             }
         
            
@@ -719,6 +846,7 @@ namespace bodyColorSeq
 
             total = one + two + three + four + five + six + seven + eight + nine + ten + eleven + twelve + thirteen + fourteen + fifteen + sixteen + seventeen + eighteen + nineteen + twenty+twentyone+twentytwo+mianzhun+thirty;
             bodyNum.Text = Convert.ToString(total);
+            globalData.totalBodyOnLine = total;
 
             string sql = "select * from (select * from BODYCOLORSEQ order by XUHAO desc ) where rownum<="+total;
 
@@ -738,13 +866,7 @@ namespace bodyColorSeq
             }
             conn.Close();
 
-            listInfo.Items.Clear();
-            for (int j = 0; j < total; j++)
-            {
-                int a = total-1-j;
-                int b = j + 1;
-                listInfo.Items.Add("第"+b+"台车身颜色是"+"------"+colorInfo[a]+"滑橇号"+skidInfo[a]);
-            }
+ 
 
         }
 
