@@ -14,6 +14,7 @@ using Oracle.ManagedDataAccess.Client;
 /**timer1 定时10s，获取面准返修区域车身信息
  * timer2 定时5s，获取颜色编组站过来的车身信息
  * timer3定时1是， 前进方向箭头闪烁
+ * timer4定时5分钟，计算换色率
  * 
  
      */
@@ -35,8 +36,7 @@ namespace bodyColorSeq
 
         public int total,one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty;
 
-    
-
+     
         public string[] colorInfo=new string[41];
         public string[] fisInfo = new string[41];
         public string[] skidInfo = new string[41];
@@ -49,17 +49,23 @@ namespace bodyColorSeq
         public int totalbeformianzhun = 0;
         public string mianzhunbody;
 
- 
-       
+    
+
+
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
             timer1.Start();
             timer2.Start();
             timer3.Start();
-            toolStripStatusLabel2.Text = "程序版本 V 1.0.0.16";
+    
+            toolStripStatusLabel2.Text = "程序版本 V 1.0.0.37";
             toolStripStatusLabel2.Alignment = ToolStripItemAlignment.Right;
             bigReadyLine.BackColor = Color.HotPink;
+            sprayBooth.BackColor = Color.Green;
+            stellRepair.BackColor = Color.Goldenrod;
+            coatRepair.BackColor = Color.Honeydew;
             
             
     
@@ -907,10 +913,10 @@ namespace bodyColorSeq
 
        }
 
+    
 
 
 
-  
 
 
     }

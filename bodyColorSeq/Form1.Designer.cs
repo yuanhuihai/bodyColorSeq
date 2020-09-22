@@ -99,23 +99,51 @@
             this.l4330 = new System.Windows.Forms.Label();
             this.l4370 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.button17 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_areathree = new System.Windows.Forms.Button();
+            this.btn_areatwo = new System.Windows.Forms.Button();
+            this.btn_areaone = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btn_lineoneout = new System.Windows.Forms.Button();
+            this.btn_lineonein = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.btn_linetwoout = new System.Windows.Forms.Button();
+            this.btn_linetwoin = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.bigreadyone = new System.Windows.Forms.Label();
+            this.bigreadytwo = new System.Windows.Forms.Label();
+            this.bigreadythree = new System.Windows.Forms.Label();
+            this.bigreadyfour = new System.Windows.Forms.Label();
+            this.bigreadyfive = new System.Windows.Forms.Label();
+            this.bigreadysix = new System.Windows.Forms.Label();
+            this.bigreadyseven = new System.Windows.Forms.Label();
+            this.bigreadyeight = new System.Windows.Forms.Label();
+            this.btn_linethreein = new System.Windows.Forms.Button();
+            this.btn_linethreeout = new System.Windows.Forms.Button();
+            this.bigReadyLine = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.label17 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button13 = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.RB6100 = new System.Windows.Forms.Button();
             this.RB6105 = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
+            this.button12 = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.RB6185 = new System.Windows.Forms.Button();
             this.RB6190 = new System.Windows.Forms.Button();
             this.RB6180 = new System.Windows.Forms.Button();
@@ -132,8 +160,8 @@
             this.RB6155 = new System.Windows.Forms.Button();
             this.RB6160 = new System.Windows.Forms.Button();
             this.RB6165 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
+            this.stellRepair = new System.Windows.Forms.Button();
+            this.coatRepair = new System.Windows.Forms.Button();
             this.RB4375 = new System.Windows.Forms.Button();
             this.RB6150 = new System.Windows.Forms.Button();
             this.RB6215 = new System.Windows.Forms.Button();
@@ -149,18 +177,8 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.bigreadyeight = new System.Windows.Forms.Label();
-            this.bigreadyseven = new System.Windows.Forms.Label();
-            this.bigreadyfive = new System.Windows.Forms.Label();
-            this.bigreadysix = new System.Windows.Forms.Label();
-            this.bigreadyone = new System.Windows.Forms.Label();
-            this.bigreadytwo = new System.Windows.Forms.Label();
-            this.bigreadythree = new System.Windows.Forms.Label();
-            this.bigreadyfour = new System.Windows.Forms.Label();
-            this.bigReadyLine = new System.Windows.Forms.Button();
-            this.label27 = new System.Windows.Forms.Label();
-            this.carToTCone = new System.Windows.Forms.Button();
+            this.label19 = new System.Windows.Forms.Label();
+            this.sprayBooth = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
@@ -169,22 +187,14 @@
             this.button11 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.btn_linetwoout = new System.Windows.Forms.Button();
-            this.btn_linetwoin = new System.Windows.Forms.Button();
-            this.btn_lineoneout = new System.Windows.Forms.Button();
-            this.btn_lineonein = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
-            this.btn_areathree = new System.Windows.Forms.Button();
-            this.btn_areatwo = new System.Windows.Forms.Button();
-            this.btn_areaone = new System.Windows.Forms.Button();
-            this.btn_linethreein = new System.Windows.Forms.Button();
-            this.btn_linethreeout = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.carToTCone = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.colorBooth = new System.Windows.Forms.TextBox();
+            this.colorGroup = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
             this.contextMenuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -193,6 +203,7 @@
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox7.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // RB3725
@@ -806,6 +817,25 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "车身流方向";
             // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(304, 141);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(55, 13);
+            this.label18.TabIndex = 88;
+            this.label18.Text = "返修区域";
+            // 
+            // button17
+            // 
+            this.button17.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button17.BackgroundImage")));
+            this.button17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button17.Location = new System.Drawing.Point(293, 101);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(69, 27);
+            this.button17.TabIndex = 87;
+            this.button17.UseVisualStyleBackColor = true;
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -838,18 +868,48 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(378, 70);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 13);
+            this.label2.Size = new System.Drawing.Size(91, 13);
             this.label2.TabIndex = 83;
-            this.label2.Text = "面漆喷漆室";
+            this.label2.Text = "面漆一线喷漆室";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(32, 70);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 13);
+            this.label1.Size = new System.Drawing.Size(91, 13);
             this.label1.TabIndex = 80;
-            this.label1.Text = "颜色编组站";
+            this.label1.Text = "颜色编组站一区";
+            // 
+            // btn_areathree
+            // 
+            this.btn_areathree.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_areathree.BackgroundImage")));
+            this.btn_areathree.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_areathree.Location = new System.Drawing.Point(293, 63);
+            this.btn_areathree.Name = "btn_areathree";
+            this.btn_areathree.Size = new System.Drawing.Size(69, 27);
+            this.btn_areathree.TabIndex = 82;
+            this.btn_areathree.UseVisualStyleBackColor = true;
+            // 
+            // btn_areatwo
+            // 
+            this.btn_areatwo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_areatwo.BackgroundImage")));
+            this.btn_areatwo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_areatwo.Location = new System.Drawing.Point(212, 63);
+            this.btn_areatwo.Name = "btn_areatwo";
+            this.btn_areatwo.Size = new System.Drawing.Size(69, 27);
+            this.btn_areatwo.TabIndex = 81;
+            this.btn_areatwo.UseVisualStyleBackColor = true;
+            // 
+            // btn_areaone
+            // 
+            this.btn_areaone.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_areaone.BackgroundImage")));
+            this.btn_areaone.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_areaone.Location = new System.Drawing.Point(124, 63);
+            this.btn_areaone.Name = "btn_areaone";
+            this.btn_areaone.Size = new System.Drawing.Size(69, 27);
+            this.btn_areaone.TabIndex = 80;
+            this.btn_areaone.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
@@ -883,6 +943,26 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "区域-1";
             // 
+            // btn_lineoneout
+            // 
+            this.btn_lineoneout.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_lineoneout.BackgroundImage")));
+            this.btn_lineoneout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_lineoneout.Location = new System.Drawing.Point(826, 20);
+            this.btn_lineoneout.Name = "btn_lineoneout";
+            this.btn_lineoneout.Size = new System.Drawing.Size(42, 27);
+            this.btn_lineoneout.TabIndex = 79;
+            this.btn_lineoneout.UseVisualStyleBackColor = true;
+            // 
+            // btn_lineonein
+            // 
+            this.btn_lineonein.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_lineonein.BackgroundImage")));
+            this.btn_lineonein.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_lineonein.Location = new System.Drawing.Point(6, 20);
+            this.btn_lineonein.Name = "btn_lineonein";
+            this.btn_lineonein.Size = new System.Drawing.Size(41, 27);
+            this.btn_lineonein.TabIndex = 76;
+            this.btn_lineonein.UseVisualStyleBackColor = true;
+            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.btn_linetwoout);
@@ -913,6 +993,26 @@
             this.groupBox4.TabIndex = 81;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "区域-2";
+            // 
+            // btn_linetwoout
+            // 
+            this.btn_linetwoout.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_linetwoout.BackgroundImage")));
+            this.btn_linetwoout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_linetwoout.Location = new System.Drawing.Point(827, 19);
+            this.btn_linetwoout.Name = "btn_linetwoout";
+            this.btn_linetwoout.Size = new System.Drawing.Size(42, 27);
+            this.btn_linetwoout.TabIndex = 78;
+            this.btn_linetwoout.UseVisualStyleBackColor = true;
+            // 
+            // btn_linetwoin
+            // 
+            this.btn_linetwoin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_linetwoin.BackgroundImage")));
+            this.btn_linetwoin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_linetwoin.Location = new System.Drawing.Point(10, 19);
+            this.btn_linetwoin.Name = "btn_linetwoin";
+            this.btn_linetwoin.Size = new System.Drawing.Size(42, 27);
+            this.btn_linetwoin.TabIndex = 77;
+            this.btn_linetwoin.UseVisualStyleBackColor = true;
             // 
             // groupBox5
             // 
@@ -949,8 +1049,118 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "区域-3";
             // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(228, 83);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(55, 13);
+            this.label27.TabIndex = 88;
+            this.label27.Text = "面准大线";
+            // 
+            // bigreadyone
+            // 
+            this.bigreadyone.AutoSize = true;
+            this.bigreadyone.Location = new System.Drawing.Point(267, 58);
+            this.bigreadyone.Name = "bigreadyone";
+            this.bigreadyone.Size = new System.Drawing.Size(10, 13);
+            this.bigreadyone.TabIndex = 86;
+            this.bigreadyone.Text = "-";
+            // 
+            // bigreadytwo
+            // 
+            this.bigreadytwo.AutoSize = true;
+            this.bigreadytwo.Location = new System.Drawing.Point(327, 59);
+            this.bigreadytwo.Name = "bigreadytwo";
+            this.bigreadytwo.Size = new System.Drawing.Size(10, 13);
+            this.bigreadytwo.TabIndex = 85;
+            this.bigreadytwo.Text = "-";
+            // 
+            // bigreadythree
+            // 
+            this.bigreadythree.AutoSize = true;
+            this.bigreadythree.Location = new System.Drawing.Point(397, 61);
+            this.bigreadythree.Name = "bigreadythree";
+            this.bigreadythree.Size = new System.Drawing.Size(10, 13);
+            this.bigreadythree.TabIndex = 84;
+            this.bigreadythree.Text = "-";
+            // 
+            // bigreadyfour
+            // 
+            this.bigreadyfour.AutoSize = true;
+            this.bigreadyfour.Location = new System.Drawing.Point(470, 60);
+            this.bigreadyfour.Name = "bigreadyfour";
+            this.bigreadyfour.Size = new System.Drawing.Size(10, 13);
+            this.bigreadyfour.TabIndex = 83;
+            this.bigreadyfour.Text = "-";
+            // 
+            // bigreadyfive
+            // 
+            this.bigreadyfive.AutoSize = true;
+            this.bigreadyfive.Location = new System.Drawing.Point(535, 61);
+            this.bigreadyfive.Name = "bigreadyfive";
+            this.bigreadyfive.Size = new System.Drawing.Size(10, 13);
+            this.bigreadyfive.TabIndex = 82;
+            this.bigreadyfive.Text = "-";
+            // 
+            // bigreadysix
+            // 
+            this.bigreadysix.AutoSize = true;
+            this.bigreadysix.Location = new System.Drawing.Point(594, 61);
+            this.bigreadysix.Name = "bigreadysix";
+            this.bigreadysix.Size = new System.Drawing.Size(10, 13);
+            this.bigreadysix.TabIndex = 81;
+            this.bigreadysix.Text = "-";
+            // 
+            // bigreadyseven
+            // 
+            this.bigreadyseven.AutoSize = true;
+            this.bigreadyseven.Location = new System.Drawing.Point(641, 61);
+            this.bigreadyseven.Name = "bigreadyseven";
+            this.bigreadyseven.Size = new System.Drawing.Size(10, 13);
+            this.bigreadyseven.TabIndex = 80;
+            this.bigreadyseven.Text = "-";
+            // 
+            // bigreadyeight
+            // 
+            this.bigreadyeight.AutoSize = true;
+            this.bigreadyeight.Location = new System.Drawing.Point(691, 61);
+            this.bigreadyeight.Name = "bigreadyeight";
+            this.bigreadyeight.Size = new System.Drawing.Size(10, 13);
+            this.bigreadyeight.TabIndex = 79;
+            this.bigreadyeight.Text = "-";
+            // 
+            // btn_linethreein
+            // 
+            this.btn_linethreein.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_linethreein.BackgroundImage")));
+            this.btn_linethreein.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_linethreein.Location = new System.Drawing.Point(14, 22);
+            this.btn_linethreein.Name = "btn_linethreein";
+            this.btn_linethreein.Size = new System.Drawing.Size(33, 27);
+            this.btn_linethreein.TabIndex = 78;
+            this.btn_linethreein.UseVisualStyleBackColor = true;
+            // 
+            // btn_linethreeout
+            // 
+            this.btn_linethreeout.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_linethreeout.BackgroundImage")));
+            this.btn_linethreeout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btn_linethreeout.Location = new System.Drawing.Point(826, 22);
+            this.btn_linethreeout.Name = "btn_linethreeout";
+            this.btn_linethreeout.Size = new System.Drawing.Size(40, 27);
+            this.btn_linethreeout.TabIndex = 77;
+            this.btn_linethreeout.UseVisualStyleBackColor = true;
+            // 
+            // bigReadyLine
+            // 
+            this.bigReadyLine.Location = new System.Drawing.Point(212, 14);
+            this.bigReadyLine.Name = "bigReadyLine";
+            this.bigReadyLine.Size = new System.Drawing.Size(517, 90);
+            this.bigReadyLine.TabIndex = 87;
+            this.bigReadyLine.UseVisualStyleBackColor = true;
+            // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.button1);
             this.groupBox6.Controls.Add(this.label17);
             this.groupBox6.Controls.Add(this.label16);
             this.groupBox6.Controls.Add(this.button8);
@@ -981,14 +1191,24 @@
             this.groupBox6.Controls.Add(this.RB6155);
             this.groupBox6.Controls.Add(this.RB6160);
             this.groupBox6.Controls.Add(this.RB6165);
-            this.groupBox6.Controls.Add(this.button1);
-            this.groupBox6.Controls.Add(this.button16);
-            this.groupBox6.Location = new System.Drawing.Point(24, 454);
+            this.groupBox6.Controls.Add(this.stellRepair);
+            this.groupBox6.Controls.Add(this.coatRepair);
+            this.groupBox6.Location = new System.Drawing.Point(25, 454);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(874, 222);
             this.groupBox6.TabIndex = 83;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "返修区域";
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::bodyColorSeq.Properties.Resources.leftarrow;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Location = new System.Drawing.Point(809, 26);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(57, 23);
+            this.button1.TabIndex = 89;
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // label17
             // 
@@ -1007,6 +1227,24 @@
             this.label16.Size = new System.Drawing.Size(43, 13);
             this.label16.TabIndex = 109;
             this.label16.Text = "钣金间";
+            // 
+            // button8
+            // 
+            this.button8.BackgroundImage = global::bodyColorSeq.Properties.Resources.skid;
+            this.button8.Location = new System.Drawing.Point(392, 20);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(15, 94);
+            this.button8.TabIndex = 108;
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // button13
+            // 
+            this.button13.BackgroundImage = global::bodyColorSeq.Properties.Resources.skid;
+            this.button13.Location = new System.Drawing.Point(306, 20);
+            this.button13.Name = "button13";
+            this.button13.Size = new System.Drawing.Size(15, 94);
+            this.button13.TabIndex = 107;
+            this.button13.UseVisualStyleBackColor = true;
             // 
             // label13
             // 
@@ -1053,14 +1291,57 @@
             this.label9.TabIndex = 100;
             this.label9.Text = "修饰来车";
             // 
+            // button12
+            // 
+            this.button12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button12.BackgroundImage")));
+            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button12.Location = new System.Drawing.Point(250, 137);
+            this.button12.Name = "button12";
+            this.button12.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button12.Size = new System.Drawing.Size(55, 23);
+            this.button12.TabIndex = 99;
+            this.button12.UseVisualStyleBackColor = true;
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(813, 8);
+            this.label8.Location = new System.Drawing.Point(806, 9);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(55, 13);
+            this.label8.Size = new System.Drawing.Size(67, 13);
             this.label8.TabIndex = 79;
-            this.label8.Text = "面准来车";
+            this.label8.Text = "面准下线车";
+            // 
+            // button10
+            // 
+            this.button10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button10.BackgroundImage")));
+            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button10.Location = new System.Drawing.Point(814, 137);
+            this.button10.Name = "button10";
+            this.button10.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button10.Size = new System.Drawing.Size(55, 23);
+            this.button10.TabIndex = 98;
+            this.button10.UseVisualStyleBackColor = true;
+            // 
+            // button7
+            // 
+            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button7.Location = new System.Drawing.Point(813, 79);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(55, 23);
+            this.button7.TabIndex = 87;
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.BackgroundImage = global::bodyColorSeq.Properties.Resources.arrow1;
+            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button5.Location = new System.Drawing.Point(343, 61);
+            this.button5.Name = "button5";
+            this.button5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.button5.Size = new System.Drawing.Size(25, 47);
+            this.button5.TabIndex = 93;
+            this.button5.UseVisualStyleBackColor = true;
             // 
             // RB6185
             // 
@@ -1208,23 +1489,23 @@
             this.RB6165.Text = "RB6165";
             this.RB6165.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // stellRepair
             // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Location = new System.Drawing.Point(186, 26);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 88);
-            this.button1.TabIndex = 78;
-            this.button1.UseVisualStyleBackColor = true;
+            this.stellRepair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.stellRepair.Location = new System.Drawing.Point(186, 26);
+            this.stellRepair.Name = "stellRepair";
+            this.stellRepair.Size = new System.Drawing.Size(119, 88);
+            this.stellRepair.TabIndex = 78;
+            this.stellRepair.UseVisualStyleBackColor = true;
             // 
-            // button16
+            // coatRepair
             // 
-            this.button16.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button16.Location = new System.Drawing.Point(318, 120);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(248, 88);
-            this.button16.TabIndex = 110;
-            this.button16.UseVisualStyleBackColor = true;
+            this.coatRepair.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.coatRepair.Location = new System.Drawing.Point(318, 120);
+            this.coatRepair.Name = "coatRepair";
+            this.coatRepair.Size = new System.Drawing.Size(248, 88);
+            this.coatRepair.TabIndex = 110;
+            this.coatRepair.UseVisualStyleBackColor = true;
             // 
             // RB4375
             // 
@@ -1352,6 +1633,8 @@
             // 
             // groupBox7
             // 
+            this.groupBox7.Controls.Add(this.label19);
+            this.groupBox7.Controls.Add(this.sprayBooth);
             this.groupBox7.Controls.Add(this.RB4375);
             this.groupBox7.Controls.Add(this.button9);
             this.groupBox7.Controls.Add(this.button3);
@@ -1373,120 +1656,30 @@
             this.groupBox7.Controls.Add(this.RB6115);
             this.groupBox7.Controls.Add(this.button6);
             this.groupBox7.Controls.Add(this.RB6110);
-            this.groupBox7.Location = new System.Drawing.Point(931, 338);
+            this.groupBox7.Location = new System.Drawing.Point(911, 338);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(375, 286);
             this.groupBox7.TabIndex = 107;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "换向区域";
             // 
-            // label18
+            // label19
             // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(304, 141);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(55, 13);
-            this.label18.TabIndex = 88;
-            this.label18.Text = "返修区域";
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(188, 34);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(15, 13);
+            this.label19.TabIndex = 107;
+            this.label19.Text = "R";
             // 
-            // bigreadyeight
+            // sprayBooth
             // 
-            this.bigreadyeight.AutoSize = true;
-            this.bigreadyeight.Location = new System.Drawing.Point(691, 61);
-            this.bigreadyeight.Name = "bigreadyeight";
-            this.bigreadyeight.Size = new System.Drawing.Size(10, 13);
-            this.bigreadyeight.TabIndex = 79;
-            this.bigreadyeight.Text = "-";
-            // 
-            // bigreadyseven
-            // 
-            this.bigreadyseven.AutoSize = true;
-            this.bigreadyseven.Location = new System.Drawing.Point(641, 61);
-            this.bigreadyseven.Name = "bigreadyseven";
-            this.bigreadyseven.Size = new System.Drawing.Size(10, 13);
-            this.bigreadyseven.TabIndex = 80;
-            this.bigreadyseven.Text = "-";
-            // 
-            // bigreadyfive
-            // 
-            this.bigreadyfive.AutoSize = true;
-            this.bigreadyfive.Location = new System.Drawing.Point(535, 61);
-            this.bigreadyfive.Name = "bigreadyfive";
-            this.bigreadyfive.Size = new System.Drawing.Size(10, 13);
-            this.bigreadyfive.TabIndex = 82;
-            this.bigreadyfive.Text = "-";
-            // 
-            // bigreadysix
-            // 
-            this.bigreadysix.AutoSize = true;
-            this.bigreadysix.Location = new System.Drawing.Point(594, 61);
-            this.bigreadysix.Name = "bigreadysix";
-            this.bigreadysix.Size = new System.Drawing.Size(10, 13);
-            this.bigreadysix.TabIndex = 81;
-            this.bigreadysix.Text = "-";
-            // 
-            // bigreadyone
-            // 
-            this.bigreadyone.AutoSize = true;
-            this.bigreadyone.Location = new System.Drawing.Point(267, 58);
-            this.bigreadyone.Name = "bigreadyone";
-            this.bigreadyone.Size = new System.Drawing.Size(10, 13);
-            this.bigreadyone.TabIndex = 86;
-            this.bigreadyone.Text = "-";
-            // 
-            // bigreadytwo
-            // 
-            this.bigreadytwo.AutoSize = true;
-            this.bigreadytwo.Location = new System.Drawing.Point(327, 59);
-            this.bigreadytwo.Name = "bigreadytwo";
-            this.bigreadytwo.Size = new System.Drawing.Size(10, 13);
-            this.bigreadytwo.TabIndex = 85;
-            this.bigreadytwo.Text = "-";
-            // 
-            // bigreadythree
-            // 
-            this.bigreadythree.AutoSize = true;
-            this.bigreadythree.Location = new System.Drawing.Point(397, 61);
-            this.bigreadythree.Name = "bigreadythree";
-            this.bigreadythree.Size = new System.Drawing.Size(10, 13);
-            this.bigreadythree.TabIndex = 84;
-            this.bigreadythree.Text = "-";
-            // 
-            // bigreadyfour
-            // 
-            this.bigreadyfour.AutoSize = true;
-            this.bigreadyfour.Location = new System.Drawing.Point(470, 60);
-            this.bigreadyfour.Name = "bigreadyfour";
-            this.bigreadyfour.Size = new System.Drawing.Size(10, 13);
-            this.bigreadyfour.TabIndex = 83;
-            this.bigreadyfour.Text = "-";
-            // 
-            // bigReadyLine
-            // 
-            this.bigReadyLine.Location = new System.Drawing.Point(212, 14);
-            this.bigReadyLine.Name = "bigReadyLine";
-            this.bigReadyLine.Size = new System.Drawing.Size(517, 90);
-            this.bigReadyLine.TabIndex = 87;
-            this.bigReadyLine.UseVisualStyleBackColor = true;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(228, 83);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(55, 13);
-            this.label27.TabIndex = 88;
-            this.label27.Text = "面准大线";
-            // 
-            // carToTCone
-            // 
-            this.carToTCone.Location = new System.Drawing.Point(1203, 18);
-            this.carToTCone.Name = "carToTCone";
-            this.carToTCone.Size = new System.Drawing.Size(131, 23);
-            this.carToTCone.TabIndex = 108;
-            this.carToTCone.Text = "去往面漆-1车身明细";
-            this.carToTCone.UseVisualStyleBackColor = true;
-            this.carToTCone.Click += new System.EventHandler(this.carToTCone_Click);
+            this.sprayBooth.Location = new System.Drawing.Point(204, 8);
+            this.sprayBooth.Name = "sprayBooth";
+            this.sprayBooth.Size = new System.Drawing.Size(170, 57);
+            this.sprayBooth.TabIndex = 79;
+            this.sprayBooth.Text = "面漆一线喷漆室";
+            this.sprayBooth.UseVisualStyleBackColor = true;
             // 
             // button9
             // 
@@ -1549,7 +1742,7 @@
             // 
             this.button15.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button15.BackgroundImage")));
             this.button15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button15.Location = new System.Drawing.Point(123, 27);
+            this.button15.Location = new System.Drawing.Point(117, 27);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(109, 25);
             this.button15.TabIndex = 79;
@@ -1566,172 +1759,89 @@
             this.button6.TabIndex = 93;
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // btn_linetwoout
+            // carToTCone
             // 
-            this.btn_linetwoout.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_linetwoout.BackgroundImage")));
-            this.btn_linetwoout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_linetwoout.Location = new System.Drawing.Point(827, 19);
-            this.btn_linetwoout.Name = "btn_linetwoout";
-            this.btn_linetwoout.Size = new System.Drawing.Size(42, 27);
-            this.btn_linetwoout.TabIndex = 78;
-            this.btn_linetwoout.UseVisualStyleBackColor = true;
+            this.carToTCone.Location = new System.Drawing.Point(1203, 18);
+            this.carToTCone.Name = "carToTCone";
+            this.carToTCone.Size = new System.Drawing.Size(131, 23);
+            this.carToTCone.TabIndex = 108;
+            this.carToTCone.Text = "去往面漆-1车身明细";
+            this.carToTCone.UseVisualStyleBackColor = true;
+            this.carToTCone.Click += new System.EventHandler(this.carToTCone_Click);
             // 
-            // btn_linetwoin
+            // groupBox1
             // 
-            this.btn_linetwoin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_linetwoin.BackgroundImage")));
-            this.btn_linetwoin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_linetwoin.Location = new System.Drawing.Point(10, 19);
-            this.btn_linetwoin.Name = "btn_linetwoin";
-            this.btn_linetwoin.Size = new System.Drawing.Size(42, 27);
-            this.btn_linetwoin.TabIndex = 77;
-            this.btn_linetwoin.UseVisualStyleBackColor = true;
+            this.groupBox1.Controls.Add(this.label23);
+            this.groupBox1.Controls.Add(this.label22);
+            this.groupBox1.Controls.Add(this.colorBooth);
+            this.groupBox1.Controls.Add(this.colorGroup);
+            this.groupBox1.Controls.Add(this.label21);
+            this.groupBox1.Controls.Add(this.label20);
+            this.groupBox1.Location = new System.Drawing.Point(698, 18);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(200, 100);
+            this.groupBox1.TabIndex = 109;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "今日换色率";
             // 
-            // btn_lineoneout
+            // colorBooth
             // 
-            this.btn_lineoneout.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_lineoneout.BackgroundImage")));
-            this.btn_lineoneout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_lineoneout.Location = new System.Drawing.Point(826, 20);
-            this.btn_lineoneout.Name = "btn_lineoneout";
-            this.btn_lineoneout.Size = new System.Drawing.Size(42, 27);
-            this.btn_lineoneout.TabIndex = 79;
-            this.btn_lineoneout.UseVisualStyleBackColor = true;
+            this.colorBooth.Location = new System.Drawing.Point(103, 62);
+            this.colorBooth.Name = "colorBooth";
+            this.colorBooth.Size = new System.Drawing.Size(53, 20);
+            this.colorBooth.TabIndex = 91;
+            this.colorBooth.Text = "15";
             // 
-            // btn_lineonein
+            // colorGroup
             // 
-            this.btn_lineonein.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_lineonein.BackgroundImage")));
-            this.btn_lineonein.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_lineonein.Location = new System.Drawing.Point(6, 20);
-            this.btn_lineonein.Name = "btn_lineonein";
-            this.btn_lineonein.Size = new System.Drawing.Size(41, 27);
-            this.btn_lineonein.TabIndex = 76;
-            this.btn_lineonein.UseVisualStyleBackColor = true;
+            this.colorGroup.Location = new System.Drawing.Point(103, 28);
+            this.colorGroup.Name = "colorGroup";
+            this.colorGroup.Size = new System.Drawing.Size(52, 20);
+            this.colorGroup.TabIndex = 89;
+            this.colorGroup.Text = "27.625";
             // 
-            // button17
+            // label21
             // 
-            this.button17.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button17.BackgroundImage")));
-            this.button17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button17.Location = new System.Drawing.Point(293, 101);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(69, 27);
-            this.button17.TabIndex = 87;
-            this.button17.UseVisualStyleBackColor = true;
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(6, 64);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(91, 13);
+            this.label21.TabIndex = 90;
+            this.label21.Text = "面漆一线喷漆室";
             // 
-            // btn_areathree
+            // label20
             // 
-            this.btn_areathree.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_areathree.BackgroundImage")));
-            this.btn_areathree.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_areathree.Location = new System.Drawing.Point(293, 63);
-            this.btn_areathree.Name = "btn_areathree";
-            this.btn_areathree.Size = new System.Drawing.Size(69, 27);
-            this.btn_areathree.TabIndex = 82;
-            this.btn_areathree.UseVisualStyleBackColor = true;
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(6, 30);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(91, 13);
+            this.label20.TabIndex = 89;
+            this.label20.Text = "颜色编组站一区";
             // 
-            // btn_areatwo
+            // label22
             // 
-            this.btn_areatwo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_areatwo.BackgroundImage")));
-            this.btn_areatwo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_areatwo.Location = new System.Drawing.Point(212, 63);
-            this.btn_areatwo.Name = "btn_areatwo";
-            this.btn_areatwo.Size = new System.Drawing.Size(69, 27);
-            this.btn_areatwo.TabIndex = 81;
-            this.btn_areatwo.UseVisualStyleBackColor = true;
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(161, 30);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(36, 13);
+            this.label22.TabIndex = 89;
+            this.label22.Text = "台/次";
             // 
-            // btn_areaone
+            // label23
             // 
-            this.btn_areaone.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_areaone.BackgroundImage")));
-            this.btn_areaone.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_areaone.Location = new System.Drawing.Point(124, 63);
-            this.btn_areaone.Name = "btn_areaone";
-            this.btn_areaone.Size = new System.Drawing.Size(69, 27);
-            this.btn_areaone.TabIndex = 80;
-            this.btn_areaone.UseVisualStyleBackColor = true;
-            // 
-            // btn_linethreein
-            // 
-            this.btn_linethreein.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_linethreein.BackgroundImage")));
-            this.btn_linethreein.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_linethreein.Location = new System.Drawing.Point(14, 22);
-            this.btn_linethreein.Name = "btn_linethreein";
-            this.btn_linethreein.Size = new System.Drawing.Size(33, 27);
-            this.btn_linethreein.TabIndex = 78;
-            this.btn_linethreein.UseVisualStyleBackColor = true;
-            // 
-            // btn_linethreeout
-            // 
-            this.btn_linethreeout.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_linethreeout.BackgroundImage")));
-            this.btn_linethreeout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_linethreeout.Location = new System.Drawing.Point(826, 22);
-            this.btn_linethreeout.Name = "btn_linethreeout";
-            this.btn_linethreeout.Size = new System.Drawing.Size(40, 27);
-            this.btn_linethreeout.TabIndex = 77;
-            this.btn_linethreeout.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.BackgroundImage = global::bodyColorSeq.Properties.Resources.skid;
-            this.button8.Location = new System.Drawing.Point(392, 20);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(15, 94);
-            this.button8.TabIndex = 108;
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // button13
-            // 
-            this.button13.BackgroundImage = global::bodyColorSeq.Properties.Resources.skid;
-            this.button13.Location = new System.Drawing.Point(306, 20);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(15, 94);
-            this.button13.TabIndex = 107;
-            this.button13.UseVisualStyleBackColor = true;
-            // 
-            // button12
-            // 
-            this.button12.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button12.BackgroundImage")));
-            this.button12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button12.Location = new System.Drawing.Point(250, 137);
-            this.button12.Name = "button12";
-            this.button12.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button12.Size = new System.Drawing.Size(55, 23);
-            this.button12.TabIndex = 99;
-            this.button12.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button10.BackgroundImage")));
-            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button10.Location = new System.Drawing.Point(814, 137);
-            this.button10.Name = "button10";
-            this.button10.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button10.Size = new System.Drawing.Size(55, 23);
-            this.button10.TabIndex = 98;
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button7.Location = new System.Drawing.Point(813, 79);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(55, 23);
-            this.button7.TabIndex = 87;
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.BackgroundImage = global::bodyColorSeq.Properties.Resources.arrow1;
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button5.Location = new System.Drawing.Point(343, 61);
-            this.button5.Name = "button5";
-            this.button5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.button5.Size = new System.Drawing.Size(25, 47);
-            this.button5.TabIndex = 93;
-            this.button5.UseVisualStyleBackColor = true;
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(161, 65);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(36, 13);
+            this.label23.TabIndex = 92;
+            this.label23.Text = "台/次";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1359, 698);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.carToTCone);
             this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox4);
@@ -1742,7 +1852,7 @@
             this.Controls.Add(this.groupBox6);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "面准进车信息";
+            this.Text = "面准一线进车信息";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.contextMenuStrip1.ResumeLayout(false);
@@ -1760,6 +1870,8 @@
             this.groupBox6.PerformLayout();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1865,7 +1977,7 @@
         private System.Windows.Forms.Button RB6210;
         private System.Windows.Forms.Button RB6195;
         private System.Windows.Forms.Button RB6170;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button stellRepair;
         private System.Windows.Forms.Button RB6200;
         private System.Windows.Forms.Button RB6205;
         private System.Windows.Forms.Button RB6155;
@@ -1907,7 +2019,7 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Button button16;
+        private System.Windows.Forms.Button coatRepair;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Button button17;
@@ -1922,6 +2034,16 @@
         private System.Windows.Forms.Label bigreadyeight;
         private System.Windows.Forms.Button bigReadyLine;
         private System.Windows.Forms.Button carToTCone;
+        private System.Windows.Forms.Button sprayBooth;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox colorBooth;
+        private System.Windows.Forms.TextBox colorGroup;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label22;
     }
 }
 
