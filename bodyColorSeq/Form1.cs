@@ -11,8 +11,9 @@ using oracleDatabase;
 using Oracle.ManagedDataAccess.Client;
 
 
-/**timer1 定时60s，获取读写站数据
- * 
+/**timer1 定时10s，获取面准返修区域车身信息
+ * timer2 定时5s，获取颜色编组站过来的车身信息
+ * timer3定时1是， 前进方向箭头闪烁
  * 
  
      */
@@ -34,6 +35,7 @@ namespace bodyColorSeq
 
         public int total,one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty;
 
+    
 
         public string[] colorInfo=new string[41];
         public string[] fisInfo = new string[41];
@@ -52,7 +54,7 @@ namespace bodyColorSeq
 
         private void Form1_Load(object sender, EventArgs e)
         {
-        
+            timer1.Start();
             timer2.Start();
             timer3.Start();
             toolStripStatusLabel2.Text = "程序版本 V 1.0.0.16";
@@ -120,9 +122,279 @@ namespace bodyColorSeq
 
         #endregion
 
-   
+
+        //获取返修区域车身信息
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Interval = 6000;
+            if (operatePLC.getPlcMX("10.228.141.98", 328, 1, 3))
+            {
+                RB6075.BackColor = Color.GreenYellow;
+
+            }
+            else
+            {
+                RB6075.BackColor = Color.White;
+
+            }
+            if (operatePLC.getPlcMX("10.228.141.98", 331, 1, 3))
+            {
+                RB6080.BackColor = Color.GreenYellow;
+
+            }
+            else
+            {
+                RB6080.BackColor = Color.White;
+
+            }
+            if (operatePLC.getPlcMX("10.228.141.98", 334, 1, 3))
+            {
+                RB6090.BackColor = Color.GreenYellow;
+
+            }
+            else
+            {
+                RB6090.BackColor = Color.White;
+
+            }
+            if (operatePLC.getPlcMX("10.228.141.98", 340, 1, 3))
+            {
+                RB6095.BackColor = Color.GreenYellow;
+
+            }
+            else
+            {
+                RB6095.BackColor = Color.White;
+
+            }
+
+            if (operatePLC.getPlcMX("10.228.141.98", 343, 1, 3))
+            {
+                RB6100.BackColor = Color.GreenYellow;
+
+            }
+            else
+            {
+                RB6100.BackColor = Color.White;
+
+            }
+            if (operatePLC.getPlcMX("10.228.141.98", 346, 1, 3))
+            {
+                RB6105.BackColor = Color.GreenYellow;
+
+            }
+            else
+            {
+                RB6105.BackColor = Color.White;
+
+            }
 
 
+            if (operatePLC.getPlcMX("10.228.141.98", 349, 1, 3))
+            {
+                RB6110.BackColor = Color.GreenYellow;
+
+            }
+            else
+            {
+                RB6110.BackColor = Color.White;
+
+            }
+            if (operatePLC.getPlcMX("10.228.141.98", 425, 1, 3))
+            {
+                RB6115.BackColor = Color.GreenYellow;
+
+            }
+            else
+            {
+                RB6115.BackColor = Color.White;
+
+            }
+    
+            if (operatePLC.getPlcMX("10.228.141.98", 428, 1, 3))
+            {
+                RB6140.BackColor = Color.GreenYellow;
+
+            }
+            else
+            {
+                RB6140.BackColor = Color.White;
+           
+            }
+            if (operatePLC.getPlcMX("10.228.141.98", 531, 1, 3))
+            {
+                RB6150.BackColor = Color.GreenYellow;
+
+            }
+            else
+            {
+                RB6150.BackColor = Color.White;
+
+            }
+            if (operatePLC.getPlcMX("10.228.141.98", 534, 1, 3))
+            {
+                RB6155.BackColor = Color.GreenYellow;
+
+            }
+            else
+            {
+                RB6155.BackColor = Color.White;
+
+            }
+            if (operatePLC.getPlcMX("10.228.141.98", 537, 1, 3))
+            {
+                RB6160.BackColor = Color.GreenYellow;
+
+            }
+            else
+            {
+                RB6160.BackColor = Color.White;
+
+            }
+            if (operatePLC.getPlcMX("10.228.141.98", 540, 1, 3))
+            {
+                RB6165.BackColor = Color.GreenYellow;
+
+            }
+            else
+            {
+                RB6165.BackColor = Color.White;
+
+            }
+            if (operatePLC.getPlcMX("10.228.141.98", 625, 1, 3))
+            {
+                RB6170.BackColor = Color.GreenYellow;
+
+            }
+            else
+            {
+                RB6170.BackColor = Color.White;
+
+            }
+            if (operatePLC.getPlcMX("10.228.141.98", 628, 1, 3))
+            {
+                RB6175.BackColor = Color.GreenYellow;
+
+            }
+            else
+            {
+                RB6175.BackColor = Color.White;
+
+            }
+            if (operatePLC.getPlcMX("10.228.141.98", 631, 1, 3))
+            {
+                RB6180.BackColor = Color.GreenYellow;
+
+            }
+            else
+            {
+                RB6180.BackColor = Color.White;
+
+            }
+            if (operatePLC.getPlcMX("10.228.141.98", 644, 1, 3))
+            {
+                RB6185.BackColor = Color.GreenYellow;
+
+            }
+            else
+            {
+                RB6185.BackColor = Color.White;
+
+            }
+            if (operatePLC.getPlcMX("10.228.141.98", 647, 1, 3))
+            {
+                RB6190.BackColor = Color.GreenYellow;
+
+            }
+            else
+            {
+                RB6190.BackColor = Color.White;
+
+            }
+            if (operatePLC.getPlcMX("10.228.141.98", 650, 1, 3))
+            {
+                RB6195.BackColor = Color.GreenYellow;
+
+            }
+            else
+            {
+                RB6195.BackColor = Color.White;
+
+            }
+            if (operatePLC.getPlcMX("10.228.141.98", 543, 1, 3))
+            {
+                RB6200.BackColor = Color.GreenYellow;
+
+            }
+            else
+            {
+                RB6200.BackColor = Color.White;
+
+            }
+            if (operatePLC.getPlcMX("10.228.141.98", 546, 1, 3))
+            {
+                RB6205.BackColor = Color.GreenYellow;
+
+            }
+            else
+            {
+                RB6205.BackColor = Color.White;
+
+            }
+            if (operatePLC.getPlcMX("10.228.141.98", 549, 1, 3))
+            {
+                RB6210.BackColor = Color.GreenYellow;
+
+            }
+            else
+            {
+                RB6210.BackColor = Color.White;
+
+            }
+            if (operatePLC.getPlcMX("10.228.141.98", 552, 1, 3))
+            {
+                RB6215.BackColor = Color.GreenYellow;
+
+            }
+            else
+            {
+                RB6215.BackColor = Color.White;
+
+            }
+            if (operatePLC.getPlcMX("10.228.141.98", 431, 1, 3))
+            {
+                RB6220.BackColor = Color.GreenYellow;
+
+            }
+            else
+            {
+                RB6220.BackColor = Color.White;
+
+            }
+            //if (operatePLC.getPlcMX("10.228.141.98", 428, 1, 3))
+            //{
+            //    RB6225.BackColor = Color.GreenYellow;
+
+            //}
+            //else
+            //{
+            //    RB6225.BackColor = Color.White;
+
+            //}
+            //if (operatePLC.getPlcMX("10.228.141.98", 428, 1, 3))
+            //{
+            //    RB6240.BackColor = Color.GreenYellow;
+
+            //}
+            //else
+            //{
+            //    RB6240.BackColor = Color.White;
+
+            //}
+
+        }
+
+        //获取颜色编组站过来的车身信息
         private void timer2_Tick(object sender, EventArgs e)
         {
             timer2.Interval = 5000;
@@ -477,6 +749,7 @@ namespace bodyColorSeq
         }
 
 
+        //车身前进方向箭头闪烁
         private void timer3_Tick(object sender, EventArgs e)
         {
             timer3.Interval = 1000;

@@ -25,7 +25,7 @@
     <InstallUrl>http://localhost/bodySeq/</InstallUrl>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>26</ApplicationRevision>
+    <ApplicationRevision>27</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -103,6 +103,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="bodyColorSeq_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
@@ -124,6 +125,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Car_Right_Red_72px_1181493_easyicon.net.ico" />
+    <None Include="Resources\skid.PNG" />
+    <None Include="Resources\leftarrow.PNG" />
+    <None Include="Resources\angle.PNG" />
+    <None Include="Resources\arrow1.PNG" />
+    <None Include="Resources\arrow.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
