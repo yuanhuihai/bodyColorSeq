@@ -704,145 +704,218 @@ namespace bodyColorSeq
 
             #region RB4365--- RB4370
             mianzhun = operatePLC.readPlcDbwValue("10.228.141.94", 0, 3, 31, 2);//获取大链车身信息
+
             #endregion
             if (operatePLC.getPlcMX("10.228.141.94", 525, 1, 3))
             {
                 RB4370.BackColor = Color.GreenYellow;
                 thirty = 1;
-                l4370.Text = colorInfo[one + two + three + four + five + six + seven + eight + nine + ten + eleven + twelve + thirteen + fourteen + fifteen + sixteen + seventeen + eighteen + nineteen + twenty + twentyone + twentytwo + mianzhun - 1];
+
+                int allTotal = one + two + three + four + five + six + seven + eight + nine + ten + eleven + twelve + thirteen + fourteen + fifteen + sixteen + seventeen + eighteen + nineteen + twenty + twentyone + twentytwo + mianzhun + thirty;
+                l4370.Text = colorInfo[allTotal- 1];
+                switch (mianzhun)
+                {
+                    case 8:
+                        bigreadyeight.Text = colorInfo[allTotal- 2];
+                        bigreadyseven.Text = colorInfo[allTotal - 3];
+                        bigreadysix.Text = colorInfo[allTotal - 4];
+                        bigreadyfive.Text = colorInfo[allTotal - 5];
+                        bigreadyfour.Text = colorInfo[allTotal - 6];
+                        bigreadythree.Text = colorInfo[allTotal - 7];
+                        bigreadytwo.Text = colorInfo[allTotal - 8];
+                        bigreadyone.Text = colorInfo[allTotal - 9];
+                        break;
+                    case 7:
+                        bigreadyeight.Text = colorInfo[allTotal - 2];
+                        bigreadyseven.Text = colorInfo[allTotal - 3];
+                        bigreadysix.Text = colorInfo[allTotal - 4];
+                        bigreadyfive.Text = colorInfo[allTotal - 5];
+                        bigreadyfour.Text = colorInfo[allTotal - 6];
+                        bigreadythree.Text = colorInfo[allTotal - 7];
+                        bigreadytwo.Text = colorInfo[allTotal - 8];
+                        bigreadyone.Text = "-";
+                        break;
+                    case 6:
+                        bigreadyeight.Text = colorInfo[allTotal - 2];
+                        bigreadyseven.Text = colorInfo[allTotal - 3];
+                        bigreadysix.Text = colorInfo[allTotal - 4];
+                        bigreadyfive.Text = colorInfo[allTotal - 5];
+                        bigreadyfour.Text = colorInfo[allTotal - 6];
+                        bigreadythree.Text = colorInfo[allTotal - 7];
+                        bigreadytwo.Text = "-";
+                        bigreadyone.Text = "-";
+                        break;
+                    case 5:
+                        bigreadyeight.Text = colorInfo[allTotal - 2];
+                        bigreadyseven.Text = colorInfo[allTotal - 3];
+                        bigreadysix.Text = colorInfo[allTotal - 4];
+                        bigreadyfive.Text = colorInfo[allTotal - 5];
+                        bigreadyfour.Text = colorInfo[allTotal - 6];
+                        bigreadythree.Text ="-";
+                        bigreadytwo.Text = "-";
+                        bigreadyone.Text = "-";
+                        break;
+                    case 4:
+                        bigreadyeight.Text = colorInfo[allTotal - 2];
+                        bigreadyseven.Text = colorInfo[allTotal - 3];
+                        bigreadysix.Text = colorInfo[allTotal - 4];
+                        bigreadyfive.Text = colorInfo[allTotal - 5];
+                        bigreadyfour.Text ="-";
+                        bigreadythree.Text = "-";
+                        bigreadytwo.Text = "-";
+                        bigreadyone.Text = "-";
+                        break;
+                    case 3:
+                        bigreadyeight.Text = colorInfo[allTotal - 2];
+                        bigreadyseven.Text = colorInfo[allTotal - 3];
+                        bigreadysix.Text = colorInfo[allTotal - 4];
+                        bigreadyfive.Text = "-";
+                        bigreadyfour.Text = "-";
+                        bigreadythree.Text = "-";
+                        bigreadytwo.Text = "-";
+                        bigreadyone.Text = "-";
+                        break;
+                    case 2:
+                        bigreadyeight.Text = colorInfo[allTotal - 2];
+                        bigreadyseven.Text = colorInfo[allTotal - 3];
+                        bigreadysix.Text = "-";
+                        bigreadyfive.Text = "-";
+                        bigreadyfour.Text = "-";
+                        bigreadythree.Text = "-";
+                        bigreadytwo.Text = "-";
+                        bigreadyone.Text = "-";
+                        break;
+                    case 1:
+                        bigreadyeight.Text = colorInfo[allTotal - 2];
+                        bigreadyseven.Text ="-";
+                        bigreadysix.Text = "-";
+                        bigreadyfive.Text = "-";
+                        bigreadyfour.Text = "-";
+                        bigreadythree.Text = "-";
+                        bigreadytwo.Text = "-";
+                        bigreadyone.Text = "-";
+                        break;
+                    case 0:
+                        bigreadyeight.Text ="-";
+                        bigreadyseven.Text = "-" ;
+                        bigreadysix.Text = "-";
+                        bigreadyfive.Text = "-";
+                        bigreadyfour.Text = "-";
+                        bigreadythree.Text = "-";
+                        bigreadytwo.Text = "-";
+                        bigreadyone.Text = "-";
+                        break;
+
+                }
             }
             else
             {
                 RB4370.BackColor = Color.White;
                 thirty = 0;
                 l4370.Text = "-";
-            }
-
-
-            if (thirty == 1)
-            {
-     
-
+                int allTotal = one + two + three + four + five + six + seven + eight + nine + ten + eleven + twelve + thirteen + fourteen + fifteen + sixteen + seventeen + eighteen + nineteen + twenty + twentyone + twentytwo + mianzhun;
                 switch (mianzhun)
                 {
                     case 8:
-                        bigreadyeight.Text = colorInfo[1];
-                        bigreadyseven.Text = colorInfo[2];
-                        bigreadysix.Text = colorInfo[3];
-                        bigreadyfive.Text = colorInfo[4];
-                        bigreadyfour.Text = colorInfo[5];
-                        bigreadythree.Text = colorInfo[6];
-                        bigreadytwo.Text = colorInfo[7];
-                        bigreadyone.Text = colorInfo[8];
+                        bigreadyeight.Text = colorInfo[allTotal-1];
+                        bigreadyseven.Text = colorInfo[allTotal-2];
+                        bigreadysix.Text = colorInfo[allTotal - 3];
+                        bigreadyfive.Text = colorInfo[allTotal - 4];
+                        bigreadyfour.Text = colorInfo[allTotal - 5];
+                        bigreadythree.Text = colorInfo[allTotal - 6];
+                        bigreadytwo.Text = colorInfo[allTotal - 7];
+                        bigreadyone.Text = colorInfo[allTotal - 8];
                         break;
                     case 7:
-                        bigreadyeight.Text = colorInfo[1];
-                        bigreadyseven.Text = colorInfo[2];
-                        bigreadysix.Text = colorInfo[3];
-                        bigreadyfive.Text = colorInfo[4];
-                        bigreadyfour.Text = colorInfo[5];
-                        bigreadythree.Text = colorInfo[6];
-                        bigreadytwo.Text = colorInfo[7];
+                        bigreadyeight.Text = colorInfo[allTotal - 1];
+                        bigreadyseven.Text = colorInfo[allTotal - 2];
+                        bigreadysix.Text = colorInfo[allTotal - 3];
+                        bigreadyfive.Text = colorInfo[allTotal - 4];
+                        bigreadyfour.Text = colorInfo[allTotal - 5];
+                        bigreadythree.Text = colorInfo[allTotal - 6];
+                        bigreadytwo.Text = colorInfo[allTotal - 7];
+                        bigreadyone.Text = "-";
                         break;
                     case 6:
-                        bigreadyeight.Text = colorInfo[1];
-                        bigreadyseven.Text = colorInfo[2];
-                        bigreadysix.Text = colorInfo[3];
-                        bigreadyfive.Text = colorInfo[4];
-                        bigreadyfour.Text = colorInfo[5];
-                        bigreadythree.Text = colorInfo[6];
+                        bigreadyeight.Text = colorInfo[allTotal - 1];
+                        bigreadyseven.Text = colorInfo[allTotal - 2];
+                        bigreadysix.Text = colorInfo[allTotal - 3];
+                        bigreadyfive.Text = colorInfo[allTotal - 4];
+                        bigreadyfour.Text = colorInfo[allTotal - 5];
+                        bigreadythree.Text = colorInfo[allTotal - 6];
+                        bigreadytwo.Text = "-";
+                        bigreadyone.Text = "-";
+
                         break;
                     case 5:
-                        bigreadyeight.Text = colorInfo[1];
-                        bigreadyseven.Text = colorInfo[2];
-                        bigreadysix.Text = colorInfo[3];
-                        bigreadyfive.Text = colorInfo[4];
-                        bigreadyfour.Text = colorInfo[5];
+                        bigreadyeight.Text = colorInfo[allTotal - 1];
+                        bigreadyseven.Text = colorInfo[allTotal - 2];
+                        bigreadysix.Text = colorInfo[allTotal - 3];
+                        bigreadyfive.Text = colorInfo[allTotal - 4];
+                        bigreadyfour.Text = colorInfo[allTotal - 5];
+                        bigreadythree.Text = "-";
+                        bigreadytwo.Text = "-";
+                        bigreadyone.Text = "-";
+
                         break;
                     case 4:
-                        bigreadyeight.Text = colorInfo[1];
-                        bigreadyseven.Text = colorInfo[2];
-                        bigreadysix.Text = colorInfo[3];
-                        bigreadyfive.Text = colorInfo[4];
+                        bigreadyeight.Text = colorInfo[allTotal - 1];
+                        bigreadyseven.Text = colorInfo[allTotal - 2];
+                        bigreadysix.Text = colorInfo[allTotal - 3];
+                        bigreadyfive.Text = colorInfo[allTotal - 4];
+                        bigreadyfour.Text = "-";
+                        bigreadythree.Text = "-";
+                        bigreadytwo.Text = "-";
+                        bigreadyone.Text = "-";
+
                         break;
                     case 3:
-                        bigreadyeight.Text = colorInfo[1];
-                        bigreadyseven.Text = colorInfo[2];
-                        bigreadysix.Text = colorInfo[3];
+                        bigreadyeight.Text = colorInfo[allTotal - 1];
+                        bigreadyseven.Text = colorInfo[allTotal - 2];
+                        bigreadysix.Text = colorInfo[allTotal - 3];
+                        bigreadyfive.Text = "-";
+                        bigreadyfour.Text = "-";
+                        bigreadythree.Text = "-";
+                        bigreadytwo.Text = "-";
+                        bigreadyone.Text = "-";
                         break;
                     case 2:
-                        bigreadyeight.Text = colorInfo[1];
-                        bigreadyseven.Text = colorInfo[2];
+                        bigreadyeight.Text = colorInfo[allTotal - 1];
+                        bigreadyseven.Text = colorInfo[allTotal - 2];
+                        bigreadysix.Text = "-";
+                        bigreadyfive.Text = "-";
+                        bigreadyfour.Text = "-";
+                        bigreadythree.Text = "-";
+                        bigreadytwo.Text = "-";
+                        bigreadyone.Text = "-";
                         break;
                     case 1:
-                        bigreadyeight.Text = colorInfo[1];
+                        bigreadyeight.Text = colorInfo[allTotal - 1];
+                        bigreadyseven.Text = "-";
+                        bigreadysix.Text = "-";
+                        bigreadyfive.Text = "-";
+                        bigreadyfour.Text = "-";
+                        bigreadythree.Text = "-";
+                        bigreadytwo.Text = "-";
+                        bigreadyone.Text = "-";
+
+                        break;
+                    case 0:
+                        bigreadyeight.Text = "-";
+                        bigreadyseven.Text = "-";
+                        bigreadysix.Text = "-";
+                        bigreadyfive.Text = "-";
+                        bigreadyfour.Text = "-";
+                        bigreadythree.Text = "-";
+                        bigreadytwo.Text = "-";
+                        bigreadyone.Text = "-";
                         break;
 
                 }
             }
-            else
-            {
-              
-                switch (mianzhun)
-                {
-                    case 8:
-                        bigreadyeight.Text = colorInfo[0];
-                        bigreadyseven.Text = colorInfo[1];
-                        bigreadysix.Text = colorInfo[2];
-                        bigreadyfive.Text = colorInfo[3];
-                        bigreadyfour.Text = colorInfo[4];
-                        bigreadythree.Text = colorInfo[5];
-                        bigreadytwo.Text = colorInfo[6];
-                        bigreadyone.Text = colorInfo[7];
-                        break;
-                    case 7:
-                        bigreadyeight.Text = colorInfo[0];
-                        bigreadyseven.Text = colorInfo[1];
-                        bigreadysix.Text = colorInfo[2];
-                        bigreadyfive.Text = colorInfo[3];
-                        bigreadyfour.Text = colorInfo[4];
-                        bigreadythree.Text = colorInfo[5];
-                        bigreadytwo.Text = colorInfo[6];
-                        break;
-                    case 6:
-                        bigreadyeight.Text = colorInfo[0];
-                        bigreadyseven.Text = colorInfo[1];
-                        bigreadysix.Text = colorInfo[2];
-                        bigreadyfive.Text = colorInfo[3];
-                        bigreadyfour.Text = colorInfo[4];
-                        bigreadythree.Text = colorInfo[5];
-           
-                        break;
-                    case 5:
-                        bigreadyeight.Text = colorInfo[0];
-                        bigreadyseven.Text = colorInfo[1];
-                        bigreadysix.Text = colorInfo[2];
-                        bigreadyfive.Text = colorInfo[3];
-                        bigreadyfour.Text = colorInfo[4];
-      
-                        break;
-                    case 4:
-                        bigreadyeight.Text = colorInfo[0];
-                        bigreadyseven.Text = colorInfo[1];
-                        bigreadysix.Text = colorInfo[2];
-                        bigreadyfive.Text = colorInfo[3];
-           
-                        break;
-                    case 3:
-                        bigreadyeight.Text = colorInfo[0];
-                        bigreadyseven.Text = colorInfo[1];
-                        bigreadysix.Text = colorInfo[2];
-                        break;
-                    case 2:
-                        bigreadyeight.Text = colorInfo[0];
-                        bigreadyseven.Text = colorInfo[1];
-                        break;
-                    case 1:
-                        bigreadyeight.Text = colorInfo[0];
-                        break;
 
-                }
-            }
+
+    
         
            
 
@@ -888,27 +961,17 @@ namespace bodyColorSeq
 
             if (signalIn % 2 == 0)
             {
-                btn_areaone.BackColor = Color.Red;
-                btn_areatwo.BackColor = Color.Red;
-                btn_areathree.BackColor = Color.Red;
-                btn_lineonein.BackColor = Color.Red;
-                btn_linetwoin.BackColor = Color.Red;
-                btn_linethreein.BackColor = Color.Red;
-                btn_lineoneout.BackColor = Color.Red;
-                btn_linetwoout.BackColor = Color.Red;
-                btn_linethreeout.BackColor = Color.Red;
+                btn_areaone.BackColor = Color.Gainsboro;
+                btn_areatwo.BackColor = Color.Gainsboro;
+                btn_areathree.BackColor = Color.Gainsboro;
+       
             }
             else
             {
                 btn_areaone.BackColor = Color.White;
                 btn_areatwo.BackColor = Color.White;
                 btn_areathree.BackColor = Color.White;
-                btn_lineonein.BackColor = Color.White;
-                btn_linetwoin.BackColor = Color.White;
-                btn_linethreein.BackColor = Color.White;
-                btn_lineoneout.BackColor = Color.White;
-                btn_linetwoout.BackColor = Color.White;
-                btn_linethreeout.BackColor = Color.White;
+    
             }
 
        }
