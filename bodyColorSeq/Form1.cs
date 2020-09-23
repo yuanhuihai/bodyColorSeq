@@ -140,6 +140,17 @@ namespace bodyColorSeq
 
         }
         #endregion
+
+
+
+        #region
+
+        private void ccrate_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://10.228.141.253:9080/sc/website/ccrate/index.html");
+        }
+
+        #endregion
         //获取返修区域车身信息
         private void timer1_Tick(object sender, EventArgs e)
         {

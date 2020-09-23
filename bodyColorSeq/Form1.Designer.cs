@@ -188,13 +188,8 @@
             this.button15 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.carToTCone = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.colorBooth = new System.Windows.Forms.TextBox();
-            this.colorGroup = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.ccrate = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -203,7 +198,7 @@
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox7.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // RB3725
@@ -810,7 +805,7 @@
             this.groupBox2.Controls.Add(this.btn_areaone);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Location = new System.Drawing.Point(178, 12);
+            this.groupBox2.Location = new System.Drawing.Point(182, 12);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(489, 161);
             this.groupBox2.TabIndex = 79;
@@ -1770,88 +1765,39 @@
             this.carToTCone.UseVisualStyleBackColor = true;
             this.carToTCone.Click += new System.EventHandler(this.carToTCone_Click);
             // 
-            // groupBox1
+            // menuStrip1
             // 
-            this.groupBox1.Controls.Add(this.label23);
-            this.groupBox1.Controls.Add(this.label22);
-            this.groupBox1.Controls.Add(this.colorBooth);
-            this.groupBox1.Controls.Add(this.colorGroup);
-            this.groupBox1.Controls.Add(this.label21);
-            this.groupBox1.Controls.Add(this.label20);
-            this.groupBox1.Location = new System.Drawing.Point(698, 18);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 100);
-            this.groupBox1.TabIndex = 109;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "今日换色率";
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ccrate});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1359, 24);
+            this.menuStrip1.TabIndex = 110;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // label23
+            // ccrate
             // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(161, 65);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(36, 13);
-            this.label23.TabIndex = 92;
-            this.label23.Text = "台/次";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(161, 30);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(36, 13);
-            this.label22.TabIndex = 89;
-            this.label22.Text = "台/次";
-            // 
-            // colorBooth
-            // 
-            this.colorBooth.Location = new System.Drawing.Point(103, 62);
-            this.colorBooth.Name = "colorBooth";
-            this.colorBooth.Size = new System.Drawing.Size(53, 20);
-            this.colorBooth.TabIndex = 91;
-            this.colorBooth.Text = "15";
-            // 
-            // colorGroup
-            // 
-            this.colorGroup.Location = new System.Drawing.Point(103, 28);
-            this.colorGroup.Name = "colorGroup";
-            this.colorGroup.Size = new System.Drawing.Size(52, 20);
-            this.colorGroup.TabIndex = 89;
-            this.colorGroup.Text = "27.625";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(6, 64);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(91, 13);
-            this.label21.TabIndex = 90;
-            this.label21.Text = "面漆一线喷漆室";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(6, 30);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(91, 13);
-            this.label20.TabIndex = 89;
-            this.label20.Text = "颜色编组站一区";
+            this.ccrate.Name = "ccrate";
+            this.ccrate.Size = new System.Drawing.Size(58, 20);
+            this.ccrate.Text = "换色率";
+            this.ccrate.Click += new System.EventHandler(this.ccrate_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1359, 698);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.carToTCone);
             this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox6);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "面准一线进车信息";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
@@ -1871,8 +1817,8 @@
             this.groupBox6.PerformLayout();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2038,13 +1984,8 @@
         private System.Windows.Forms.Button sprayBooth;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox colorBooth;
-        private System.Windows.Forms.TextBox colorGroup;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem ccrate;
     }
 }
 
