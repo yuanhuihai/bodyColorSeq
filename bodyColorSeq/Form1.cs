@@ -1041,7 +1041,7 @@ namespace bodyColorSeq
            
                 j++;
             }
-            conn.Close();
+            //conn.Close();
 
 
       
@@ -1054,7 +1054,7 @@ namespace bodyColorSeq
                 string sqlsearch = "select * from TCONEBODYINFO where FIS='" + repairFisInfo[k] + "'";
 
                 OracleCommand commm = new OracleCommand(sqlsearch, conn);
-                conn.Open();
+                //conn.Open();
                 OracleDataReader readd = commm.ExecuteReader();
                 while (readd.Read())
                 {
@@ -1062,29 +1062,21 @@ namespace bodyColorSeq
                  
                     operateDatabase.OrcGetCom(sqldel);
                 }
-                conn.Close();
+                //conn.Close();
 
 
             }
 
             //获取该车身的更多信息
-            listMoreInfo.Items.Clear();
+    
 
 
             for (int l = 0; l < repairSkidInfo.Length; l++)
             {
-
-
-
-
-
-
                 string sqlmore = "select * from XIUSHIONEREPAIRBODYINFO where FIS='" + repairFisInfo[l] + "'and rownum='1' order by XUHAO asc ";
 
-
-
                 OracleCommand commmm = new OracleCommand(sqlmore, conn);
-                conn.Open();
+                //conn.Open();
                 OracleDataReader readdd = commmm.ExecuteReader();
                 while (readdd.Read())
                 {
@@ -1097,33 +1089,28 @@ namespace bodyColorSeq
 
          
                 }
-                conn.Close();
+                //conn.Close();
 
 
 
             }
 
+            conn.Close();
+
+            listMoreInfo.Items.Clear();
+            listTimeInfo.Items.Clear();
 
             for(int m = 0; m < repairCarNum; m++)
             {
                 listMoreInfo.Items.Add("FIS号码"+repairFisInfo[m] +"--"+"滑橇"+repairSkidInfo[m]+"颜色"+repairColorInfo[m]+"时间"+ repairShijianInfo[m]);
                 listTimeInfo.Items.Add("滞留时间" + repairTime[m]);
             }
-
-
-
-
-
-
-
-
-
-
-    
+   
 
             }
 
 
+        //计算滞留时间
         public int stayTime(string inTime)
         {
 
