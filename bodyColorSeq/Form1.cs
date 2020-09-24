@@ -36,7 +36,8 @@ namespace bodyColorSeq
 
         public int total,one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty;
 
-     
+
+
         public string[] colorInfo=new string[41];
         public string[] fisInfo = new string[41];
         public string[] skidInfo = new string[41];
@@ -49,7 +50,8 @@ namespace bodyColorSeq
         public int totalbeformianzhun = 0;
         public string mianzhunbody;
 
-    
+
+
 
 
 
@@ -59,6 +61,8 @@ namespace bodyColorSeq
             timer1.Start();
             timer2.Start();
             timer3.Start();
+
+            timer4.Start();//计算滞留车
     
             toolStripStatusLabel2.Text = "程序版本 V 1.0.0.37";
             toolStripStatusLabel2.Alignment = ToolStripItemAlignment.Right;
@@ -139,16 +143,25 @@ namespace bodyColorSeq
             frm.Show();
 
         }
+
+        private void repairMenuItem_Click(object sender, EventArgs e)
+        {
+            repair frmRepair = new repair();
+            frmRepair.Show();
+        }
+
+        private void ccrate_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("http://10.228.141.253:9080/sc/website/ccrate/index.html");
+        }
+
         #endregion
 
 
 
         #region
 
-        private void ccrate_Click(object sender, EventArgs e)
-        {
-            System.Diagnostics.Process.Start("http://10.228.141.253:9080/sc/website/ccrate/index.html");
-        }
+
 
         #endregion
         //获取返修区域车身信息
@@ -975,6 +988,7 @@ namespace bodyColorSeq
                 btn_areaone.BackColor = Color.Gainsboro;
                 btn_areatwo.BackColor = Color.Gainsboro;
                 btn_areathree.BackColor = Color.Gainsboro;
+                carToTCone.BackColor = Color.LightGreen;
        
             }
             else
@@ -982,14 +996,159 @@ namespace bodyColorSeq
                 btn_areaone.BackColor = Color.White;
                 btn_areatwo.BackColor = Color.White;
                 btn_areathree.BackColor = Color.White;
+                carToTCone.BackColor = Color.Wheat;
     
             }
 
        }
 
+
+
+        #region  计算滞留车
+
+
+        private void timer4_Tick(object sender, EventArgs e)
+        {
+            timer4.Interval = 60000;
+
+
+            //获取滞留车数量
+            string sql = "select distinct FIS from XIUSHIONEREPAIRBODYINFO";
+            int repairCarNum = operateDatabase.OrcGetNums(sql);
+
+                    //定义反修车信息
+             string[] repairColorInfo = new string[repairCarNum];
+             string[] repairFisInfo = new string[repairCarNum];
+             string[] repairSkidInfo = new string[repairCarNum];
+             string[] repairBodyInfo = new string[repairCarNum];
+            string[] repairRqiInfo = new string[repairCarNum];
+            string[] repairShijianInfo = new string[repairCarNum];
+
+            int[] repairTime = new int[repairCarNum];
+
+
+            //获取滞留车明细
+            int j = 0;
+
+            OracleConnection conn = new OracleConnection("Data Source=10.228.141.253/ORCL;User Id=WEBKF;Password=WEBKF");
+            OracleCommand comm = new OracleCommand(sql, conn);
+            conn.Open();
+            OracleDataReader read = comm.ExecuteReader();
+            while (read.Read())
+            {
+         
+                repairFisInfo[j] = read["FIS"].ToString();
+           
+                j++;
+            }
+            conn.Close();
+
+
+      
+
+            //判断车身信息是否去了大线，如果去了大线，则记录在返修的表格中的信息删除
+            for (int k = 0; k < repairSkidInfo.Length; k++)
+            {
+
+
+                string sqlsearch = "select * from TCONEBODYINFO where FIS='" + repairFisInfo[k] + "'";
+
+                OracleCommand commm = new OracleCommand(sqlsearch, conn);
+                conn.Open();
+                OracleDataReader readd = commm.ExecuteReader();
+                while (readd.Read())
+                {
+                    string sqldel = "delete from XIUSHIONEREPAIRBODYINFO where FIS= '" + repairFisInfo[k] + "'";
+                 
+                    operateDatabase.OrcGetCom(sqldel);
+                }
+                conn.Close();
+
+
+            }
+
+            //获取该车身的更多信息
+            listMoreInfo.Items.Clear();
+
+
+            for (int l = 0; l < repairSkidInfo.Length; l++)
+            {
+
+
+
+
+
+
+                string sqlmore = "select * from XIUSHIONEREPAIRBODYINFO where FIS='" + repairFisInfo[l] + "'and rownum='1' order by XUHAO asc ";
+
+
+
+                OracleCommand commmm = new OracleCommand(sqlmore, conn);
+                conn.Open();
+                OracleDataReader readdd = commmm.ExecuteReader();
+                while (readdd.Read())
+                {
+                    repairFisInfo[l] = readdd["FIS"].ToString();
+                    repairBodyInfo[l] = readdd["TYPE"].ToString();
+                    repairColorInfo[l] = readdd["COLOR"].ToString();
+                    repairSkidInfo[l] = readdd["SKID"].ToString();               
+                    repairShijianInfo[l] = readdd["SHIJIAN"].ToString();
+                    repairTime[l] = stayTime(repairShijianInfo[l]);
+
+         
+                }
+                conn.Close();
+
+
+
+            }
+
+
+            for(int m = 0; m < repairCarNum; m++)
+            {
+                listMoreInfo.Items.Add("FIS号码"+repairFisInfo[m] +"--"+"滑橇"+repairSkidInfo[m]+"颜色"+repairColorInfo[m]+"时间"+ repairShijianInfo[m]);
+                listTimeInfo.Items.Add("滞留时间" + repairTime[m]);
+            }
+
+
+
+
+
+
+
+
+
+
     
 
+            }
 
+
+        public int stayTime(string inTime)
+        {
+
+            //数据库读出来时间分解
+
+            string kuhour = inTime.Substring(0, 2);
+            string kumin = inTime.Substring(3, 2);
+      
+
+
+
+            int kulong = Convert.ToInt16(kuhour) * 60 + Convert.ToInt16(kumin);
+
+            //当前时间获取
+
+            int currlong = Convert.ToInt16(DateTime.Now.Hour.ToString()) * 60 + Convert.ToInt16(DateTime.Now.Minute.ToString());
+
+
+            int  stayMin= currlong - kulong;
+
+            return stayMin;
+
+        }
+
+        #endregion
 
 
 

@@ -190,6 +190,13 @@
             this.carToTCone = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.ccrate = new System.Windows.Forms.ToolStripMenuItem();
+            this.repairMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.timer4 = new System.Windows.Forms.Timer(this.components);
+            this.listMoreInfo = new System.Windows.Forms.ListBox();
+            this.listTimeInfo = new System.Windows.Forms.ListBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
             this.contextMenuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -199,6 +206,7 @@
             this.groupBox6.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // RB3725
@@ -426,7 +434,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(368, 16);
+            this.label5.Location = new System.Drawing.Point(18, 104);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(55, 13);
             this.label5.TabIndex = 33;
@@ -435,7 +443,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(459, 16);
+            this.label7.Location = new System.Drawing.Point(109, 104);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(19, 13);
             this.label7.TabIndex = 34;
@@ -443,7 +451,7 @@
             // 
             // bodyNum
             // 
-            this.bodyNum.Location = new System.Drawing.Point(429, 14);
+            this.bodyNum.Location = new System.Drawing.Point(79, 102);
             this.bodyNum.Name = "bodyNum";
             this.bodyNum.Size = new System.Drawing.Size(22, 20);
             this.bodyNum.TabIndex = 35;
@@ -723,7 +731,7 @@
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.toolStripStatusLabel2});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 676);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 611);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(1359, 22);
             this.statusStrip1.TabIndex = 68;
@@ -805,9 +813,9 @@
             this.groupBox2.Controls.Add(this.btn_areaone);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Location = new System.Drawing.Point(182, 12);
+            this.groupBox2.Location = new System.Drawing.Point(251, 34);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(489, 161);
+            this.groupBox2.Size = new System.Drawing.Size(489, 133);
             this.groupBox2.TabIndex = 79;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "车身流方向";
@@ -815,7 +823,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(304, 141);
+            this.label18.Location = new System.Drawing.Point(300, 109);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(55, 13);
             this.label18.TabIndex = 88;
@@ -825,7 +833,7 @@
             // 
             this.button17.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button17.BackgroundImage")));
             this.button17.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button17.Location = new System.Drawing.Point(293, 101);
+            this.button17.Location = new System.Drawing.Point(293, 77);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(69, 27);
             this.button17.TabIndex = 87;
@@ -834,7 +842,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(304, 43);
+            this.label6.Location = new System.Drawing.Point(304, 19);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(40, 13);
             this.label6.TabIndex = 86;
@@ -843,7 +851,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(226, 43);
+            this.label4.Location = new System.Drawing.Point(226, 19);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(40, 13);
             this.label4.TabIndex = 85;
@@ -852,7 +860,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(140, 41);
+            this.label3.Location = new System.Drawing.Point(140, 17);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(40, 13);
             this.label3.TabIndex = 84;
@@ -861,7 +869,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(378, 70);
+            this.label2.Location = new System.Drawing.Point(378, 44);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 13);
             this.label2.TabIndex = 83;
@@ -871,7 +879,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(32, 70);
+            this.label1.Location = new System.Drawing.Point(32, 46);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(91, 13);
             this.label1.TabIndex = 80;
@@ -881,7 +889,7 @@
             // 
             this.btn_areathree.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_areathree.BackgroundImage")));
             this.btn_areathree.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_areathree.Location = new System.Drawing.Point(293, 63);
+            this.btn_areathree.Location = new System.Drawing.Point(293, 39);
             this.btn_areathree.Name = "btn_areathree";
             this.btn_areathree.Size = new System.Drawing.Size(69, 27);
             this.btn_areathree.TabIndex = 82;
@@ -891,7 +899,7 @@
             // 
             this.btn_areatwo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_areatwo.BackgroundImage")));
             this.btn_areatwo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_areatwo.Location = new System.Drawing.Point(212, 63);
+            this.btn_areatwo.Location = new System.Drawing.Point(212, 39);
             this.btn_areatwo.Name = "btn_areatwo";
             this.btn_areatwo.Size = new System.Drawing.Size(69, 27);
             this.btn_areatwo.TabIndex = 81;
@@ -901,7 +909,8 @@
             // 
             this.btn_areaone.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_areaone.BackgroundImage")));
             this.btn_areaone.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btn_areaone.Location = new System.Drawing.Point(124, 63);
+            this.btn_areaone.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_areaone.Location = new System.Drawing.Point(124, 39);
             this.btn_areaone.Name = "btn_areaone";
             this.btn_areaone.Size = new System.Drawing.Size(69, 27);
             this.btn_areaone.TabIndex = 80;
@@ -1013,6 +1022,7 @@
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.label27);
+            this.groupBox5.Controls.Add(this.carToTCone);
             this.groupBox5.Controls.Add(this.bigreadyone);
             this.groupBox5.Controls.Add(this.bigreadytwo);
             this.groupBox5.Controls.Add(this.bigreadythree);
@@ -1757,18 +1767,19 @@
             // 
             // carToTCone
             // 
-            this.carToTCone.Location = new System.Drawing.Point(1203, 18);
+            this.carToTCone.Location = new System.Drawing.Point(752, 80);
             this.carToTCone.Name = "carToTCone";
-            this.carToTCone.Size = new System.Drawing.Size(131, 23);
+            this.carToTCone.Size = new System.Drawing.Size(66, 23);
             this.carToTCone.TabIndex = 108;
-            this.carToTCone.Text = "去往面漆-1车身明细";
+            this.carToTCone.Text = "车身明细";
             this.carToTCone.UseVisualStyleBackColor = true;
             this.carToTCone.Click += new System.EventHandler(this.carToTCone_Click);
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ccrate});
+            this.ccrate,
+            this.repairMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1359, 24);
@@ -1782,12 +1793,70 @@
             this.ccrate.Text = "换色率";
             this.ccrate.Click += new System.EventHandler(this.ccrate_Click);
             // 
+            // repairMenuItem
+            // 
+            this.repairMenuItem.Name = "repairMenuItem";
+            this.repairMenuItem.Size = new System.Drawing.Size(84, 20);
+            this.repairMenuItem.Text = "返修滞留车";
+            this.repairMenuItem.Click += new System.EventHandler(this.repairMenuItem_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label21);
+            this.groupBox1.Controls.Add(this.label20);
+            this.groupBox1.Controls.Add(this.listTimeInfo);
+            this.groupBox1.Controls.Add(this.listMoreInfo);
+            this.groupBox1.Location = new System.Drawing.Point(927, 38);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(420, 268);
+            this.groupBox1.TabIndex = 111;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "滞留车信息";
+            // 
+            // timer4
+            // 
+            this.timer4.Tick += new System.EventHandler(this.timer4_Tick);
+            // 
+            // listMoreInfo
+            // 
+            this.listMoreInfo.FormattingEnabled = true;
+            this.listMoreInfo.Location = new System.Drawing.Point(11, 48);
+            this.listMoreInfo.Name = "listMoreInfo";
+            this.listMoreInfo.Size = new System.Drawing.Size(285, 212);
+            this.listMoreInfo.TabIndex = 1;
+            // 
+            // listTimeInfo
+            // 
+            this.listTimeInfo.FormattingEnabled = true;
+            this.listTimeInfo.Location = new System.Drawing.Point(302, 48);
+            this.listTimeInfo.Name = "listTimeInfo";
+            this.listTimeInfo.Size = new System.Drawing.Size(112, 212);
+            this.listTimeInfo.TabIndex = 2;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(8, 25);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(55, 13);
+            this.label20.TabIndex = 89;
+            this.label20.Text = "车身信息";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(315, 25);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(103, 13);
+            this.label21.TabIndex = 90;
+            this.label21.Text = "滞留时间（分钟）";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1359, 698);
-            this.Controls.Add(this.carToTCone);
+            this.ClientSize = new System.Drawing.Size(1359, 633);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -1819,6 +1888,8 @@
             this.groupBox7.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1986,6 +2057,13 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem ccrate;
+        private System.Windows.Forms.ToolStripMenuItem repairMenuItem;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Timer timer4;
+        private System.Windows.Forms.ListBox listTimeInfo;
+        private System.Windows.Forms.ListBox listMoreInfo;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label label20;
     }
 }
 

@@ -56,5 +56,25 @@ namespace oracleDatabase
             return orcread;
 
         }
+
+
+        //获取数据库中条数
+        public int OrcGetNums(string M_str_sqlstr)
+        {
+            OracleConnection orccon = this.OrcGetCon();
+            orccon.Open();
+            OracleCommand orccom = new OracleCommand(M_str_sqlstr, orccon);
+            OracleDataReader orcread = orccom.ExecuteReader();
+
+            int i = 0;
+
+            while(orcread.Read())
+            {
+                i++;
+            }
+
+            return i;
+
+        }
     }
 }
