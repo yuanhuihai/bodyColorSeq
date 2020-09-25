@@ -15,22 +15,26 @@ namespace oracleDatabase
         //连接Oracle数据库的方法by ethan  20180916
 
         //连接数据库
-        public OracleConnection OrcGetCon()
+      
+        OracleConnection conn = new OracleConnection("Data Source=10.228.141.253/ORCL;User Id=WEBKF;Password=WEBKF");
+        
+        public void connOpen()
         {
-            string M_str_sqlcon = "Data Source=10.228.141.253/ORCL;User Id=WEBKF;Password=WEBKF";//定义数据库连接字符串   
-            OracleConnection myCon = new OracleConnection(M_str_sqlcon);
-            return myCon;
+            conn.Open();
         }
-
-
+        
+        public void connClose()
+        {
+            conn.Close();
+        }
         //连接OracleConnection,执行SQL
         public void OrcGetCom(string M_str_sqlstr)
         {
-            OracleConnection orccon = this.OrcGetCon();
-            orccon.Open();
-            OracleCommand orccom = new OracleCommand(M_str_sqlstr, orccon);
+
+
+            OracleCommand orccom = new OracleCommand(M_str_sqlstr, conn);
             orccom.ExecuteNonQuery();
-            orccon.Close();
+      
 
         }
 
@@ -38,8 +42,8 @@ namespace oracleDatabase
         //创建DataSet对象
         public DataSet OrcGetDs(string M_str_sqlstr, string M_str_table)
         {
-            OracleConnection orccon = this.OrcGetCon();
-            OracleDataAdapter orcda = new OracleDataAdapter(M_str_sqlstr, orccon);
+            
+            OracleDataAdapter orcda = new OracleDataAdapter(M_str_sqlstr, conn);
             DataSet myds = new DataSet();
             orcda.Fill(myds, M_str_table);
             return myds;
@@ -49,21 +53,19 @@ namespace oracleDatabase
         //创建OracleDataReader对象
         public OracleDataReader OrcGetRead(string M_str_sqlstr)
         {
-            OracleConnection orccon = this.OrcGetCon();
-            orccon.Open();
-            OracleCommand orccom = new OracleCommand(M_str_sqlstr, orccon);
+          
+            OracleCommand orccom = new OracleCommand(M_str_sqlstr, conn);
             OracleDataReader orcread = orccom.ExecuteReader();
             return orcread;
-
+       
         }
 
 
         //获取数据库中条数
         public int OrcGetNums(string M_str_sqlstr)
         {
-            OracleConnection orccon = this.OrcGetCon();
-            orccon.Open();
-            OracleCommand orccom = new OracleCommand(M_str_sqlstr, orccon);
+           
+            OracleCommand orccom = new OracleCommand(M_str_sqlstr, conn);
             OracleDataReader orcread = orccom.ExecuteReader();
 
             int i = 0;
@@ -72,7 +74,7 @@ namespace oracleDatabase
             {
                 i++;
             }
-
+      
             return i;
 
         }

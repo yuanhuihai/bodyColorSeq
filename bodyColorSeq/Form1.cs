@@ -51,11 +51,6 @@ namespace bodyColorSeq
         public string mianzhunbody;
 
 
-
-
-
-
-
         private void Form1_Load(object sender, EventArgs e)
         {
             timer1.Start();
@@ -66,13 +61,15 @@ namespace bodyColorSeq
     
             toolStripStatusLabel2.Text = "程序版本 V 1.0.0.37";
             toolStripStatusLabel2.Alignment = ToolStripItemAlignment.Right;
+         
             bigReadyLine.BackColor = Color.HotPink;
             sprayBooth.BackColor = Color.Green;
             stellRepair.BackColor = Color.Goldenrod;
             coatRepair.BackColor = Color.Honeydew;
-            
-            
-    
+
+            //数据库连接打开
+            operateDatabase.connOpen();
+
         }
 
         #region 程序后台运行
@@ -1000,6 +997,8 @@ namespace bodyColorSeq
     
             }
 
+           
+
        }
 
 
@@ -1030,10 +1029,9 @@ namespace bodyColorSeq
             //获取滞留车明细
             int j = 0;
 
-            OracleConnection conn = new OracleConnection("Data Source=10.228.141.253/ORCL;User Id=WEBKF;Password=WEBKF");
-            OracleCommand comm = new OracleCommand(sql, conn);
-            conn.Open();
-            OracleDataReader read = comm.ExecuteReader();
+           
+            OracleDataReader read =operateDatabase.OrcGetRead(sql);
+  
             while (read.Read())
             {
          
@@ -1041,7 +1039,8 @@ namespace bodyColorSeq
            
                 j++;
             }
-            //conn.Close();
+
+       
 
 
       
@@ -1052,17 +1051,16 @@ namespace bodyColorSeq
 
 
                 string sqlsearch = "select * from TCONEBODYINFO where FIS='" + repairFisInfo[k] + "'";
+            
 
-                OracleCommand commm = new OracleCommand(sqlsearch, conn);
-                //conn.Open();
-                OracleDataReader readd = commm.ExecuteReader();
+                OracleDataReader readd = operateDatabase.OrcGetRead(sqlsearch); 
                 while (readd.Read())
                 {
                     string sqldel = "delete from XIUSHIONEREPAIRBODYINFO where FIS= '" + repairFisInfo[k] + "'";
                  
                     operateDatabase.OrcGetCom(sqldel);
                 }
-                //conn.Close();
+           
 
 
             }
@@ -1075,9 +1073,7 @@ namespace bodyColorSeq
             {
                 string sqlmore = "select * from XIUSHIONEREPAIRBODYINFO where FIS='" + repairFisInfo[l] + "'and rownum='1' order by XUHAO asc ";
 
-                OracleCommand commmm = new OracleCommand(sqlmore, conn);
-                //conn.Open();
-                OracleDataReader readdd = commmm.ExecuteReader();
+                OracleDataReader readdd = operateDatabase.OrcGetRead(sqlmore);
                 while (readdd.Read())
                 {
                     repairFisInfo[l] = readdd["FIS"].ToString();
@@ -1089,13 +1085,11 @@ namespace bodyColorSeq
 
          
                 }
-                //conn.Close();
-
-
+           
 
             }
 
-            conn.Close();
+          
 
             listMoreInfo.Items.Clear();
             listTimeInfo.Items.Clear();

@@ -117,6 +117,7 @@
             this.btn_linetwoin = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label27 = new System.Windows.Forms.Label();
+            this.carToTCone = new System.Windows.Forms.Button();
             this.bigreadyone = new System.Windows.Forms.Label();
             this.bigreadytwo = new System.Windows.Forms.Label();
             this.bigreadythree = new System.Windows.Forms.Label();
@@ -187,16 +188,15 @@
             this.button11 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.carToTCone = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.ccrate = new System.Windows.Forms.ToolStripMenuItem();
             this.repairMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.timer4 = new System.Windows.Forms.Timer(this.components);
-            this.listMoreInfo = new System.Windows.Forms.ListBox();
-            this.listTimeInfo = new System.Windows.Forms.ListBox();
-            this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.listTimeInfo = new System.Windows.Forms.ListBox();
+            this.listMoreInfo = new System.Windows.Forms.ListBox();
+            this.timer4 = new System.Windows.Forms.Timer(this.components);
             this.contextMenuStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -1064,6 +1064,16 @@
             this.label27.TabIndex = 88;
             this.label27.Text = "面准大线";
             // 
+            // carToTCone
+            // 
+            this.carToTCone.Location = new System.Drawing.Point(752, 80);
+            this.carToTCone.Name = "carToTCone";
+            this.carToTCone.Size = new System.Drawing.Size(66, 23);
+            this.carToTCone.TabIndex = 108;
+            this.carToTCone.Text = "车身明细";
+            this.carToTCone.UseVisualStyleBackColor = true;
+            this.carToTCone.Click += new System.EventHandler(this.carToTCone_Click);
+            // 
             // bigreadyone
             // 
             this.bigreadyone.AutoSize = true;
@@ -1765,16 +1775,6 @@
             this.button6.TabIndex = 93;
             this.button6.UseVisualStyleBackColor = true;
             // 
-            // carToTCone
-            // 
-            this.carToTCone.Location = new System.Drawing.Point(752, 80);
-            this.carToTCone.Name = "carToTCone";
-            this.carToTCone.Size = new System.Drawing.Size(66, 23);
-            this.carToTCone.TabIndex = 108;
-            this.carToTCone.Text = "车身明细";
-            this.carToTCone.UseVisualStyleBackColor = true;
-            this.carToTCone.Click += new System.EventHandler(this.carToTCone_Click);
-            // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -1813,25 +1813,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "滞留车信息";
             // 
-            // timer4
+            // label21
             // 
-            this.timer4.Tick += new System.EventHandler(this.timer4_Tick);
-            // 
-            // listMoreInfo
-            // 
-            this.listMoreInfo.FormattingEnabled = true;
-            this.listMoreInfo.Location = new System.Drawing.Point(11, 48);
-            this.listMoreInfo.Name = "listMoreInfo";
-            this.listMoreInfo.Size = new System.Drawing.Size(285, 212);
-            this.listMoreInfo.TabIndex = 1;
-            // 
-            // listTimeInfo
-            // 
-            this.listTimeInfo.FormattingEnabled = true;
-            this.listTimeInfo.Location = new System.Drawing.Point(302, 48);
-            this.listTimeInfo.Name = "listTimeInfo";
-            this.listTimeInfo.Size = new System.Drawing.Size(112, 212);
-            this.listTimeInfo.TabIndex = 2;
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(315, 25);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(103, 13);
+            this.label21.TabIndex = 90;
+            this.label21.Text = "滞留时间（分钟）";
             // 
             // label20
             // 
@@ -1842,14 +1831,25 @@
             this.label20.TabIndex = 89;
             this.label20.Text = "车身信息";
             // 
-            // label21
+            // listTimeInfo
             // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(315, 25);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(103, 13);
-            this.label21.TabIndex = 90;
-            this.label21.Text = "滞留时间（分钟）";
+            this.listTimeInfo.FormattingEnabled = true;
+            this.listTimeInfo.Location = new System.Drawing.Point(302, 48);
+            this.listTimeInfo.Name = "listTimeInfo";
+            this.listTimeInfo.Size = new System.Drawing.Size(112, 212);
+            this.listTimeInfo.TabIndex = 2;
+            // 
+            // listMoreInfo
+            // 
+            this.listMoreInfo.FormattingEnabled = true;
+            this.listMoreInfo.Location = new System.Drawing.Point(11, 48);
+            this.listMoreInfo.Name = "listMoreInfo";
+            this.listMoreInfo.Size = new System.Drawing.Size(285, 212);
+            this.listMoreInfo.TabIndex = 1;
+            // 
+            // timer4
+            // 
+            this.timer4.Tick += new System.EventHandler(this.timer4_Tick);
             // 
             // Form1
             // 
