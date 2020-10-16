@@ -40,6 +40,7 @@ namespace bodyColorSeq
 
         public string[] colorInfo=new string[41];
         public string[] fisInfo = new string[41];
+
         public string[] skidInfo = new string[41];
 
         public int twentyone, twentytwo, twentythree, twentyfour, twentyfive, twentysix, twentyseven, twentyeight, twentynine, thirty;
@@ -1020,7 +1021,7 @@ namespace bodyColorSeq
              string[] repairFisInfo = new string[repairCarNum];
              string[] repairSkidInfo = new string[repairCarNum];
              string[] repairBodyInfo = new string[repairCarNum];
-            string[] repairRqiInfo = new string[repairCarNum];
+            string[] repairRiqiInfo = new string[repairCarNum];
             string[] repairShijianInfo = new string[repairCarNum];
 
             int[] repairTime = new int[repairCarNum];
@@ -1079,7 +1080,8 @@ namespace bodyColorSeq
                     repairFisInfo[l] = readdd["FIS"].ToString();
                     repairBodyInfo[l] = readdd["TYPE"].ToString();
                     repairColorInfo[l] = readdd["COLOR"].ToString();
-                    repairSkidInfo[l] = readdd["SKID"].ToString();               
+                    repairSkidInfo[l] = readdd["SKID"].ToString();
+                    repairRiqiInfo[l] = readdd["RIQI"].ToString();
                     repairShijianInfo[l] = readdd["SHIJIAN"].ToString();
                     repairTime[l] = stayTime(repairShijianInfo[l]);
 
@@ -1096,7 +1098,7 @@ namespace bodyColorSeq
 
             for(int m = 0; m < repairCarNum; m++)
             {
-                listMoreInfo.Items.Add("FIS号码"+repairFisInfo[m] +"--"+"滑橇"+repairSkidInfo[m]+"颜色"+repairColorInfo[m]+"时间"+ repairShijianInfo[m]);
+                listMoreInfo.Items.Add("FIS号码"+repairFisInfo[m] +"--"+"滑橇"+repairSkidInfo[m]+"颜色"+repairColorInfo[m]+"--日期"+ repairRiqiInfo[m] + "--时间" + repairShijianInfo[m]);
                 listTimeInfo.Items.Add("滞留时间" + repairTime[m]);
             }
    

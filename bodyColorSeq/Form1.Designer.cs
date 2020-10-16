@@ -733,7 +733,7 @@
             this.toolStripStatusLabel2});
             this.statusStrip1.Location = new System.Drawing.Point(0, 611);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1359, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(1444, 22);
             this.statusStrip1.TabIndex = 68;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -1782,7 +1782,7 @@
             this.repairMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1359, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1444, 24);
             this.menuStrip1.TabIndex = 110;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -1808,7 +1808,7 @@
             this.groupBox1.Controls.Add(this.listMoreInfo);
             this.groupBox1.Location = new System.Drawing.Point(927, 38);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(420, 268);
+            this.groupBox1.Size = new System.Drawing.Size(493, 268);
             this.groupBox1.TabIndex = 111;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "滞留车信息";
@@ -1816,7 +1816,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(315, 25);
+            this.label21.Location = new System.Drawing.Point(370, 25);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(103, 13);
             this.label21.TabIndex = 90;
@@ -1834,9 +1834,9 @@
             // listTimeInfo
             // 
             this.listTimeInfo.FormattingEnabled = true;
-            this.listTimeInfo.Location = new System.Drawing.Point(302, 48);
+            this.listTimeInfo.Location = new System.Drawing.Point(386, 48);
             this.listTimeInfo.Name = "listTimeInfo";
-            this.listTimeInfo.Size = new System.Drawing.Size(112, 212);
+            this.listTimeInfo.Size = new System.Drawing.Size(97, 212);
             this.listTimeInfo.TabIndex = 2;
             // 
             // listMoreInfo
@@ -1844,7 +1844,7 @@
             this.listMoreInfo.FormattingEnabled = true;
             this.listMoreInfo.Location = new System.Drawing.Point(11, 48);
             this.listMoreInfo.Name = "listMoreInfo";
-            this.listMoreInfo.Size = new System.Drawing.Size(285, 212);
+            this.listMoreInfo.Size = new System.Drawing.Size(369, 212);
             this.listMoreInfo.TabIndex = 1;
             // 
             // timer4
@@ -1855,7 +1855,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1359, 633);
+            this.ClientSize = new System.Drawing.Size(1444, 633);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox4);
