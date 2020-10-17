@@ -1046,25 +1046,25 @@ namespace bodyColorSeq
 
       
 
-            //判断车身信息是否去了大线，如果去了大线，则记录在返修的表格中的信息删除
-            for (int k = 0; k < repairSkidInfo.Length; k++)
-            {
+            ////判断车身信息是否去了大线，如果去了大线，则记录在返修的表格中的信息删除
+            //for (int k = 0; k < repairSkidInfo.Length; k++)
+            //{
 
 
-                string sqlsearch = "select * from TCONEBODYINFO where FIS='" + repairFisInfo[k] + "'";
+            //    string sqlsearch = "select * from TCONEBODYINFO where FIS='" + repairFisInfo[k] + "'";
             
 
-                OracleDataReader readd = operateDatabase.OrcGetRead(sqlsearch); 
-                while (readd.Read())
-                {
-                    string sqldel = "delete from XIUSHIONEREPAIRBODYINFO where FIS= '" + repairFisInfo[k] + "'";
+            //    OracleDataReader readd = operateDatabase.OrcGetRead(sqlsearch); 
+            //    while (readd.Read())
+            //    {
+            //        string sqldel = "delete from XIUSHIONEREPAIRBODYINFO where FIS= '" + repairFisInfo[k] + "'";
                  
-                    operateDatabase.OrcGetCom(sqldel);
-                }
+            //        operateDatabase.OrcGetCom(sqldel);
+            //    }
            
 
 
-            }
+            //}
 
             //获取该车身的更多信息
     
